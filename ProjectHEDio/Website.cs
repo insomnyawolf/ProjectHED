@@ -49,6 +49,8 @@ namespace ProjectHEDio
 
         protected Thread ScrapeThread;
 
+        public abstract bool ThreadIsAlive();
+
         public abstract void InitializeScrape(string[] arguments = null, int totalPages = 1);
 
         protected abstract int GetMaxPages(string[] arguments = null);
