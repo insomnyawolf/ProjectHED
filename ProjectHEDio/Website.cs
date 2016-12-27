@@ -11,7 +11,7 @@ namespace ProjectHEDio
     {
         protected static Queue<string> WebsiteImageLinks = new Queue<string>(); 
 
-        protected Thread DownloadThread;
+        protected Thread ScrapeThread;
 
         public abstract int GetMaxPages(string[] arguments = null);
 
