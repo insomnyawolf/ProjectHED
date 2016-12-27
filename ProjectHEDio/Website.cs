@@ -15,9 +15,9 @@ namespace ProjectHEDio
 
         public abstract void InitializeScrape(string[] arguments = null, int pageNumber = 1);
 
-        public abstract int GetMaxPages(string[] arguments = null);
+        protected abstract int GetMaxPages(string[] arguments = null);
 
-        public abstract string FormatURL(string[] arguments = null, int pageNumber = 1);
+        protected abstract string FormatURL(string[] arguments = null, int pageNumber = 1);
 
         protected abstract void Scrape(string[] arguments = null, int pageNumber = 1);
     }
