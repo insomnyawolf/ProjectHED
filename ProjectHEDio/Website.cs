@@ -15,7 +15,6 @@ namespace ProjectHEDio
 
         public abstract int GetMaxPages(string[] arguments = null);
 
-        // ReSharper disable once InconsistentNaming
         public abstract string FormatURL(string[] arguments = null, int pageNumber = 1);
 
         public abstract void Scrape(string[] arguments = null, int pageNumber = 1);
