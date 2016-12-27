@@ -45,7 +45,7 @@ namespace ProjectHEDio
             return result;
         }
 
-        protected static Queue<string> WebsiteImageLinks = new Queue<string>();
+        public static Queue<string> WebsiteImageLinks = new Queue<string>();
 
         // For every object instantiated that derives from this class, is there an individual thread for each object?
         protected Thread ScrapeThread;
