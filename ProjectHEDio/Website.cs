@@ -9,7 +9,7 @@ namespace ProjectHEDio
 {
     public abstract class WebsiteBase
     {
-        protected static Queue<string> WebsiteImageLinks = new Queue<string>(); 
+        protected static Queue<string> WebsiteImageLinks = new Queue<string>();
 
         protected Thread ScrapeThread;
 
@@ -17,6 +17,6 @@ namespace ProjectHEDio
 
         public abstract string FormatURL(string[] arguments = null, int pageNumber = 1);
 
-        public abstract void Scrape(string[] arguments = null, int pageNumber = 1);
+        public abstract void InitializeScrape(string[] arguments = null, int pageNumber = 1);
     }
 }
