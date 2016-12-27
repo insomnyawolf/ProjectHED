@@ -27,6 +27,24 @@ namespace ProjectHEDio
             return source;
         }
 
+        protected static string GetTagList(string[] arguments)
+        {
+            if (arguments == null)
+            {
+                return string.Empty;
+            }
+            if (arguments.Length < 1)
+            {
+                return string.Empty;
+            }
+            string result = string.Empty;
+            for (int i = 0; i < arguments.Length; i++)
+            {
+                result += arguments[i].Replace("+", "") + (i == arguments.Length - 1 ? "" : "+");
+            }
+            return result;
+        }
+
         protected static Queue<string> WebsiteImageLinks = new Queue<string>();
 
         protected Thread ScrapeThread;
