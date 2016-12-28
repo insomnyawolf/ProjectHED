@@ -11,11 +11,6 @@ namespace ProjectHEDio
 {
     class WebsiteKonachanNet : WebsiteBase
     {
-        public WebsiteKonachanNet()
-        {
-
-        }
-
         public override bool ThreadIsAlive()
         {
             return ScrapeThread.IsAlive;
