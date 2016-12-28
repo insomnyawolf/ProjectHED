@@ -36,6 +36,10 @@ namespace ProjectHEDio
             }
             else
             {
+                if (!source.Contains("Next Page"))
+                {
+                    return 1;
+                }
                 return -1;
             }
         }
