@@ -11,11 +11,6 @@ namespace ProjectHEDio
 {
     class WebsiteKonachanNet : WebsiteBase
     {
-        public override bool ThreadIsAlive()
-        {
-            return ScrapeThread.IsAlive;
-        }
-
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
         {
             ScrapeThread = new Thread(() => Scrape(arguments, totalPages));
