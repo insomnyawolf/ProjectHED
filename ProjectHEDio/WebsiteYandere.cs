@@ -56,6 +56,7 @@ namespace ProjectHEDio
             {
                 pages = totalPages;
             }
+            ulong totalFound = 0;
             for (int i = 1; i <= pages; i++)
             {
                 string source = GetSource(FormatURL(arguments, i));
@@ -67,7 +68,10 @@ namespace ProjectHEDio
                 {
                     WebsiteImageLinks.Enqueue(m.Groups["Link"].Value);
                 }
+                LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
+                totalFound = totalFound + (uint)mc.Count;
             }
+            LogHelper.Log(string.Format("SCRAPE: Found {0} total matches from this {1} object.", totalFound, this.ToString()));
         }
     }
 }
