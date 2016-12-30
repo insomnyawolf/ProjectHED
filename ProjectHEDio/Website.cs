@@ -18,6 +18,7 @@ namespace ProjectHEDio
                 using (WebClient wc = new WebClient())
                 {
                     source = wc.DownloadString(url);
+                    LogHelper.Log("Downloaded source (" + url + ").");
                 }
             }
             catch (WebException)
