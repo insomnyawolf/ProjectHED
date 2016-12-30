@@ -68,6 +68,11 @@ namespace ProjectHEDio
 
         public static Queue<string> WebsiteImageLinks = new Queue<string>();
 
+        public void ClearWebsiteImageLinkQueue()
+        {
+            WebsiteImageLinks.Clear();
+        }
+
         protected Thread ScrapeThread;
 
         public bool ThreadIsAlive()
