@@ -24,7 +24,7 @@ namespace ProjectHEDio
         {
             try
             {
-                string result = DateTime.Now.ToString();
+                string result = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss.fff");
                 result += " ";
                 switch (type)
                 {
