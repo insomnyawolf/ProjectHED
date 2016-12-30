@@ -47,8 +47,30 @@ namespace ProjectHEDio
 
         protected override void Scrape(string[] arguments = null, int totalPages = 1)
         {
-            // TODO: This
-            throw new NotImplementedException();
+            int pages = GetMaxPages(arguments);
+            if (pages < 1)
+            {
+                return;
+            }
+            if (totalPages < pages)
+            {
+                pages = totalPages;
+            }
+            for (int i = 1; i <= pages; i++)
+            {
+                string source = GetSource(FormatURL(arguments, i));
+                // Images can be retrieved from the Javascript.
+                // We can most likely improve this regular expression, or use a different method.
+                // Post\.register\({[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,\"file_ext\":\"([^\"]+)\",\"file_url\":\"([^\"]+)\"
+                string reallyBadPattern = "Post\\.register\\({[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,\\\"file_ext\\\":\\\"([^\\\"]+)\\\",\\\"file_url\\\":\\\"([^\\\"]+)\\\"";
+                // Group 1: File extension. We could use this later.
+                // Group 2: Link to image.
+                MatchCollection mc = Regex.Matches(source, reallyBadPattern);
+                foreach (Match m in mc)
+                {
+                    WebsiteImageLinks.Enqueue(m.Groups[2].Value);
+                }
+            }
         }
     }
 }
