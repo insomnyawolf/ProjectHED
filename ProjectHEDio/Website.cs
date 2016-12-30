@@ -10,8 +10,11 @@ namespace ProjectHEDio
 {
     public abstract class WebsiteBase
     {
+        private const int MaxSourceRetrievalRetries = 3;
+
         protected static string GetSource(string url)
         {
+            LogHelper.Log("Downloading source (" + url + ")...");
             string source = string.Empty;
             try
             {
@@ -24,6 +27,23 @@ namespace ProjectHEDio
             catch (WebException)
             {
                 LogHelper.Log("Unable to download source (" + url + ").", LogHelper.LogType.Error);
+                for (int tries = 1; tries <= MaxSourceRetrievalRetries; tries++)
+                {
+                    LogHelper.Log("Retrying source download (" + url + ") [retry #" + tries + "]...", LogHelper.LogType.Warning);
+                    try
+                    {
+                        using (WebClient wc = new WebClient())
+                        {
+                            source = wc.DownloadString(url);
+                            LogHelper.Log("Downloaded source (" + url + ") after " + tries + " tr" + (tries == 1 ? "y" : "ies") + ".");
+                            break;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        LogHelper.Log("Unable to download source (" + url + ").", LogHelper.LogType.Error);
+                    }
+                }
             }
             return source;
         }
