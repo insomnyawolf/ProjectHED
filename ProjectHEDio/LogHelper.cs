@@ -7,6 +7,11 @@ namespace ProjectHEDio
     {
         private static string LogFilepath = Environment.CurrentDirectory + "\\" + "ProjectHEDLog.txt";
 
+        public static void ClearLogFile()
+        {
+            File.WriteAllText(LogFilepath, "");
+        }
+
         public enum LogType
         {
             Normal,
