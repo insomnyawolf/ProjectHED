@@ -26,6 +26,10 @@ namespace ProjectHEDio
             {
                 return 0;
             }
+            if (!source.Contains("Next Page"))
+            {
+                return 1;
+            }
 
             string pattern = "page=(\\d+)[^\"]+\" ?rel=\"last\"";
             string match = Regex.Match(source, pattern).Groups[1].Value;
@@ -34,14 +38,7 @@ namespace ProjectHEDio
             {
                 return result;
             }
-            else
-            {
-                if (!source.Contains("Next Page"))
-                {
-                    return 1;
-                }
-                return -1;
-            }
+            return -1;
         }
 
         protected override string FormatURL(string[] arguments = null, int pageNumber = 1)
