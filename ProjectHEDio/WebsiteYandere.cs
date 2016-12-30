@@ -30,8 +30,8 @@ namespace ProjectHEDio
                 return 1;
             }
 
-            string pattern = "page=(\\d+)[^\"]+\" ?rel=\"last\"";
-            string match = Regex.Match(source, pattern).Groups[1].Value;
+            string pattern = "page=(?<LastPage>\\d+)[^\"]+\" ?rel=\"last\"";
+            string match = Regex.Match(source, pattern).Groups["LastPage"].Value;
             int result = -1;
             if (int.TryParse(match, out result))
             {
@@ -60,15 +60,12 @@ namespace ProjectHEDio
             {
                 string source = GetSource(FormatURL(arguments, i));
                 // Images can be retrieved from the Javascript.
-                // We can most likely improve this regular expression, or use a different method.
-                // Post\.register\({[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,\"file_ext\":\"([^\"]+)\",\"file_url\":\"([^\"]+)\"
-                string reallyBadPattern = "Post\\.register\\({[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,[^,]+,\\\"file_ext\\\":\\\"([^\\\"]+)\\\",\\\"file_url\\\":\\\"([^\\\"]+)\\\"";
-                // Group 1: File extension. We could use this later.
-                // Group 2: Link to image.
-                MatchCollection mc = Regex.Matches(source, reallyBadPattern);
+                // Post\.register\({(?:[^,]+,){13}\"file_url\":\"(?<Link>[^\"]+)
+                string pattern = "Post\\.register\\({(?:[^,]+,){13}\\\"file_url\\\":\\\"(?<Link>[^\\\"]+)";
+                MatchCollection mc = Regex.Matches(source, pattern);
                 foreach (Match m in mc)
                 {
-                    WebsiteImageLinks.Enqueue(m.Groups[2].Value);
+                    WebsiteImageLinks.Enqueue(m.Groups["Link"].Value);
                 }
             }
         }

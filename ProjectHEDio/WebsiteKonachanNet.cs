@@ -31,8 +31,8 @@ namespace ProjectHEDio
                 return 1;
             }
 
-            string pattern = "page=(\\d+)[^\"]+\" ?rel=\"last\"";
-            string match = Regex.Match(source, pattern).Groups[1].Value;
+            string pattern = "page=(?<LastPage>\\d+)[^\"]+\" ?rel=\"last\"";
+            string match = Regex.Match(source, pattern).Groups["LastPage"].Value;
             int result = -1;
             if (int.TryParse(match, out result))
             {
@@ -60,11 +60,11 @@ namespace ProjectHEDio
             for (int i = 1; i <= pages; i++)
             {
                 string source = GetSource(FormatURL(arguments, i));
-                string pattern = "directlink [^\"]+img\" ?href=\"([^\"]+)\">";
+                string pattern = "directlink [^\"]+img\" ?href=\"(?<Link>[^\"]+)\">";
                 MatchCollection mc = Regex.Matches(source, pattern);
                 foreach (Match m in mc)
                 {
-                    WebsiteImageLinks.Enqueue("http:" + m.Groups[1].Value);
+                    WebsiteImageLinks.Enqueue("http:" + m.Groups["Link"].Value);
                 }
             }
         }
