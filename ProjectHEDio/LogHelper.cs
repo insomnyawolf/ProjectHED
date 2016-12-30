@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Diagnostics;
 
 namespace ProjectHEDio
 {
@@ -39,6 +40,7 @@ namespace ProjectHEDio
                 }
                 result += text;
                 File.AppendAllText(LogFilepath, result + Environment.NewLine);
+                Debug.WriteLine(result);
             }
             catch (Exception)
             {
