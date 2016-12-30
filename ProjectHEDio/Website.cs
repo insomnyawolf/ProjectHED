@@ -29,13 +29,13 @@ namespace ProjectHEDio
                 LogHelper.Log("Unable to download source (" + url + ").", LogHelper.LogType.Error);
                 for (int tries = 1; tries <= MaxSourceRetrievalRetries; tries++)
                 {
-                    LogHelper.Log("Retrying source download (" + url + ") [retry #" + tries + "]...", LogHelper.LogType.Warning);
+                    LogHelper.Log(string.Format("Retrying source download ({0}) [retry #{1}]...", url, tries), LogHelper.LogType.Warning);
                     try
                     {
                         using (WebClient wc = new WebClient())
                         {
                             source = wc.DownloadString(url);
-                            LogHelper.Log("Downloaded source (" + url + ") after " + tries + " tr" + (tries == 1 ? "y" : "ies") + ".");
+                            LogHelper.Log(string.Format("Downloaded source ({0}) after {1} tr{2}.", url, tries, (tries == 1 ? "y" : "ies")));
                             break;
                         }
                     }
