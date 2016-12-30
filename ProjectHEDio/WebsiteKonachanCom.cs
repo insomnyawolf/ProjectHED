@@ -43,7 +43,7 @@ namespace ProjectHEDio
 
         protected override string FormatURL(string[] arguments = null, int pageNumber = 1)
         {
-            return string.Format("http://konachan.net/post?page={0}&tags={1}", pageNumber, GetTagList(arguments));
+            return string.Format("http://konachan.com/post?page={0}&tags={1}", pageNumber, GetTagList(arguments));
         }
 
         protected override void Scrape(string[] arguments = null, int totalPages = 1)
