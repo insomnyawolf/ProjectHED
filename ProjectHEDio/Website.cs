@@ -68,7 +68,7 @@ namespace ProjectHEDio
 
         public static Queue<string> WebsiteImageLinks = new Queue<string>();
 
-        public void ClearWebsiteImageLinkQueue()
+        public void Reset()
         {
             WebsiteImageLinks.Clear();
         }
