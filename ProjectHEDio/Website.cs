@@ -87,6 +87,12 @@ namespace ProjectHEDio
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
         }
 
+        protected static void AddToLinks(string link, int width, int height, int retries = 0)
+        {
+            TotalFileCount++;
+            WebsiteFileLinks.Enqueue(new ScrapedFile(link, width, height, retries));
+        }
+
         public bool ThreadIsAlive()
         {
             return ScrapeThread.IsAlive;
