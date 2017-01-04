@@ -11,7 +11,12 @@ namespace ProjectHEDio
     public abstract class Website
     {
         private const int MaxSourceRetrievalRetries = 3;
+
         private static int TotalFileCount = 0;
+
+        public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
+
+        public static List<Website> WebsiteList = new List<Website>();
 
         protected static string GetSource(string url)
         {
@@ -67,8 +72,6 @@ namespace ProjectHEDio
             return result;
         }
 
-        public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
-
         public void Reset()
         {
             WebsiteFileLinks.Clear();
@@ -86,8 +89,6 @@ namespace ProjectHEDio
         {
             return ScrapeThread.IsAlive;
         }
-
-        public static List<Website> WebsiteList = new List<Website>();
 
         public Website()
         {
