@@ -16,7 +16,6 @@ namespace ProjectHEDio
 
         //===================================================
         // Sources
-        // - Gelbooru
         // - Sankaku Complex
         // - Zerochan
         // - Safebooru
