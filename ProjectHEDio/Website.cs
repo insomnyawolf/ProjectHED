@@ -8,7 +8,7 @@ using System.Net;
 
 namespace ProjectHEDio
 {
-    public abstract class WebsiteBase
+    public abstract class Website
     {
         private const int MaxSourceRetrievalRetries = 3;
         private static int TotalFileCount = 0;
@@ -87,9 +87,9 @@ namespace ProjectHEDio
             return ScrapeThread.IsAlive;
         }
 
-        public static List<WebsiteBase> WebsiteList = new List<WebsiteBase>();
+        public static List<Website> WebsiteList = new List<Website>();
 
-        public WebsiteBase()
+        public Website()
         {
             // Add all websites that inherit from this class to a list.
             WebsiteList.Add(this);
