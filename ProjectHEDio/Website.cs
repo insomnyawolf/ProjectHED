@@ -10,7 +10,7 @@ namespace ProjectHEDio
 {
     public abstract class Website
     {
-        private const int MaxSourceRetrievalRetries = 3;
+        private static int MaxSourceRetrievalRetries = 3;
 
         private static int TotalFileCount = 0;
 
