@@ -62,7 +62,7 @@ namespace ProjectHEDio
                 MatchCollection mc = Regex.Matches(source, pattern);
                 foreach (Match m in mc)
                 {
-                    WebsiteImageLinks.Enqueue(m.Groups["Link"].Value);
+                    WebsiteFileLinks.Enqueue(m.Groups["Link"].Value);
                 }
                 LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
                 totalFound = totalFound + (uint)mc.Count;

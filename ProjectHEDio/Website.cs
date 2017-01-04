@@ -11,6 +11,7 @@ namespace ProjectHEDio
     public abstract class WebsiteBase
     {
         private const int MaxSourceRetrievalRetries = 3;
+        private static int TotalFileCount = 0;
 
         protected static string GetSource(string url)
         {
@@ -66,11 +67,11 @@ namespace ProjectHEDio
             return result;
         }
 
-        public static Queue<string> WebsiteImageLinks = new Queue<string>();
+        public static Queue<string> WebsiteFileLinks = new Queue<string>();
 
         public void Reset()
         {
-            WebsiteImageLinks.Clear();
+            WebsiteFileLinks.Clear();
         }
 
         protected Thread ScrapeThread;
