@@ -18,6 +18,8 @@ namespace ProjectHEDio
 
         public static List<Website> WebsiteList = new List<Website>();
 
+        protected Thread ScrapeThread;
+
         protected static string GetSource(string url)
         {
             LogHelper.Log("Downloading source (" + url + ")...");
@@ -84,8 +86,6 @@ namespace ProjectHEDio
             TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
         }
-
-        protected Thread ScrapeThread;
 
         public bool ThreadIsAlive()
         {
