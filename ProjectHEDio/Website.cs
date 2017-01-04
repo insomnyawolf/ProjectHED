@@ -72,7 +72,7 @@ namespace ProjectHEDio
             return result;
         }
 
-        public void Reset()
+        public static void Reset()
         {
             TotalFileCount = 0;
             WebsiteFileLinks.Clear();
