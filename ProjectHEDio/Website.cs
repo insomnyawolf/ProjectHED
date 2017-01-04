@@ -8,9 +8,17 @@ using System.Net;
 
 namespace ProjectHEDio
 {
-    public abstract class WebsiteBase
+    public abstract class Website
     {
         private const int MaxSourceRetrievalRetries = 3;
+
+        private static int TotalFileCount = 0;
+
+        public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
+
+        public static List<Website> WebsiteList = new List<Website>();
+
+        protected Thread ScrapeThread;
 
         protected static string GetSource(string url)
         {
@@ -66,18 +74,34 @@ namespace ProjectHEDio
             return result;
         }
 
-        public static Queue<string> WebsiteImageLinks = new Queue<string>();
-
-        public void ClearWebsiteImageLinkQueue()
+        public static void Reset()
         {
-            WebsiteImageLinks.Clear();
+            TotalFileCount = 0;
+            WebsiteFileLinks.Clear();
+            WebsiteList.Clear();
         }
 
-        protected Thread ScrapeThread;
+        protected static void AddToLinks(string link, int retries = 0)
+        {
+            TotalFileCount++;
+            WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
+        }
+
+        protected static void AddToLinks(string link, int width, int height, int retries = 0)
+        {
+            TotalFileCount++;
+            WebsiteFileLinks.Enqueue(new ScrapedFile(link, width, height, retries));
+        }
 
         public bool ThreadIsAlive()
         {
             return ScrapeThread.IsAlive;
+        }
+
+        public Website()
+        {
+            // Add all websites that inherit from this class to a list.
+            WebsiteList.Add(this);
         }
 
         public abstract void InitializeScrape(string[] arguments = null, int totalPages = 1);

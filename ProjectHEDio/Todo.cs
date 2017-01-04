@@ -11,15 +11,15 @@ namespace ProjectHEDio
         //===================================================
         // Functionality
         // - I dunno dude.
+        // - Change commit names to imperative verbs
         //===================================================
 
         //===================================================
         // Sources
-        // - Gelbooru
-        // - Sankaku Complex
-        // - Zerochan
         // - Safebooru
         // - 3dbooru
+        // - Sankaku Complex
+        // - Zerochan
         // - Pixiv
         //===================================================
     }

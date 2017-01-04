@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace ProjectHEDio
 {
-    class WebsiteKonachanCom : WebsiteBase
+    class WebsiteKonachanCom : Website
     {
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
         {
@@ -61,7 +61,7 @@ namespace ProjectHEDio
                 MatchCollection mc = Regex.Matches(source, pattern);
                 foreach (Match m in mc)
                 {
-                    WebsiteImageLinks.Enqueue("http:" + m.Groups["Link"].Value);
+                    AddToLinks("http:" + m.Groups["Link"].Value);
                 }
                 LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
                 totalFound = totalFound + (uint)mc.Count;
