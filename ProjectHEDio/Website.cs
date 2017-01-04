@@ -81,7 +81,7 @@ namespace ProjectHEDio
             return ScrapeThread.IsAlive;
         }
 
-        public static List<WebsiteBase> WebsiteList = new List<WebsiteBase>(); 
+        public static List<WebsiteBase> WebsiteList = new List<WebsiteBase>();
 
         public WebsiteBase()
         {
