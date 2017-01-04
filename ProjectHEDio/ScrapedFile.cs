@@ -31,5 +31,25 @@ namespace ProjectHEDio
             this.Width = width;
             this.Height = height;
         }
+
+        public string GetLink()
+        {
+            return this.Link;
+        }
+
+        public int GetRetries()
+        {
+            return this.Retries;
+        }
+
+        public int GetWidth()
+        {
+            return this.Width;
+        }
+
+        public int GetHeight()
+        {
+            return this.Height;
+        }
     }
 }
