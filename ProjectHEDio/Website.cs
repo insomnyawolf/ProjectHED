@@ -76,6 +76,7 @@ namespace ProjectHEDio
         {
             TotalFileCount = 0;
             WebsiteFileLinks.Clear();
+            WebsiteList.Clear();
         }
 
         protected static void AddToLinks(string link, int retries = 0)
