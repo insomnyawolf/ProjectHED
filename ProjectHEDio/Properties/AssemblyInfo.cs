@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ProjectHED")]
-[assembly: AssemblyDescription("An open-source bulk image downloader for anime.")]
+[assembly: AssemblyTitle("An open-source bulk image downloader for anime.")]
+[assembly: AssemblyDescription("ProjectHED")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ProjectHED")]
