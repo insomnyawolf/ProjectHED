@@ -67,7 +67,7 @@ namespace ProjectHEDio
             return result;
         }
 
-        public static Queue<string> WebsiteFileLinks = new Queue<string>();
+        public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
 
         public void Reset()
         {
