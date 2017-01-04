@@ -64,6 +64,7 @@
     <Compile Include="ScrapedFile.cs" />
     <Compile Include="Todo.cs" />
     <Compile Include="Website.cs" />
+    <Compile Include="WebsiteGelbooru.cs" />
     <Compile Include="WebsiteKonachanCom.cs" />
     <Compile Include="WebsiteKonachanNet.cs" />
     <Compile Include="WebsiteYandere.cs" />
