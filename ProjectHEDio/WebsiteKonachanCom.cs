@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace ProjectHEDio
 {
-    class WebsiteKonachanCom : WebsiteBase
+    class WebsiteKonachanCom : Website
     {
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
         {
