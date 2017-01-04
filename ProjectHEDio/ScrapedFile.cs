@@ -2,7 +2,7 @@
 
 namespace ProjectHEDio
 {
-    class ScrapedFile
+    public class ScrapedFile
     {
         private string Link;
         private int Retries = 0;
