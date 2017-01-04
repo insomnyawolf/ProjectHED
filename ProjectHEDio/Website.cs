@@ -76,6 +76,7 @@ namespace ProjectHEDio
 
         protected static void AddToLinks(string link, int retries = 0)
         {
+            TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
         }
 
