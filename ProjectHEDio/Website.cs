@@ -80,6 +80,14 @@ namespace ProjectHEDio
             return ScrapeThread.IsAlive;
         }
 
+        public static List<WebsiteBase> WebsiteList = new List<WebsiteBase>(); 
+
+        public WebsiteBase()
+        {
+            // Add all websites that inherit from this class to a list.
+            WebsiteList.Add(this);
+        }
+
         public abstract void InitializeScrape(string[] arguments = null, int totalPages = 1);
 
         protected abstract int GetMaxPages(string[] arguments = null);
