@@ -32,6 +32,14 @@ namespace ProjectHEDio
             this.Height = height;
         }
 
+        public ScrapedFile(string link, int width, int height, int retries)
+        {
+            this.Link = link;
+            this.Width = width;
+            this.Height = height;
+            this.Retries = retries;
+        }
+
         public string GetLink()
         {
             return this.Link;
