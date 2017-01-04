@@ -16,10 +16,10 @@ namespace ProjectHEDio
 
         //===================================================
         // Sources
-        // - Sankaku Complex
-        // - Zerochan
         // - Safebooru
         // - 3dbooru
+        // - Sankaku Complex
+        // - Zerochan
         // - Pixiv
         //===================================================
     }
