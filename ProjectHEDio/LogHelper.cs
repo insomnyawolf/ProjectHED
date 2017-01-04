@@ -39,8 +39,8 @@ namespace ProjectHEDio
                         break;
                 }
                 result += text;
-                File.AppendAllText(LogFilepath, result + Environment.NewLine);
                 Debug.WriteLine(result);
+                File.AppendAllText(LogFilepath, result + Environment.NewLine);
             }
             catch (Exception)
             {
