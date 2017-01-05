@@ -53,9 +53,9 @@
             this.metroTabPageConfiguration = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
-            this.progressBarMain = new MetroFramework.Controls.MetroProgressBar();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
+            this.progressBarMain = new System.Windows.Forms.ProgressBar();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizesMethod.SuspendLayout();
@@ -367,13 +367,6 @@
             this.comboBoxLanguageSelector.Size = new System.Drawing.Size(121, 29);
             this.comboBoxLanguageSelector.TabIndex = 1;
             // 
-            // progressBarMain
-            // 
-            this.progressBarMain.Location = new System.Drawing.Point(150, 340);
-            this.progressBarMain.Name = "progressBarMain";
-            this.progressBarMain.Size = new System.Drawing.Size(336, 29);
-            this.progressBarMain.TabIndex = 2;
-            // 
             // buttonStart
             // 
             this.buttonStart.Location = new System.Drawing.Point(492, 340);
@@ -392,14 +385,21 @@
             this.labelStatus.TabIndex = 4;
             this.labelStatus.Text = "Status: Waiting.";
             // 
+            // progressBarMain
+            // 
+            this.progressBarMain.Location = new System.Drawing.Point(150, 340);
+            this.progressBarMain.Name = "progressBarMain";
+            this.progressBarMain.Size = new System.Drawing.Size(336, 29);
+            this.progressBarMain.TabIndex = 2;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 403);
+            this.Controls.Add(this.progressBarMain);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonStart);
-            this.Controls.Add(this.progressBarMain);
             this.Controls.Add(this.comboBoxLanguageSelector);
             this.Controls.Add(this.tabControlMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -430,7 +430,6 @@
         private MetroFramework.Controls.MetroTabPage metroTabPageConfiguration;
         private MetroFramework.Controls.MetroTabPage metroTabPageAbout;
         private MetroFramework.Controls.MetroComboBox comboBoxLanguageSelector;
-        private MetroFramework.Controls.MetroProgressBar progressBarMain;
         private MetroFramework.Controls.MetroButton buttonStart;
         private MetroFramework.Controls.MetroLabel labelStatus;
         private MetroFramework.Controls.MetroCheckBox checkBoxUseTags;
@@ -450,5 +449,6 @@
         private MetroFramework.Controls.MetroRadioButton radioButtonRestrictImageSizesMethodTag;
         private MetroFramework.Controls.MetroRadioButton radioButtonRestrictImageSizesMethodManual;
         private MetroFramework.Controls.MetroCheckBox checkBoxRestrictImageSizesQueryTagDontDownloadTagless;
+        private System.Windows.Forms.ProgressBar progressBarMain;
     }
 }
