@@ -15,6 +15,7 @@ namespace ProjectHEDio
         public FormMain()
         {
             InitializeComponent();
+            comboBoxLanguageSelector.Text = "English";
         }
     }
 }
