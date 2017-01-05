@@ -278,9 +278,10 @@
             this.labelTags2.AutoSize = true;
             this.labelTags2.Location = new System.Drawing.Point(4, 66);
             this.labelTags2.Name = "labelTags2";
-            this.labelTags2.Size = new System.Drawing.Size(440, 19);
+            this.labelTags2.Size = new System.Drawing.Size(495, 19);
             this.labelTags2.TabIndex = 5;
-            this.labelTags2.Text = "If you are using multiple tags, please separate individual tags with a space.";
+            this.labelTags2.Text = "To use multiple tags in the same query, please separate individual tags with a sp" +
+    "ace.";
             // 
             // labelTags1
             // 
