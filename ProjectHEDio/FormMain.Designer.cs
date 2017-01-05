@@ -131,6 +131,7 @@
             this.metroButtonStart.Size = new System.Drawing.Size(61, 29);
             this.metroButtonStart.TabIndex = 3;
             this.metroButtonStart.Text = "Start";
+            this.metroButtonStart.Click += new System.EventHandler(this.metroButtonStart_Click);
             // 
             // labelStatus
             // 

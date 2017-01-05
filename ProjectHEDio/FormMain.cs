@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 
 namespace ProjectHEDio
 {
@@ -16,6 +17,11 @@ namespace ProjectHEDio
         {
             InitializeComponent();
             comboBoxLanguageSelector.Text = "English";
+        }
+
+        private void metroButtonStart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
