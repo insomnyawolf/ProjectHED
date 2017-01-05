@@ -17,6 +17,7 @@ namespace ProjectHEDio
         {
             InitializeComponent();
             comboBoxLanguageSelector.Text = "English";
+            progressBarMain.Value = 0;
         }
 
         private void metroButtonStart_Click(object sender, EventArgs e)
