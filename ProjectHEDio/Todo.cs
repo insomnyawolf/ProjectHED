@@ -11,7 +11,8 @@ namespace ProjectHEDio
         //===================================================
         // Functionality
         // - I dunno dude.
-        // - Change commit names to imperative verbs
+        //
+        // . Change commit names to imperative verbs
         //===================================================
 
         //===================================================
