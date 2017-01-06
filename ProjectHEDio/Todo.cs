@@ -11,7 +11,8 @@ namespace ProjectHEDio
         //===================================================
         // Functionality
         // - I dunno dude.
-        // - Change commit names to imperative verbs
+        //
+        // . Change commit names to imperative verbs
         //===================================================
 
         //===================================================
@@ -21,6 +22,12 @@ namespace ProjectHEDio
         // - Sankaku Complex
         // - Zerochan
         // - Pixiv
+        //===================================================
+
+        //===================================================
+        // Misc
+        // https://danbooru.donmai.us/wiki_pages/58938
+        // http://pixiv.readthedocs.io/en/latest/api.html
         //===================================================
     }
 }

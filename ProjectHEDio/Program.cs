@@ -17,6 +17,7 @@ namespace ProjectHEDio
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             LogHelper.ClearLogFile();
+            Application.Run(new FormMain());
         }
     }
 }
