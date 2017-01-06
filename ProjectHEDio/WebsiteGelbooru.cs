@@ -41,7 +41,7 @@ namespace ProjectHEDio
         protected override string FormatURL(string[] arguments = null, int pageNumber = 1)
         {
             // We'll use the API for this :3c
-            return string.Format("http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=42&pid={0}&tags={1}", (pageNumber - 1), arguments);
+            return string.Format("http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=42&pid={0}&tags={1}", (pageNumber - 1), GetTagList(arguments));
         }
 
         protected override void Scrape(string[] arguments = null, int totalPages = 1)
