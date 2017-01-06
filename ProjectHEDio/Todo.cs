@@ -26,6 +26,7 @@ namespace ProjectHEDio
         //===================================================
         // Misc
         // https://danbooru.donmai.us/wiki_pages/58938
+        // http://pixiv.readthedocs.io/en/latest/api.html
         //===================================================
     }
 }
