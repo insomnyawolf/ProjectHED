@@ -141,10 +141,10 @@
             this.radioButtonRestrictImageSizesMethodTag.AutoSize = true;
             this.radioButtonRestrictImageSizesMethodTag.Location = new System.Drawing.Point(3, 24);
             this.radioButtonRestrictImageSizesMethodTag.Name = "radioButtonRestrictImageSizesMethodTag";
-            this.radioButtonRestrictImageSizesMethodTag.Size = new System.Drawing.Size(221, 15);
+            this.radioButtonRestrictImageSizesMethodTag.Size = new System.Drawing.Size(241, 15);
             this.radioButtonRestrictImageSizesMethodTag.TabIndex = 3;
             this.radioButtonRestrictImageSizesMethodTag.TabStop = true;
-            this.radioButtonRestrictImageSizesMethodTag.Text = "Implement size restrictions in queries.";
+            this.radioButtonRestrictImageSizesMethodTag.Text = "Implement size restrictions in tag queries.";
             this.radioButtonRestrictImageSizesMethodTag.UseVisualStyleBackColor = true;
             // 
             // panelRestrictImageSizes
