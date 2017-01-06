@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Net;
+using MetroFramework.Controls;
 
 namespace ProjectHEDio
 {
@@ -19,6 +20,8 @@ namespace ProjectHEDio
         public static List<Website> WebsiteList = new List<Website>();
 
         protected Thread ScrapeThread;
+
+        public MetroPanel SourcePanel;
 
         protected static string GetSource(string url)
         {
@@ -98,10 +101,11 @@ namespace ProjectHEDio
             return ScrapeThread.IsAlive;
         }
 
-        public Website()
+        public Website(MetroPanel sourcePanel)
         {
             // Add all websites that inherit from this class to a list.
             WebsiteList.Add(this);
+            this.SourcePanel = sourcePanel;
         }
 
         public abstract void InitializeScrape(string[] arguments = null, int totalPages = 1);

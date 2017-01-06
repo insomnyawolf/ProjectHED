@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Threading;
 using System.Text.RegularExpressions;
+using MetroFramework.Controls;
 
 namespace ProjectHEDio
 {
     class WebsiteKonachanCom : Website
     {
+        public WebsiteKonachanCom(MetroPanel sourcePanel) : base(sourcePanel)
+        {
+
+        }
+
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
         {
             ScrapeThread = new Thread(() => Scrape(arguments, totalPages));
