@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControlMain = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPagePictureOptions = new MetroFramework.Controls.MetroTabPage();
+            this.labelRestrictImageSizes = new MetroFramework.Controls.MetroLabel();
             this.panelRestrictImageSizesMethod = new MetroFramework.Controls.MetroPanel();
             this.checkBoxRestrictImageSizesQueryTagDontDownloadTagless = new MetroFramework.Controls.MetroCheckBox();
             this.radioButtonRestrictImageSizesMethodManual = new MetroFramework.Controls.MetroRadioButton();
@@ -56,7 +57,6 @@
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
-            this.labelRestrictImageSizes = new MetroFramework.Controls.MetroLabel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizesMethod.SuspendLayout();
@@ -99,6 +99,16 @@
             this.metroTabPagePictureOptions.TabIndex = 0;
             this.metroTabPagePictureOptions.Text = "Picture Options";
             this.metroTabPagePictureOptions.VerticalScrollbarBarColor = true;
+            // 
+            // labelRestrictImageSizes
+            // 
+            this.labelRestrictImageSizes.AutoSize = true;
+            this.labelRestrictImageSizes.Location = new System.Drawing.Point(4, 136);
+            this.labelRestrictImageSizes.Name = "labelRestrictImageSizes";
+            this.labelRestrictImageSizes.Size = new System.Drawing.Size(474, 19);
+            this.labelRestrictImageSizes.TabIndex = 13;
+            this.labelRestrictImageSizes.Text = "If this is checked, ProjectHED will restrict image downloads to the options below" +
+    ".";
             // 
             // panelRestrictImageSizesMethod
             // 
@@ -217,10 +227,11 @@
             this.numericUpDownRestrictImageSizesHeight.Size = new System.Drawing.Size(55, 20);
             this.numericUpDownRestrictImageSizesHeight.TabIndex = 10;
             this.numericUpDownRestrictImageSizesHeight.Value = new decimal(new int[] {
-            1080,
+            1,
             0,
             0,
             0});
+            this.numericUpDownRestrictImageSizesHeight.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
             // 
             // labelResolutionX
             // 
@@ -249,10 +260,11 @@
             this.numericUpDownRestrictImageSizesWidth.Size = new System.Drawing.Size(55, 20);
             this.numericUpDownRestrictImageSizesWidth.TabIndex = 8;
             this.numericUpDownRestrictImageSizesWidth.Value = new decimal(new int[] {
-            1920,
+            1,
             0,
             0,
             0});
+            this.numericUpDownRestrictImageSizesWidth.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
             // 
             // checkBoxRestrictImageSizes
             // 
@@ -394,16 +406,6 @@
             this.progressBarMain.Name = "progressBarMain";
             this.progressBarMain.Size = new System.Drawing.Size(336, 29);
             this.progressBarMain.TabIndex = 2;
-            // 
-            // labelRestrictImageSizes
-            // 
-            this.labelRestrictImageSizes.AutoSize = true;
-            this.labelRestrictImageSizes.Location = new System.Drawing.Point(4, 136);
-            this.labelRestrictImageSizes.Name = "labelRestrictImageSizes";
-            this.labelRestrictImageSizes.Size = new System.Drawing.Size(474, 19);
-            this.labelRestrictImageSizes.TabIndex = 13;
-            this.labelRestrictImageSizes.Text = "If this is checked, ProjectHED will restrict image downloads to the options below" +
-    ".";
             // 
             // FormMain
             // 
