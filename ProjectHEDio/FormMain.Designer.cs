@@ -80,9 +80,9 @@
             // 
             // metroTabPagePictureOptions
             // 
+            this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.labelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizesMethod);
-            this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
             this.metroTabPagePictureOptions.Controls.Add(this.labelResolutionX);
             this.metroTabPagePictureOptions.Controls.Add(this.numericUpDownRestrictImageSizesWidth);
@@ -181,10 +181,10 @@
             this.radioButtonRestrictImageSizesLess.AutoSize = true;
             this.radioButtonRestrictImageSizesLess.Location = new System.Drawing.Point(4, 45);
             this.radioButtonRestrictImageSizesLess.Name = "radioButtonRestrictImageSizesLess";
-            this.radioButtonRestrictImageSizesLess.Size = new System.Drawing.Size(202, 15);
+            this.radioButtonRestrictImageSizesLess.Size = new System.Drawing.Size(215, 15);
             this.radioButtonRestrictImageSizesLess.TabIndex = 4;
             this.radioButtonRestrictImageSizesLess.TabStop = true;
-            this.radioButtonRestrictImageSizesLess.Text = "Images must be smaller than wxh.";
+            this.radioButtonRestrictImageSizesLess.Text = "Images must be less than wxh pixels.";
             this.radioButtonRestrictImageSizesLess.UseVisualStyleBackColor = true;
             // 
             // radioButtonRestrictImageSizesGreater
@@ -192,10 +192,10 @@
             this.radioButtonRestrictImageSizesGreater.AutoSize = true;
             this.radioButtonRestrictImageSizesGreater.Location = new System.Drawing.Point(4, 24);
             this.radioButtonRestrictImageSizesGreater.Name = "radioButtonRestrictImageSizesGreater";
-            this.radioButtonRestrictImageSizesGreater.Size = new System.Drawing.Size(198, 15);
+            this.radioButtonRestrictImageSizesGreater.Size = new System.Drawing.Size(189, 15);
             this.radioButtonRestrictImageSizesGreater.TabIndex = 3;
             this.radioButtonRestrictImageSizesGreater.TabStop = true;
-            this.radioButtonRestrictImageSizesGreater.Text = "Images must be bigger than wxh.";
+            this.radioButtonRestrictImageSizesGreater.Text = "Images must exceed wxh pixels.";
             this.radioButtonRestrictImageSizesGreater.UseVisualStyleBackColor = true;
             // 
             // radioButtonRestrictImageSizesEqual
@@ -203,10 +203,10 @@
             this.radioButtonRestrictImageSizesEqual.AutoSize = true;
             this.radioButtonRestrictImageSizesEqual.Location = new System.Drawing.Point(4, 3);
             this.radioButtonRestrictImageSizesEqual.Name = "radioButtonRestrictImageSizesEqual";
-            this.radioButtonRestrictImageSizesEqual.Size = new System.Drawing.Size(134, 15);
+            this.radioButtonRestrictImageSizesEqual.Size = new System.Drawing.Size(166, 15);
             this.radioButtonRestrictImageSizesEqual.TabIndex = 2;
             this.radioButtonRestrictImageSizesEqual.TabStop = true;
-            this.radioButtonRestrictImageSizesEqual.Text = "Images must be wxh.";
+            this.radioButtonRestrictImageSizesEqual.Text = "Images must be wxh pixels.";
             this.radioButtonRestrictImageSizesEqual.UseVisualStyleBackColor = true;
             // 
             // numericUpDownRestrictImageSizesHeight
@@ -272,9 +272,9 @@
             this.checkBoxRestrictImageSizes.FontSize = MetroFramework.MetroLinkSize.Tall;
             this.checkBoxRestrictImageSizes.Location = new System.Drawing.Point(0, 108);
             this.checkBoxRestrictImageSizes.Name = "checkBoxRestrictImageSizes";
-            this.checkBoxRestrictImageSizes.Size = new System.Drawing.Size(184, 25);
+            this.checkBoxRestrictImageSizes.Size = new System.Drawing.Size(188, 25);
             this.checkBoxRestrictImageSizes.TabIndex = 7;
-            this.checkBoxRestrictImageSizes.Text = "Restrict Image Sizes";
+            this.checkBoxRestrictImageSizes.Text = "Restrict Image Sizes:";
             this.checkBoxRestrictImageSizes.UseVisualStyleBackColor = true;
             this.checkBoxRestrictImageSizes.CheckedChanged += new System.EventHandler(this.checkBoxRestrictImageSizes_CheckedChanged);
             // 
