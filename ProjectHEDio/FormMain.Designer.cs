@@ -56,6 +56,7 @@
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
+            this.labelRestrictImageSizes = new MetroFramework.Controls.MetroLabel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizesMethod.SuspendLayout();
@@ -79,6 +80,7 @@
             // 
             // metroTabPagePictureOptions
             // 
+            this.metroTabPagePictureOptions.Controls.Add(this.labelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizesMethod);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
@@ -107,7 +109,7 @@
             this.panelRestrictImageSizesMethod.HorizontalScrollbarBarColor = true;
             this.panelRestrictImageSizesMethod.HorizontalScrollbarHighlightOnWheel = false;
             this.panelRestrictImageSizesMethod.HorizontalScrollbarSize = 10;
-            this.panelRestrictImageSizesMethod.Location = new System.Drawing.Point(273, 146);
+            this.panelRestrictImageSizesMethod.Location = new System.Drawing.Point(273, 158);
             this.panelRestrictImageSizesMethod.Name = "panelRestrictImageSizesMethod";
             this.panelRestrictImageSizesMethod.Size = new System.Drawing.Size(249, 72);
             this.panelRestrictImageSizesMethod.TabIndex = 12;
@@ -156,7 +158,7 @@
             this.panelRestrictImageSizes.HorizontalScrollbarBarColor = true;
             this.panelRestrictImageSizes.HorizontalScrollbarHighlightOnWheel = false;
             this.panelRestrictImageSizes.HorizontalScrollbarSize = 10;
-            this.panelRestrictImageSizes.Location = new System.Drawing.Point(0, 146);
+            this.panelRestrictImageSizes.Location = new System.Drawing.Point(0, 158);
             this.panelRestrictImageSizes.Name = "panelRestrictImageSizes";
             this.panelRestrictImageSizes.Size = new System.Drawing.Size(266, 72);
             this.panelRestrictImageSizes.TabIndex = 11;
@@ -169,10 +171,10 @@
             this.radioButtonRestrictImageSizesLess.AutoSize = true;
             this.radioButtonRestrictImageSizesLess.Location = new System.Drawing.Point(4, 45);
             this.radioButtonRestrictImageSizesLess.Name = "radioButtonRestrictImageSizesLess";
-            this.radioButtonRestrictImageSizesLess.Size = new System.Drawing.Size(248, 15);
+            this.radioButtonRestrictImageSizesLess.Size = new System.Drawing.Size(202, 15);
             this.radioButtonRestrictImageSizesLess.TabIndex = 4;
             this.radioButtonRestrictImageSizesLess.TabStop = true;
-            this.radioButtonRestrictImageSizesLess.Text = "Images must be larger than this resolution.";
+            this.radioButtonRestrictImageSizesLess.Text = "Images must be smaller than wxh.";
             this.radioButtonRestrictImageSizesLess.UseVisualStyleBackColor = true;
             // 
             // radioButtonRestrictImageSizesGreater
@@ -180,10 +182,10 @@
             this.radioButtonRestrictImageSizesGreater.AutoSize = true;
             this.radioButtonRestrictImageSizesGreater.Location = new System.Drawing.Point(4, 24);
             this.radioButtonRestrictImageSizesGreater.Name = "radioButtonRestrictImageSizesGreater";
-            this.radioButtonRestrictImageSizesGreater.Size = new System.Drawing.Size(248, 15);
+            this.radioButtonRestrictImageSizesGreater.Size = new System.Drawing.Size(198, 15);
             this.radioButtonRestrictImageSizesGreater.TabIndex = 3;
             this.radioButtonRestrictImageSizesGreater.TabStop = true;
-            this.radioButtonRestrictImageSizesGreater.Text = "Images must be larger than this resolution.";
+            this.radioButtonRestrictImageSizesGreater.Text = "Images must be bigger than wxh.";
             this.radioButtonRestrictImageSizesGreater.UseVisualStyleBackColor = true;
             // 
             // radioButtonRestrictImageSizesEqual
@@ -191,16 +193,16 @@
             this.radioButtonRestrictImageSizesEqual.AutoSize = true;
             this.radioButtonRestrictImageSizesEqual.Location = new System.Drawing.Point(4, 3);
             this.radioButtonRestrictImageSizesEqual.Name = "radioButtonRestrictImageSizesEqual";
-            this.radioButtonRestrictImageSizesEqual.Size = new System.Drawing.Size(209, 15);
+            this.radioButtonRestrictImageSizesEqual.Size = new System.Drawing.Size(134, 15);
             this.radioButtonRestrictImageSizesEqual.TabIndex = 2;
             this.radioButtonRestrictImageSizesEqual.TabStop = true;
-            this.radioButtonRestrictImageSizesEqual.Text = "Images must match this resolution.";
+            this.radioButtonRestrictImageSizesEqual.Text = "Images must be wxh.";
             this.radioButtonRestrictImageSizesEqual.UseVisualStyleBackColor = true;
             // 
             // numericUpDownRestrictImageSizesHeight
             // 
             this.numericUpDownRestrictImageSizesHeight.Enabled = false;
-            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(272, 124);
+            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(272, 113);
             this.numericUpDownRestrictImageSizesHeight.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -223,7 +225,7 @@
             // labelResolutionX
             // 
             this.labelResolutionX.AutoSize = true;
-            this.labelResolutionX.Location = new System.Drawing.Point(251, 124);
+            this.labelResolutionX.Location = new System.Drawing.Point(251, 113);
             this.labelResolutionX.Name = "labelResolutionX";
             this.labelResolutionX.Size = new System.Drawing.Size(15, 19);
             this.labelResolutionX.TabIndex = 9;
@@ -232,7 +234,7 @@
             // numericUpDownRestrictImageSizesWidth
             // 
             this.numericUpDownRestrictImageSizesWidth.Enabled = false;
-            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(190, 124);
+            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(190, 113);
             this.numericUpDownRestrictImageSizesWidth.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -256,7 +258,7 @@
             // 
             this.checkBoxRestrictImageSizes.AutoSize = true;
             this.checkBoxRestrictImageSizes.FontSize = MetroFramework.MetroLinkSize.Tall;
-            this.checkBoxRestrictImageSizes.Location = new System.Drawing.Point(0, 119);
+            this.checkBoxRestrictImageSizes.Location = new System.Drawing.Point(0, 108);
             this.checkBoxRestrictImageSizes.Name = "checkBoxRestrictImageSizes";
             this.checkBoxRestrictImageSizes.Size = new System.Drawing.Size(184, 25);
             this.checkBoxRestrictImageSizes.TabIndex = 7;
@@ -393,6 +395,16 @@
             this.progressBarMain.Size = new System.Drawing.Size(336, 29);
             this.progressBarMain.TabIndex = 2;
             // 
+            // labelRestrictImageSizes
+            // 
+            this.labelRestrictImageSizes.AutoSize = true;
+            this.labelRestrictImageSizes.Location = new System.Drawing.Point(4, 136);
+            this.labelRestrictImageSizes.Name = "labelRestrictImageSizes";
+            this.labelRestrictImageSizes.Size = new System.Drawing.Size(474, 19);
+            this.labelRestrictImageSizes.TabIndex = 13;
+            this.labelRestrictImageSizes.Text = "If this is checked, ProjectHED will restrict image downloads to the options below" +
+    ".";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,5 +463,6 @@
         private MetroFramework.Controls.MetroRadioButton radioButtonRestrictImageSizesMethodManual;
         private MetroFramework.Controls.MetroCheckBox checkBoxRestrictImageSizesQueryTagDontDownloadTagless;
         private System.Windows.Forms.ProgressBar progressBarMain;
+        private MetroFramework.Controls.MetroLabel labelRestrictImageSizes;
     }
 }
