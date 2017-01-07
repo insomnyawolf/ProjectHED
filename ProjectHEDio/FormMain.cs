@@ -247,6 +247,12 @@ namespace ProjectHEDio
             this.labelStatus.Text = "Status: " + status;
         }
 
+        private void buttonDownloadDirectoryBrowse_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialogMain.ShowDialog();
+            textBoxDownloadDirectory.Text = folderBrowserDialogMain.SelectedPath;
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
 

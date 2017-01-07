@@ -98,6 +98,7 @@
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
+            this.folderBrowserDialogMain = new System.Windows.Forms.FolderBrowserDialog();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizes.SuspendLayout();
@@ -930,6 +931,7 @@
             this.buttonDownloadDirectoryBrowse.Size = new System.Drawing.Size(30, 23);
             this.buttonDownloadDirectoryBrowse.TabIndex = 4;
             this.buttonDownloadDirectoryBrowse.Text = "...";
+            this.buttonDownloadDirectoryBrowse.Click += new System.EventHandler(this.buttonDownloadDirectoryBrowse_Click);
             // 
             // textBoxDownloadDirectory
             // 
@@ -1062,6 +1064,10 @@
             this.progressBarMain.Step = 1;
             this.progressBarMain.TabIndex = 2;
             // 
+            // folderBrowserDialogMain
+            // 
+            this.folderBrowserDialogMain.Description = "Please select a download directory.";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1186,5 +1192,6 @@
         private System.Windows.Forms.LinkLabel labelAbout3;
         private MetroFramework.Controls.MetroLabel labelAbout4;
         private System.Windows.Forms.PictureBox pictureBoxDonate;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialogMain;
     }
 }
