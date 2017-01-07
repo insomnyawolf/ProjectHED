@@ -417,7 +417,7 @@
             this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout4.AutoSize = true;
             this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout4.Location = new System.Drawing.Point(14, 101);
+            this.labelAbout4.Location = new System.Drawing.Point(179, 101);
             this.labelAbout4.Name = "labelAbout4";
             this.labelAbout4.Size = new System.Drawing.Size(164, 19);
             this.labelAbout4.TabIndex = 5;
@@ -440,7 +440,7 @@
             this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout2.AutoSize = true;
             this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout2.Location = new System.Drawing.Point(15, 42);
+            this.labelAbout2.Location = new System.Drawing.Point(180, 42);
             this.labelAbout2.Name = "labelAbout2";
             this.labelAbout2.Size = new System.Drawing.Size(162, 19);
             this.labelAbout2.TabIndex = 3;
@@ -451,7 +451,7 @@
             this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout1.AutoSize = true;
             this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout1.Location = new System.Drawing.Point(-20, 14);
+            this.labelAbout1.Location = new System.Drawing.Point(145, 14);
             this.labelAbout1.Name = "labelAbout1";
             this.labelAbout1.Size = new System.Drawing.Size(232, 19);
             this.labelAbout1.TabIndex = 2;
