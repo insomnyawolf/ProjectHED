@@ -80,11 +80,23 @@
             this.labelSourceKonachanNet = new MetroFramework.Controls.MetroLabel();
             this.checkBoxSourceKonachanNet = new MetroFramework.Controls.MetroCheckBox();
             this.metroTabPageDownloadSettings = new MetroFramework.Controls.MetroTabPage();
+            this.numericUpDownMaxRetryAttempts = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxOpenDirectoryOnFinish = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBoxNotify = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBoxRetryDownloads = new MetroFramework.Controls.MetroCheckBox();
+            this.checkBoxOverwrite = new MetroFramework.Controls.MetroCheckBox();
+            this.buttonDownloadDirectoryBrowse = new MetroFramework.Controls.MetroButton();
+            this.textBoxDownloadDirectory = new MetroFramework.Controls.MetroTextBox();
+            this.labelDownloadDirectory = new MetroFramework.Controls.MetroLabel();
             this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
+            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
+            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizes.SuspendLayout();
@@ -103,6 +115,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanCom)).BeginInit();
             this.panelSourceKonachanNet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanNet)).BeginInit();
+            this.metroTabPageDownloadSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).BeginInit();
+            this.metroTabPageAbout.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -817,6 +832,14 @@
             // 
             // metroTabPageDownloadSettings
             // 
+            this.metroTabPageDownloadSettings.Controls.Add(this.numericUpDownMaxRetryAttempts);
+            this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxOpenDirectoryOnFinish);
+            this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxNotify);
+            this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxRetryDownloads);
+            this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxOverwrite);
+            this.metroTabPageDownloadSettings.Controls.Add(this.buttonDownloadDirectoryBrowse);
+            this.metroTabPageDownloadSettings.Controls.Add(this.textBoxDownloadDirectory);
+            this.metroTabPageDownloadSettings.Controls.Add(this.labelDownloadDirectory);
             this.metroTabPageDownloadSettings.HorizontalScrollbarBarColor = true;
             this.metroTabPageDownloadSettings.Location = new System.Drawing.Point(4, 35);
             this.metroTabPageDownloadSettings.Name = "metroTabPageDownloadSettings";
@@ -825,8 +848,111 @@
             this.metroTabPageDownloadSettings.Text = "Download Settings";
             this.metroTabPageDownloadSettings.VerticalScrollbarBarColor = true;
             // 
+            // numericUpDownMaxRetryAttempts
+            // 
+            this.numericUpDownMaxRetryAttempts.Location = new System.Drawing.Point(346, 95);
+            this.numericUpDownMaxRetryAttempts.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numericUpDownMaxRetryAttempts.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownMaxRetryAttempts.Name = "numericUpDownMaxRetryAttempts";
+            this.numericUpDownMaxRetryAttempts.Size = new System.Drawing.Size(35, 20);
+            this.numericUpDownMaxRetryAttempts.TabIndex = 7;
+            this.numericUpDownMaxRetryAttempts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownMaxRetryAttempts.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // checkBoxOpenDirectoryOnFinish
+            // 
+            this.checkBoxOpenDirectoryOnFinish.AutoSize = true;
+            this.checkBoxOpenDirectoryOnFinish.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.checkBoxOpenDirectoryOnFinish.Location = new System.Drawing.Point(3, 180);
+            this.checkBoxOpenDirectoryOnFinish.Name = "checkBoxOpenDirectoryOnFinish";
+            this.checkBoxOpenDirectoryOnFinish.Size = new System.Drawing.Size(521, 19);
+            this.checkBoxOpenDirectoryOnFinish.TabIndex = 9;
+            this.checkBoxOpenDirectoryOnFinish.Text = "After the download completes, open the download directory in Windows Explorer";
+            this.checkBoxOpenDirectoryOnFinish.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxNotify
+            // 
+            this.checkBoxNotify.AutoSize = true;
+            this.checkBoxNotify.Checked = true;
+            this.checkBoxNotify.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxNotify.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.checkBoxNotify.Location = new System.Drawing.Point(3, 137);
+            this.checkBoxNotify.Name = "checkBoxNotify";
+            this.checkBoxNotify.Size = new System.Drawing.Size(445, 19);
+            this.checkBoxNotify.TabIndex = 8;
+            this.checkBoxNotify.Text = "After the download completes, show a notification in the system tray";
+            this.checkBoxNotify.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRetryDownloads
+            // 
+            this.checkBoxRetryDownloads.AutoSize = true;
+            this.checkBoxRetryDownloads.Checked = true;
+            this.checkBoxRetryDownloads.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxRetryDownloads.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.checkBoxRetryDownloads.Location = new System.Drawing.Point(3, 94);
+            this.checkBoxRetryDownloads.Name = "checkBoxRetryDownloads";
+            this.checkBoxRetryDownloads.Size = new System.Drawing.Size(416, 19);
+            this.checkBoxRetryDownloads.TabIndex = 6;
+            this.checkBoxRetryDownloads.Text = "Automatically retry failed downloads (max attempts:           tries)";
+            this.checkBoxRetryDownloads.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOverwrite
+            // 
+            this.checkBoxOverwrite.AutoSize = true;
+            this.checkBoxOverwrite.Checked = true;
+            this.checkBoxOverwrite.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxOverwrite.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.checkBoxOverwrite.Location = new System.Drawing.Point(3, 51);
+            this.checkBoxOverwrite.Name = "checkBoxOverwrite";
+            this.checkBoxOverwrite.Size = new System.Drawing.Size(289, 19);
+            this.checkBoxOverwrite.TabIndex = 5;
+            this.checkBoxOverwrite.Text = "Overwrite files that have the same filename";
+            this.checkBoxOverwrite.UseVisualStyleBackColor = true;
+            // 
+            // buttonDownloadDirectoryBrowse
+            // 
+            this.buttonDownloadDirectoryBrowse.Location = new System.Drawing.Point(489, 4);
+            this.buttonDownloadDirectoryBrowse.Name = "buttonDownloadDirectoryBrowse";
+            this.buttonDownloadDirectoryBrowse.Size = new System.Drawing.Size(30, 23);
+            this.buttonDownloadDirectoryBrowse.TabIndex = 4;
+            this.buttonDownloadDirectoryBrowse.Text = "...";
+            // 
+            // textBoxDownloadDirectory
+            // 
+            this.textBoxDownloadDirectory.Location = new System.Drawing.Point(144, 4);
+            this.textBoxDownloadDirectory.Name = "textBoxDownloadDirectory";
+            this.textBoxDownloadDirectory.ReadOnly = true;
+            this.textBoxDownloadDirectory.Size = new System.Drawing.Size(339, 23);
+            this.textBoxDownloadDirectory.TabIndex = 3;
+            // 
+            // labelDownloadDirectory
+            // 
+            this.labelDownloadDirectory.AutoSize = true;
+            this.labelDownloadDirectory.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelDownloadDirectory.Location = new System.Drawing.Point(3, 5);
+            this.labelDownloadDirectory.Name = "labelDownloadDirectory";
+            this.labelDownloadDirectory.Size = new System.Drawing.Size(134, 19);
+            this.labelDownloadDirectory.TabIndex = 2;
+            this.labelDownloadDirectory.Text = "Download Directory:";
+            // 
             // metroTabPageAbout
             // 
+            this.metroTabPageAbout.Controls.Add(this.labelAbout4);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout3);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout2);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout1);
             this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
             this.metroTabPageAbout.Location = new System.Drawing.Point(4, 35);
             this.metroTabPageAbout.Name = "metroTabPageAbout";
@@ -872,6 +998,51 @@
             this.progressBarMain.Size = new System.Drawing.Size(336, 29);
             this.progressBarMain.TabIndex = 2;
             // 
+            // labelAbout1
+            // 
+            this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout1.AutoSize = true;
+            this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout1.Location = new System.Drawing.Point(145, 14);
+            this.labelAbout1.Name = "labelAbout1";
+            this.labelAbout1.Size = new System.Drawing.Size(232, 19);
+            this.labelAbout1.TabIndex = 2;
+            this.labelAbout1.Text = "ProjectHED is maintained by Chezzy.";
+            // 
+            // labelAbout2
+            // 
+            this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout2.AutoSize = true;
+            this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout2.Location = new System.Drawing.Point(180, 42);
+            this.labelAbout2.Name = "labelAbout2";
+            this.labelAbout2.Size = new System.Drawing.Size(162, 19);
+            this.labelAbout2.TabIndex = 3;
+            this.labelAbout2.Text = "ProjectHED is on GitHub.";
+            // 
+            // labelAbout3
+            // 
+            this.labelAbout3.AutoSize = true;
+            this.labelAbout3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAbout3.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbout3.Location = new System.Drawing.Point(157, 70);
+            this.labelAbout3.Name = "labelAbout3";
+            this.labelAbout3.Size = new System.Drawing.Size(207, 19);
+            this.labelAbout3.TabIndex = 4;
+            this.labelAbout3.TabStop = true;
+            this.labelAbout3.Text = "To visit the repository, click here.";
+            // 
+            // labelAbout4
+            // 
+            this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout4.AutoSize = true;
+            this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout4.Location = new System.Drawing.Point(179, 101);
+            this.labelAbout4.Name = "labelAbout4";
+            this.labelAbout4.Size = new System.Drawing.Size(164, 19);
+            this.labelAbout4.TabIndex = 5;
+            this.labelAbout4.Text = "Thank you for the love. ♡";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -914,6 +1085,11 @@
             this.panelSourceKonachanNet.ResumeLayout(false);
             this.panelSourceKonachanNet.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanNet)).EndInit();
+            this.metroTabPageDownloadSettings.ResumeLayout(false);
+            this.metroTabPageDownloadSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).EndInit();
+            this.metroTabPageAbout.ResumeLayout(false);
+            this.metroTabPageAbout.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -977,5 +1153,17 @@
         private MetroFramework.Controls.MetroCheckBox checkBoxSourceYandere;
         private MetroFramework.Controls.MetroButton buttonSourcesDeselectAll;
         private MetroFramework.Controls.MetroButton buttonSourcesSelectAll;
+        private MetroFramework.Controls.MetroLabel labelDownloadDirectory;
+        private MetroFramework.Controls.MetroTextBox textBoxDownloadDirectory;
+        private MetroFramework.Controls.MetroButton buttonDownloadDirectoryBrowse;
+        private MetroFramework.Controls.MetroCheckBox checkBoxOverwrite;
+        private MetroFramework.Controls.MetroCheckBox checkBoxRetryDownloads;
+        private MetroFramework.Controls.MetroCheckBox checkBoxNotify;
+        private MetroFramework.Controls.MetroCheckBox checkBoxOpenDirectoryOnFinish;
+        private System.Windows.Forms.NumericUpDown numericUpDownMaxRetryAttempts;
+        private MetroFramework.Controls.MetroLabel labelAbout1;
+        private MetroFramework.Controls.MetroLabel labelAbout2;
+        private System.Windows.Forms.LinkLabel labelAbout3;
+        private MetroFramework.Controls.MetroLabel labelAbout4;
     }
 }
