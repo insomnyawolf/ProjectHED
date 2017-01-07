@@ -411,10 +411,10 @@
             this.labelSourcesColumns.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.labelSourcesColumns.Location = new System.Drawing.Point(2, 5);
             this.labelSourcesColumns.Name = "labelSourcesColumns";
-            this.labelSourcesColumns.Size = new System.Drawing.Size(486, 19);
+            this.labelSourcesColumns.Size = new System.Drawing.Size(490, 19);
             this.labelSourcesColumns.TabIndex = 4;
-            this.labelSourcesColumns.Text = "Source Name                       Content             Limit                      " +
-    "Limit Amount";
+            this.labelSourcesColumns.Text = "Source Name                                   Content           Limit            " +
+    " Limit Amount";
             // 
             // panelSources
             // 
@@ -487,7 +487,7 @@
             "No Limit",
             "Page Limit",
             "Image Limit"});
-            this.comboBoxSourceYandere.Location = new System.Drawing.Point(245, 3);
+            this.comboBoxSourceYandere.Location = new System.Drawing.Point(284, 3);
             this.comboBoxSourceYandere.Name = "comboBoxSourceYandere";
             this.comboBoxSourceYandere.Size = new System.Drawing.Size(98, 25);
             this.comboBoxSourceYandere.TabIndex = 4;
@@ -495,7 +495,7 @@
             // labelSourceYandere
             // 
             this.labelSourceYandere.AutoSize = true;
-            this.labelSourceYandere.Location = new System.Drawing.Point(176, 6);
+            this.labelSourceYandere.Location = new System.Drawing.Point(223, 6);
             this.labelSourceYandere.Name = "labelSourceYandere";
             this.labelSourceYandere.Size = new System.Drawing.Size(46, 19);
             this.labelSourceYandere.Style = MetroFramework.MetroColorStyle.Red;
@@ -563,7 +563,7 @@
             "No Limit",
             "Page Limit",
             "Image Limit"});
-            this.comboBoxSourceDanbooru.Location = new System.Drawing.Point(245, 3);
+            this.comboBoxSourceDanbooru.Location = new System.Drawing.Point(284, 3);
             this.comboBoxSourceDanbooru.Name = "comboBoxSourceDanbooru";
             this.comboBoxSourceDanbooru.Size = new System.Drawing.Size(98, 25);
             this.comboBoxSourceDanbooru.TabIndex = 4;
@@ -571,7 +571,7 @@
             // labelSourceDanbooru
             // 
             this.labelSourceDanbooru.AutoSize = true;
-            this.labelSourceDanbooru.Location = new System.Drawing.Point(176, 6);
+            this.labelSourceDanbooru.Location = new System.Drawing.Point(223, 6);
             this.labelSourceDanbooru.Name = "labelSourceDanbooru";
             this.labelSourceDanbooru.Size = new System.Drawing.Size(46, 19);
             this.labelSourceDanbooru.Style = MetroFramework.MetroColorStyle.Red;
@@ -584,9 +584,9 @@
             this.checkBoxSourceDanbooru.AutoSize = true;
             this.checkBoxSourceDanbooru.Location = new System.Drawing.Point(3, 8);
             this.checkBoxSourceDanbooru.Name = "checkBoxSourceDanbooru";
-            this.checkBoxSourceDanbooru.Size = new System.Drawing.Size(146, 15);
+            this.checkBoxSourceDanbooru.Size = new System.Drawing.Size(198, 15);
             this.checkBoxSourceDanbooru.TabIndex = 2;
-            this.checkBoxSourceDanbooru.Text = "Danbooru (.donmai.us)";
+            this.checkBoxSourceDanbooru.Text = "Danbooru (danbooru.donmai.us)";
             this.checkBoxSourceDanbooru.UseVisualStyleBackColor = true;
             // 
             // panelSourceGelbooruCom
@@ -639,7 +639,7 @@
             "No Limit",
             "Page Limit",
             "Image Limit"});
-            this.comboBoxSourceGelbooruCom.Location = new System.Drawing.Point(245, 3);
+            this.comboBoxSourceGelbooruCom.Location = new System.Drawing.Point(284, 3);
             this.comboBoxSourceGelbooruCom.Name = "comboBoxSourceGelbooruCom";
             this.comboBoxSourceGelbooruCom.Size = new System.Drawing.Size(98, 25);
             this.comboBoxSourceGelbooruCom.TabIndex = 4;
@@ -647,7 +647,7 @@
             // labelSourceGelbooruCom
             // 
             this.labelSourceGelbooruCom.AutoSize = true;
-            this.labelSourceGelbooruCom.Location = new System.Drawing.Point(176, 6);
+            this.labelSourceGelbooruCom.Location = new System.Drawing.Point(223, 6);
             this.labelSourceGelbooruCom.Name = "labelSourceGelbooruCom";
             this.labelSourceGelbooruCom.Size = new System.Drawing.Size(46, 19);
             this.labelSourceGelbooruCom.Style = MetroFramework.MetroColorStyle.Red;
@@ -660,9 +660,9 @@
             this.checkBoxSourceGelbooruCom.AutoSize = true;
             this.checkBoxSourceGelbooruCom.Location = new System.Drawing.Point(3, 8);
             this.checkBoxSourceGelbooruCom.Name = "checkBoxSourceGelbooruCom";
-            this.checkBoxSourceGelbooruCom.Size = new System.Drawing.Size(110, 15);
+            this.checkBoxSourceGelbooruCom.Size = new System.Drawing.Size(158, 15);
             this.checkBoxSourceGelbooruCom.TabIndex = 2;
-            this.checkBoxSourceGelbooruCom.Text = "Gelbooru (.com)";
+            this.checkBoxSourceGelbooruCom.Text = "Gelbooru (gelbooru.com)";
             this.checkBoxSourceGelbooruCom.UseVisualStyleBackColor = true;
             // 
             // panelSourceKonachanCom
@@ -715,7 +715,7 @@
             "No Limit",
             "Page Limit",
             "Image Limit"});
-            this.comboBoxSourceKonachanCom.Location = new System.Drawing.Point(245, 3);
+            this.comboBoxSourceKonachanCom.Location = new System.Drawing.Point(284, 3);
             this.comboBoxSourceKonachanCom.Name = "comboBoxSourceKonachanCom";
             this.comboBoxSourceKonachanCom.Size = new System.Drawing.Size(98, 25);
             this.comboBoxSourceKonachanCom.TabIndex = 4;
@@ -723,7 +723,7 @@
             // labelSourceKonachanCom
             // 
             this.labelSourceKonachanCom.AutoSize = true;
-            this.labelSourceKonachanCom.Location = new System.Drawing.Point(176, 6);
+            this.labelSourceKonachanCom.Location = new System.Drawing.Point(223, 6);
             this.labelSourceKonachanCom.Name = "labelSourceKonachanCom";
             this.labelSourceKonachanCom.Size = new System.Drawing.Size(46, 19);
             this.labelSourceKonachanCom.Style = MetroFramework.MetroColorStyle.Red;
@@ -736,9 +736,9 @@
             this.checkBoxSourceKonachanCom.AutoSize = true;
             this.checkBoxSourceKonachanCom.Location = new System.Drawing.Point(3, 8);
             this.checkBoxSourceKonachanCom.Name = "checkBoxSourceKonachanCom";
-            this.checkBoxSourceKonachanCom.Size = new System.Drawing.Size(114, 15);
+            this.checkBoxSourceKonachanCom.Size = new System.Drawing.Size(166, 15);
             this.checkBoxSourceKonachanCom.TabIndex = 2;
-            this.checkBoxSourceKonachanCom.Text = "Konachan (.com)";
+            this.checkBoxSourceKonachanCom.Text = "Konachan (konachan.com)";
             this.checkBoxSourceKonachanCom.UseVisualStyleBackColor = true;
             // 
             // panelSourceKonachanNet
@@ -791,7 +791,7 @@
             "No Limit",
             "Page Limit",
             "Image Limit"});
-            this.comboBoxSourceKonachanNet.Location = new System.Drawing.Point(245, 3);
+            this.comboBoxSourceKonachanNet.Location = new System.Drawing.Point(284, 3);
             this.comboBoxSourceKonachanNet.Name = "comboBoxSourceKonachanNet";
             this.comboBoxSourceKonachanNet.Size = new System.Drawing.Size(98, 25);
             this.comboBoxSourceKonachanNet.TabIndex = 4;
@@ -799,7 +799,7 @@
             // labelSourceKonachanNet
             // 
             this.labelSourceKonachanNet.AutoSize = true;
-            this.labelSourceKonachanNet.Location = new System.Drawing.Point(180, 6);
+            this.labelSourceKonachanNet.Location = new System.Drawing.Point(227, 6);
             this.labelSourceKonachanNet.Name = "labelSourceKonachanNet";
             this.labelSourceKonachanNet.Size = new System.Drawing.Size(36, 19);
             this.labelSourceKonachanNet.Style = MetroFramework.MetroColorStyle.Green;
@@ -812,9 +812,9 @@
             this.checkBoxSourceKonachanNet.AutoSize = true;
             this.checkBoxSourceKonachanNet.Location = new System.Drawing.Point(3, 8);
             this.checkBoxSourceKonachanNet.Name = "checkBoxSourceKonachanNet";
-            this.checkBoxSourceKonachanNet.Size = new System.Drawing.Size(107, 15);
+            this.checkBoxSourceKonachanNet.Size = new System.Drawing.Size(159, 15);
             this.checkBoxSourceKonachanNet.TabIndex = 2;
-            this.checkBoxSourceKonachanNet.Text = "Konachan (.net)";
+            this.checkBoxSourceKonachanNet.Text = "Konachan (konachan.net)";
             this.checkBoxSourceKonachanNet.UseVisualStyleBackColor = true;
             // 
             // metroTabPageDownloadSettings
