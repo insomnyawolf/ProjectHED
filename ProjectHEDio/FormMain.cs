@@ -40,55 +40,55 @@ namespace ProjectHEDio
             {
                 if (p is MetroPanel)
                 {
-                    MetroCheckBox checkBox = null;
-                    MetroComboBox comboBox = null;
-                    NumericUpDown numericUpDown = null;
+                    MetroCheckBox checkBoxSelected = null;
+                    MetroComboBox comboBoxLimitType = null;
+                    NumericUpDown numericUpDownLimitAmount = null;
                     foreach (Control c in p.Controls)
                     {
                         if (c is MetroCheckBox)
                         {
-                            checkBox = (MetroCheckBox)c;
+                            checkBoxSelected = (MetroCheckBox)c;
                         }
                         else if (c is MetroComboBox)
                         {
-                            comboBox = (MetroComboBox)c;
+                            comboBoxLimitType = (MetroComboBox)c;
                         }
                         else if (c is NumericUpDown)
                         {
-                            numericUpDown = (NumericUpDown)c;
+                            numericUpDownLimitAmount = (NumericUpDown)c;
                         }
                     }
-                    comboBox.Enabled = false;
-                    comboBox.Text = "No Limit";
-                    comboBox.SelectedIndexChanged += (sender, args) =>
+                    comboBoxLimitType.Enabled = false;
+                    comboBoxLimitType.Text = "No Limit";
+                    comboBoxLimitType.SelectedIndexChanged += (sender, args) =>
                     {
-                        if (comboBox.Text != "No Limit")
+                        if (comboBoxLimitType.Text != "No Limit")
                         {
-                            numericUpDown.Enabled = true;
+                            numericUpDownLimitAmount.Enabled = true;
                         }
                         else
                         {
-                            numericUpDown.Enabled = false;
+                            numericUpDownLimitAmount.Enabled = false;
                         }
                     };
-                    checkBox.CheckedChanged += (sender, args) =>
+                    checkBoxSelected.CheckedChanged += (sender, args) =>
                     {
-                        if (checkBox.Checked)
+                        if (checkBoxSelected.Checked)
                         {
-                            comboBox.Enabled = true;
-                            if (comboBox.Text != "No Limit")
+                            comboBoxLimitType.Enabled = true;
+                            if (comboBoxLimitType.Text != "No Limit")
                             {
-                                numericUpDown.Enabled = true;
+                                numericUpDownLimitAmount.Enabled = true;
                             }
                             else
                             {
-                                numericUpDown.Enabled = false;
+                                numericUpDownLimitAmount.Enabled = false;
                             }
                         }
                         else
                         {
-                            comboBox.Enabled = false;
-                            numericUpDown.Enabled = false;
+                            comboBoxLimitType.Enabled = false;
+                            numericUpDownLimitAmount.Enabled = false;
                         }
                         
                         // Get how many sources are selected.
