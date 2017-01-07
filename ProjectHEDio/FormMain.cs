@@ -241,6 +241,12 @@ namespace ProjectHEDio
             pictureBoxDonate.Cursor = Cursors.Default;
         }
 
+        private void UpdateStatus(string status, MetroColorStyle style = MetroColorStyle.Black)
+        {
+            this.labelStatus.Style = style;
+            this.labelStatus.Text = "Status: " + status;
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
 

@@ -1049,8 +1049,10 @@
             this.labelStatus.Location = new System.Drawing.Point(23, 372);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(97, 19);
+            this.labelStatus.Style = MetroFramework.MetroColorStyle.Black;
             this.labelStatus.TabIndex = 4;
             this.labelStatus.Text = "Status: Waiting.";
+            this.labelStatus.UseStyleColors = true;
             // 
             // progressBarMain
             // 
