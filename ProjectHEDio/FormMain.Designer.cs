@@ -446,7 +446,7 @@
             this.panelSourceYandere.HorizontalScrollbarBarColor = true;
             this.panelSourceYandere.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceYandere.HorizontalScrollbarSize = 10;
-            this.panelSourceYandere.Location = new System.Drawing.Point(3, 140);
+            this.panelSourceYandere.Location = new System.Drawing.Point(4, 140);
             this.panelSourceYandere.Name = "panelSourceYandere";
             this.panelSourceYandere.Size = new System.Drawing.Size(490, 31);
             this.panelSourceYandere.TabIndex = 6;
