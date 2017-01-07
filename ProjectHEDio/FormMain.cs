@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Controls;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace ProjectHEDio
 {
@@ -223,6 +224,26 @@ namespace ProjectHEDio
                     }
                 }
             }
+        }
+
+        private void labelAbout3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/MoeChezzy/ProjectHED");
+        }
+
+        private void pictureBoxDonate_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/MoeChezzy/ProjectHED");
+        }
+
+        private void pictureBoxDonate_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBoxDonate.Cursor = Cursors.Hand;
+        }
+
+        private void pictureBoxDonate_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBoxDonate.Cursor = Cursors.Default;
         }
     }
 }

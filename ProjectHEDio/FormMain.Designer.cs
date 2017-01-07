@@ -411,6 +411,9 @@
             this.pictureBoxDonate.Size = new System.Drawing.Size(92, 26);
             this.pictureBoxDonate.TabIndex = 6;
             this.pictureBoxDonate.TabStop = false;
+            this.pictureBoxDonate.Click += new System.EventHandler(this.pictureBoxDonate_Click);
+            this.pictureBoxDonate.MouseEnter += new System.EventHandler(this.pictureBoxDonate_MouseEnter);
+            this.pictureBoxDonate.MouseLeave += new System.EventHandler(this.pictureBoxDonate_MouseLeave);
             // 
             // labelAbout4
             // 
@@ -434,6 +437,7 @@
             this.labelAbout3.TabIndex = 4;
             this.labelAbout3.TabStop = true;
             this.labelAbout3.Text = "To visit the repository, click here.";
+            this.labelAbout3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.labelAbout3_LinkClicked);
             // 
             // labelAbout2
             // 
