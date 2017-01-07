@@ -32,6 +32,40 @@ namespace ProjectHEDio
             // Workaround for text box to have prompt text
             textBoxTags.Text = "Test :3c";
             textBoxTags.Text = "";
+
+            // Workaround for combo boxes in source tab to have initial text
+            // Workaround for combo boxes to toggle Enabled property of numeric up down property on value changed
+            foreach (Control p in panelSources.Controls)
+            {
+                if (p is MetroPanel)
+                {
+                    MetroComboBox comboBox = null;
+                    NumericUpDown numericUpDown = null;
+                    foreach (Control c in p.Controls)
+                    {
+                        if (c is MetroComboBox)
+                        {
+                            comboBox = (MetroComboBox)c;
+                        }
+                        else if (c is NumericUpDown)
+                        {
+                            numericUpDown = (NumericUpDown)c;
+                        }
+                    }
+                    comboBox.Text = "No Limit";
+                    comboBox.SelectedIndexChanged += (sender, args) =>
+                    {
+                        if (comboBox.Text != "No Limit")
+                        {
+                            numericUpDown.Enabled = true;
+                        }
+                        else
+                        {
+                            numericUpDown.Enabled = false;
+                        }
+                    };
+                }
+            }
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
