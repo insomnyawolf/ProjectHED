@@ -49,6 +49,12 @@
             this.labelTags1 = new MetroFramework.Controls.MetroLabel();
             this.textBoxTags = new MetroFramework.Controls.MetroTextBox();
             this.checkBoxUseTags = new MetroFramework.Controls.MetroCheckBox();
+            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBoxDonate = new System.Windows.Forms.PictureBox();
+            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
+            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPageSourceSelection = new MetroFramework.Controls.MetroTabPage();
             this.buttonSourcesDeselectAll = new MetroFramework.Controls.MetroButton();
             this.buttonSourcesSelectAll = new MetroFramework.Controls.MetroButton();
@@ -88,21 +94,18 @@
             this.buttonDownloadDirectoryBrowse = new MetroFramework.Controls.MetroButton();
             this.textBoxDownloadDirectory = new MetroFramework.Controls.MetroTextBox();
             this.labelDownloadDirectory = new MetroFramework.Controls.MetroLabel();
-            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
-            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
-            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizes.SuspendLayout();
             this.panelRestrictImageSizesMethod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).BeginInit();
+            this.metroTabPageAbout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
             this.metroTabPageSourceSelection.SuspendLayout();
             this.panelSources.SuspendLayout();
             this.panelSourceYandere.SuspendLayout();
@@ -117,7 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanNet)).BeginInit();
             this.metroTabPageDownloadSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).BeginInit();
-            this.metroTabPageAbout.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -385,6 +387,75 @@
             this.checkBoxUseTags.Text = "Use Tags:";
             this.checkBoxUseTags.UseVisualStyleBackColor = true;
             this.checkBoxUseTags.CheckedChanged += new System.EventHandler(this.checkBoxUseTags_CheckedChanged);
+            // 
+            // metroTabPageAbout
+            // 
+            this.metroTabPageAbout.Controls.Add(this.pictureBoxDonate);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout4);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout3);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout2);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout1);
+            this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
+            this.metroTabPageAbout.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPageAbout.Name = "metroTabPageAbout";
+            this.metroTabPageAbout.Size = new System.Drawing.Size(522, 232);
+            this.metroTabPageAbout.TabIndex = 4;
+            this.metroTabPageAbout.Text = "About";
+            this.metroTabPageAbout.VerticalScrollbarBarColor = true;
+            // 
+            // pictureBoxDonate
+            // 
+            this.pictureBoxDonate.Image = global::ProjectHEDio.Properties.Resources.DonateButton;
+            this.pictureBoxDonate.Location = new System.Drawing.Point(215, 204);
+            this.pictureBoxDonate.Name = "pictureBoxDonate";
+            this.pictureBoxDonate.Size = new System.Drawing.Size(92, 26);
+            this.pictureBoxDonate.TabIndex = 6;
+            this.pictureBoxDonate.TabStop = false;
+            // 
+            // labelAbout4
+            // 
+            this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout4.AutoSize = true;
+            this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout4.Location = new System.Drawing.Point(14, 101);
+            this.labelAbout4.Name = "labelAbout4";
+            this.labelAbout4.Size = new System.Drawing.Size(164, 19);
+            this.labelAbout4.TabIndex = 5;
+            this.labelAbout4.Text = "Thank you for the love. ♡";
+            // 
+            // labelAbout3
+            // 
+            this.labelAbout3.AutoSize = true;
+            this.labelAbout3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAbout3.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbout3.Location = new System.Drawing.Point(157, 70);
+            this.labelAbout3.Name = "labelAbout3";
+            this.labelAbout3.Size = new System.Drawing.Size(207, 19);
+            this.labelAbout3.TabIndex = 4;
+            this.labelAbout3.TabStop = true;
+            this.labelAbout3.Text = "To visit the repository, click here.";
+            // 
+            // labelAbout2
+            // 
+            this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout2.AutoSize = true;
+            this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout2.Location = new System.Drawing.Point(15, 42);
+            this.labelAbout2.Name = "labelAbout2";
+            this.labelAbout2.Size = new System.Drawing.Size(162, 19);
+            this.labelAbout2.TabIndex = 3;
+            this.labelAbout2.Text = "ProjectHED is on GitHub.";
+            // 
+            // labelAbout1
+            // 
+            this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout1.AutoSize = true;
+            this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout1.Location = new System.Drawing.Point(-20, 14);
+            this.labelAbout1.Name = "labelAbout1";
+            this.labelAbout1.Size = new System.Drawing.Size(232, 19);
+            this.labelAbout1.TabIndex = 2;
+            this.labelAbout1.Text = "ProjectHED is maintained by Chezzy.";
             // 
             // metroTabPageSourceSelection
             // 
@@ -947,20 +1018,6 @@
             this.labelDownloadDirectory.TabIndex = 2;
             this.labelDownloadDirectory.Text = "Download Directory:";
             // 
-            // metroTabPageAbout
-            // 
-            this.metroTabPageAbout.Controls.Add(this.labelAbout4);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout3);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout2);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout1);
-            this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
-            this.metroTabPageAbout.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageAbout.Name = "metroTabPageAbout";
-            this.metroTabPageAbout.Size = new System.Drawing.Size(522, 232);
-            this.metroTabPageAbout.TabIndex = 4;
-            this.metroTabPageAbout.Text = "About";
-            this.metroTabPageAbout.VerticalScrollbarBarColor = true;
-            // 
             // comboBoxLanguageSelector
             // 
             this.comboBoxLanguageSelector.FormattingEnabled = true;
@@ -998,51 +1055,6 @@
             this.progressBarMain.Size = new System.Drawing.Size(336, 29);
             this.progressBarMain.TabIndex = 2;
             // 
-            // labelAbout1
-            // 
-            this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout1.AutoSize = true;
-            this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout1.Location = new System.Drawing.Point(145, 14);
-            this.labelAbout1.Name = "labelAbout1";
-            this.labelAbout1.Size = new System.Drawing.Size(232, 19);
-            this.labelAbout1.TabIndex = 2;
-            this.labelAbout1.Text = "ProjectHED is maintained by Chezzy.";
-            // 
-            // labelAbout2
-            // 
-            this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout2.AutoSize = true;
-            this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout2.Location = new System.Drawing.Point(180, 42);
-            this.labelAbout2.Name = "labelAbout2";
-            this.labelAbout2.Size = new System.Drawing.Size(162, 19);
-            this.labelAbout2.TabIndex = 3;
-            this.labelAbout2.Text = "ProjectHED is on GitHub.";
-            // 
-            // labelAbout3
-            // 
-            this.labelAbout3.AutoSize = true;
-            this.labelAbout3.BackColor = System.Drawing.Color.Transparent;
-            this.labelAbout3.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAbout3.Location = new System.Drawing.Point(157, 70);
-            this.labelAbout3.Name = "labelAbout3";
-            this.labelAbout3.Size = new System.Drawing.Size(207, 19);
-            this.labelAbout3.TabIndex = 4;
-            this.labelAbout3.TabStop = true;
-            this.labelAbout3.Text = "To visit the repository, click here.";
-            // 
-            // labelAbout4
-            // 
-            this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout4.AutoSize = true;
-            this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout4.Location = new System.Drawing.Point(179, 101);
-            this.labelAbout4.Name = "labelAbout4";
-            this.labelAbout4.Size = new System.Drawing.Size(164, 19);
-            this.labelAbout4.TabIndex = 5;
-            this.labelAbout4.Text = "Thank you for the love. ♡";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1067,6 +1079,9 @@
             this.panelRestrictImageSizesMethod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).EndInit();
+            this.metroTabPageAbout.ResumeLayout(false);
+            this.metroTabPageAbout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
             this.metroTabPageSourceSelection.ResumeLayout(false);
             this.metroTabPageSourceSelection.PerformLayout();
             this.panelSources.ResumeLayout(false);
@@ -1088,8 +1103,6 @@
             this.metroTabPageDownloadSettings.ResumeLayout(false);
             this.metroTabPageDownloadSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).EndInit();
-            this.metroTabPageAbout.ResumeLayout(false);
-            this.metroTabPageAbout.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1165,5 +1178,6 @@
         private MetroFramework.Controls.MetroLabel labelAbout2;
         private System.Windows.Forms.LinkLabel labelAbout3;
         private MetroFramework.Controls.MetroLabel labelAbout4;
+        private System.Windows.Forms.PictureBox pictureBoxDonate;
     }
 }
