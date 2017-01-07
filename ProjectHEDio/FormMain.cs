@@ -11,6 +11,7 @@ using MetroFramework;
 using MetroFramework.Controls;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
+using System.IO;
 
 namespace ProjectHEDio
 {
@@ -255,7 +256,62 @@ namespace ProjectHEDio
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            if (!Website.IsDownloading())
+            {
+                // Currently not downloading
 
+                // Check to see if download directory is valid or set
+                if (string.IsNullOrWhiteSpace(textBoxDownloadDirectory.Text) || !Directory.Exists(textBoxDownloadDirectory.Text))
+                {
+                    UpdateStatus("Couldn't start download - no valid download directory was set.", MetroColorStyle.Red);
+                    return;
+                }
+
+                // Check to see if tag usage is checked but no tags were inserted
+                if (checkBoxUseTags.Checked && string.IsNullOrWhiteSpace(textBoxTags.Text))
+                {
+                    UpdateStatus("Couldn't start download - no tags were specified when \"Use Tags\" is checked.", MetroColorStyle.Red);
+                    return;
+                }
+
+                // Check to see if any sources have been checked
+                int checkedSources = 0;
+                foreach (Control p in panelSources.Controls)
+                {
+                    if (p is MetroPanel)
+                    {
+                        foreach (Control c in p.Controls)
+                        {
+                            if (c is MetroCheckBox)
+                            {
+                                MetroCheckBox checkBox = (MetroCheckBox)c;
+                                if (checkBox.Checked)
+                                {
+                                    checkedSources++;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (checkedSources < 1)
+                {
+                    UpdateStatus("Couldn't start download - no sources were checked.", MetroColorStyle.Red);
+                    return;
+                }
+
+                // TODO: Start the download.
+            }
+            else
+            {
+                // Currently downloading
+                DialogResult confirmation = MessageBox.Show("ProjectHED is still downloading images!" + Environment.NewLine + "Are you sure you want to stop the operation?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (confirmation == DialogResult.No)
+                {
+                    return;
+                }
+
+                // TODO: Cancel the download.
+            }
         }
     }
 }
