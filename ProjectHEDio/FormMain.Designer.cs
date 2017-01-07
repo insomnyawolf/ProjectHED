@@ -80,7 +80,6 @@
             this.labelSourceKonachanNet = new MetroFramework.Controls.MetroLabel();
             this.checkBoxSourceKonachanNet = new MetroFramework.Controls.MetroCheckBox();
             this.metroTabPageDownloadSettings = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPageConfiguration = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
@@ -111,7 +110,6 @@
             this.tabControlMain.Controls.Add(this.metroTabPagePictureOptions);
             this.tabControlMain.Controls.Add(this.metroTabPageSourceSelection);
             this.tabControlMain.Controls.Add(this.metroTabPageDownloadSettings);
-            this.tabControlMain.Controls.Add(this.metroTabPageConfiguration);
             this.tabControlMain.Controls.Add(this.metroTabPageAbout);
             this.tabControlMain.Location = new System.Drawing.Point(23, 63);
             this.tabControlMain.Name = "tabControlMain";
@@ -827,16 +825,6 @@
             this.metroTabPageDownloadSettings.Text = "Download Settings";
             this.metroTabPageDownloadSettings.VerticalScrollbarBarColor = true;
             // 
-            // metroTabPageConfiguration
-            // 
-            this.metroTabPageConfiguration.HorizontalScrollbarBarColor = true;
-            this.metroTabPageConfiguration.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageConfiguration.Name = "metroTabPageConfiguration";
-            this.metroTabPageConfiguration.Size = new System.Drawing.Size(522, 232);
-            this.metroTabPageConfiguration.TabIndex = 3;
-            this.metroTabPageConfiguration.Text = "Configuration";
-            this.metroTabPageConfiguration.VerticalScrollbarBarColor = true;
-            // 
             // metroTabPageAbout
             // 
             this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
@@ -937,7 +925,6 @@
         private MetroFramework.Controls.MetroTabPage metroTabPagePictureOptions;
         private MetroFramework.Controls.MetroTabPage metroTabPageSourceSelection;
         private MetroFramework.Controls.MetroTabPage metroTabPageDownloadSettings;
-        private MetroFramework.Controls.MetroTabPage metroTabPageConfiguration;
         private MetroFramework.Controls.MetroTabPage metroTabPageAbout;
         private MetroFramework.Controls.MetroComboBox comboBoxLanguageSelector;
         private MetroFramework.Controls.MetroButton buttonStart;
