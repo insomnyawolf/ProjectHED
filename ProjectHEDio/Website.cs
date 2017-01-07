@@ -98,6 +98,10 @@ namespace ProjectHEDio
 
         public bool ThreadIsAlive()
         {
+            if (ScrapeThread == null)
+            {
+                return false;
+            }
             return ScrapeThread.IsAlive;
         }
 
