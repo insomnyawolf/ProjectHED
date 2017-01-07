@@ -58,6 +58,7 @@ namespace ProjectHEDio
                             numericUpDown = (NumericUpDown)c;
                         }
                     }
+                    comboBox.Enabled = false;
                     comboBox.Text = "No Limit";
                     comboBox.SelectedIndexChanged += (sender, args) =>
                     {
