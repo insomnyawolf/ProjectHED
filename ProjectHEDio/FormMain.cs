@@ -166,5 +166,41 @@ namespace ProjectHEDio
                 }
             }
         }
+
+        private void buttonSourcesSelectAll_Click(object sender, EventArgs e)
+        {
+            foreach (Control p in panelSources.Controls)
+            {
+                if (p is MetroPanel)
+                {
+                    foreach (Control c in p.Controls)
+                    {
+                        if (c is MetroCheckBox)
+                        {
+                            MetroCheckBox checkBox = (MetroCheckBox)c;
+                            checkBox.Checked = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonSourcesDeselectAll_Click(object sender, EventArgs e)
+        {
+            foreach (Control p in panelSources.Controls)
+            {
+                if (p is MetroPanel)
+                {
+                    foreach (Control c in p.Controls)
+                    {
+                        if (c is MetroCheckBox)
+                        {
+                            MetroCheckBox checkBox = (MetroCheckBox)c;
+                            checkBox.Checked = false;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

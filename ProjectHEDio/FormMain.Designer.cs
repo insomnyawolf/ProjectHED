@@ -387,6 +387,24 @@
             this.metroTabPageSourceSelection.Text = "Source Selection";
             this.metroTabPageSourceSelection.VerticalScrollbarBarColor = true;
             // 
+            // buttonSourcesDeselectAll
+            // 
+            this.buttonSourcesDeselectAll.Location = new System.Drawing.Point(84, 201);
+            this.buttonSourcesDeselectAll.Name = "buttonSourcesDeselectAll";
+            this.buttonSourcesDeselectAll.Size = new System.Drawing.Size(75, 23);
+            this.buttonSourcesDeselectAll.TabIndex = 6;
+            this.buttonSourcesDeselectAll.Text = "Deselect All";
+            this.buttonSourcesDeselectAll.Click += new System.EventHandler(this.buttonSourcesDeselectAll_Click);
+            // 
+            // buttonSourcesSelectAll
+            // 
+            this.buttonSourcesSelectAll.Location = new System.Drawing.Point(3, 201);
+            this.buttonSourcesSelectAll.Name = "buttonSourcesSelectAll";
+            this.buttonSourcesSelectAll.Size = new System.Drawing.Size(75, 23);
+            this.buttonSourcesSelectAll.TabIndex = 5;
+            this.buttonSourcesSelectAll.Text = "Select All";
+            this.buttonSourcesSelectAll.Click += new System.EventHandler(this.buttonSourcesSelectAll_Click);
+            // 
             // labelSourcesColumns
             // 
             this.labelSourcesColumns.AutoSize = true;
