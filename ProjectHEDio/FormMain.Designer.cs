@@ -49,12 +49,6 @@
             this.labelTags1 = new MetroFramework.Controls.MetroLabel();
             this.textBoxTags = new MetroFramework.Controls.MetroTextBox();
             this.checkBoxUseTags = new MetroFramework.Controls.MetroCheckBox();
-            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
-            this.pictureBoxDonate = new System.Windows.Forms.PictureBox();
-            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
-            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPageSourceSelection = new MetroFramework.Controls.MetroTabPage();
             this.buttonSourcesDeselectAll = new MetroFramework.Controls.MetroButton();
             this.buttonSourcesSelectAll = new MetroFramework.Controls.MetroButton();
@@ -94,6 +88,12 @@
             this.buttonDownloadDirectoryBrowse = new MetroFramework.Controls.MetroButton();
             this.textBoxDownloadDirectory = new MetroFramework.Controls.MetroTextBox();
             this.labelDownloadDirectory = new MetroFramework.Controls.MetroLabel();
+            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBoxDonate = new System.Windows.Forms.PictureBox();
+            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
+            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
@@ -104,8 +104,6 @@
             this.panelRestrictImageSizesMethod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).BeginInit();
-            this.metroTabPageAbout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
             this.metroTabPageSourceSelection.SuspendLayout();
             this.panelSources.SuspendLayout();
             this.panelSourceYandere.SuspendLayout();
@@ -120,6 +118,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanNet)).BeginInit();
             this.metroTabPageDownloadSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).BeginInit();
+            this.metroTabPageAbout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -1057,6 +1057,7 @@
             this.progressBarMain.Location = new System.Drawing.Point(150, 340);
             this.progressBarMain.Name = "progressBarMain";
             this.progressBarMain.Size = new System.Drawing.Size(336, 29);
+            this.progressBarMain.Step = 1;
             this.progressBarMain.TabIndex = 2;
             // 
             // FormMain
@@ -1083,9 +1084,6 @@
             this.panelRestrictImageSizesMethod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).EndInit();
-            this.metroTabPageAbout.ResumeLayout(false);
-            this.metroTabPageAbout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
             this.metroTabPageSourceSelection.ResumeLayout(false);
             this.metroTabPageSourceSelection.PerformLayout();
             this.panelSources.ResumeLayout(false);
@@ -1107,6 +1105,9 @@
             this.metroTabPageDownloadSettings.ResumeLayout(false);
             this.metroTabPageDownloadSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).EndInit();
+            this.metroTabPageAbout.ResumeLayout(false);
+            this.metroTabPageAbout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
