@@ -89,6 +89,27 @@ namespace ProjectHEDio
                             comboBox.Enabled = false;
                             numericUpDown.Enabled = false;
                         }
+                        
+                        // Get how many sources are selected.
+                        int sources = 0;
+                        foreach (Control panel in panelSources.Controls)
+                        {
+                            if (panel is MetroPanel)
+                            {
+                                foreach (Control c in panel.Controls)
+                                {
+                                    if (c is MetroCheckBox)
+                                    {
+                                        MetroCheckBox cBox = (MetroCheckBox)c;
+                                        if (cBox.Checked)
+                                        {
+                                            sources++;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        labelStatus.Text = "Status: " + sources + " source" + (sources == 1 ? " is" : "s are") + " selected.";
                     };
                 }
             }
