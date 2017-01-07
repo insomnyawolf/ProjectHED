@@ -84,6 +84,22 @@ namespace ProjectHEDio
             WebsiteList.Clear();
         }
 
+        public static bool IsDownloading()
+        {
+            if (WebsiteList.Count == 0)
+            {
+                return false;
+            }
+            foreach (Website w in WebsiteList)
+            {
+                if (w.ThreadIsAlive())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         protected static void AddToLinks(string link, int retries = 0)
         {
             TotalFileCount++;
