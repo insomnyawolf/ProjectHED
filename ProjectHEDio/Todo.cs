@@ -5,8 +5,9 @@
         //===================================================
         // Functionality
         // - I dunno dude.
+        // - Add more logging events.
         //
-        // . Change commit names to imperative verbs
+        // . Change commit names to imperative verbs.
         //===================================================
 
         //===================================================
