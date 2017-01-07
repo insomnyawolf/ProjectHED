@@ -115,7 +115,7 @@
             this.tabControlMain.Controls.Add(this.metroTabPageAbout);
             this.tabControlMain.Location = new System.Drawing.Point(23, 63);
             this.tabControlMain.Name = "tabControlMain";
-            this.tabControlMain.SelectedIndex = 1;
+            this.tabControlMain.SelectedIndex = 0;
             this.tabControlMain.Size = new System.Drawing.Size(530, 271);
             this.tabControlMain.TabIndex = 0;
             // 
