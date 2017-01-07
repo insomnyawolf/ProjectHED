@@ -35,15 +35,21 @@ namespace ProjectHEDio
 
             // Workaround for combo boxes in source tab to have initial text
             // Workaround for combo boxes to toggle Enabled property of numeric up down property on value changed
+            // Workaround for each source panel to not have enabled controls unless the source is checked
             foreach (Control p in panelSources.Controls)
             {
                 if (p is MetroPanel)
                 {
+                    MetroCheckBox checkBox = null;
                     MetroComboBox comboBox = null;
                     NumericUpDown numericUpDown = null;
                     foreach (Control c in p.Controls)
                     {
-                        if (c is MetroComboBox)
+                        if (c is MetroCheckBox)
+                        {
+                            checkBox = (MetroCheckBox)c;
+                        }
+                        else if (c is MetroComboBox)
                         {
                             comboBox = (MetroComboBox)c;
                         }
@@ -61,6 +67,26 @@ namespace ProjectHEDio
                         }
                         else
                         {
+                            numericUpDown.Enabled = false;
+                        }
+                    };
+                    checkBox.CheckedChanged += (sender, args) =>
+                    {
+                        if (checkBox.Checked)
+                        {
+                            comboBox.Enabled = true;
+                            if (comboBox.Text != "No Limit")
+                            {
+                                numericUpDown.Enabled = true;
+                            }
+                            else
+                            {
+                                numericUpDown.Enabled = false;
+                            }
+                        }
+                        else
+                        {
+                            comboBox.Enabled = false;
                             numericUpDown.Enabled = false;
                         }
                     };
