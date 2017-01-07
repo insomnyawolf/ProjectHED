@@ -117,11 +117,6 @@ namespace ProjectHEDio
             }
         }
 
-        private void buttonStart_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void checkBoxUseTags_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxUseTags.Checked)
@@ -244,6 +239,11 @@ namespace ProjectHEDio
         private void pictureBoxDonate_MouseLeave(object sender, EventArgs e)
         {
             pictureBoxDonate.Cursor = Cursors.Default;
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
