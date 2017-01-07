@@ -389,7 +389,7 @@
             // 
             // buttonSourcesDeselectAll
             // 
-            this.buttonSourcesDeselectAll.Location = new System.Drawing.Point(84, 201);
+            this.buttonSourcesDeselectAll.Location = new System.Drawing.Point(84, 207);
             this.buttonSourcesDeselectAll.Name = "buttonSourcesDeselectAll";
             this.buttonSourcesDeselectAll.Size = new System.Drawing.Size(75, 23);
             this.buttonSourcesDeselectAll.TabIndex = 6;
@@ -398,7 +398,7 @@
             // 
             // buttonSourcesSelectAll
             // 
-            this.buttonSourcesSelectAll.Location = new System.Drawing.Point(3, 201);
+            this.buttonSourcesSelectAll.Location = new System.Drawing.Point(3, 207);
             this.buttonSourcesSelectAll.Name = "buttonSourcesSelectAll";
             this.buttonSourcesSelectAll.Size = new System.Drawing.Size(75, 23);
             this.buttonSourcesSelectAll.TabIndex = 5;
