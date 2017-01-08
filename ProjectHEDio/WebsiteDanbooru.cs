@@ -78,7 +78,7 @@ namespace ProjectHEDio
                     {
                         link = m.Groups["Link"].Value;
                     }
-                    AddToLinks(link);
+                    AddToLinks("http://danbooru.donmai.us" + link);
                 }
                 LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
                 totalFound = totalFound + (uint)mc.Count;

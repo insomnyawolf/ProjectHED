@@ -6,8 +6,16 @@
         // Functionality
         // - I dunno dude.
         // - Add more logging events.
+        // - [ADD] Scrape limits by pictures.
+        // - [ADD] Size restrictions.
+        // - [ADD] Support to change name if path is too long
         //
         // . Change commit names to imperative verbs.
+        //===================================================
+
+        //===================================================
+        // Source
+        // - Add documentation to methods
         //===================================================
 
         //===================================================
