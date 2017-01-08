@@ -12,6 +12,10 @@ A now open-source (yet unfinished) bulk image scraper and downloader for various
 
 I'm going to update this later.
 
+# Download
+
+[Click here](https://github.com/MoeChezzy/ProjectHED/releases) to go to the Releases page!
+
 # Donate
 
 I love you. [Click here](https://www.paypal.me/moechezzy) to donate to me via PayPal. :3c
