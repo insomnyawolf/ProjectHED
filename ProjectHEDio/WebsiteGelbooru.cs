@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Threading;
 using System.Text.RegularExpressions;
+using MetroFramework.Controls;
 
 namespace ProjectHEDio
 {
     class WebsiteGelbooru : Website
     {
+        public WebsiteGelbooru(MetroPanel sourcePanel) : base(sourcePanel)
+        {
+
+        }
+
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
         {
             ScrapeThread = new Thread(() => Scrape(arguments, totalPages));
@@ -41,7 +47,7 @@ namespace ProjectHEDio
         protected override string FormatURL(string[] arguments = null, int pageNumber = 1)
         {
             // We'll use the API for this :3c
-            return string.Format("http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=42&pid={0}&tags={1}", (pageNumber - 1), arguments);
+            return string.Format("http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=42&pid={0}&tags={1}", (pageNumber - 1), GetTagList(arguments));
         }
 
         protected override void Scrape(string[] arguments = null, int totalPages = 1)
@@ -61,6 +67,9 @@ namespace ProjectHEDio
                 string source = GetSource(FormatURL(arguments, i));
                 // Images can be retrieved from the XML file.
                 // <post height="(?<Height>\d+)" ?(?:[^\"]+"){2}[^f]?file_url="(?<Link>[^\"]+)"
+
+                // file_url="(?<Link>[^\"]+)"
+                // <post height="(?<Height>\d+)"
                 // id="\d+" width="(?<Width>\d+)
                 // <post[^>]+\/>
                 string postPattern = "<post[^>]+\\/>";
@@ -68,14 +77,16 @@ namespace ProjectHEDio
                 foreach (Match m in mc)
                 {
                     string postString = m.Value;
-                    string mainPattern = "<post height=\"(?<Height>\\d+)\" ?(?:[^\\\"]+\"){2}[^f]?file_url=\"(?<Link>[^\\\"]+)";
+                    // string mainPattern = "<post height=\"(?<Height>\\d+\" ?(?:[^\\\"]+\"){2}[^f]?file_url=\"(?<Link>[^\\\"]+)\"";
+                    string linkPattern = "file_url=\"(?<Link>[^\\\"]+)\"";
+                    string heightPattern = "<post height=\"(?<Height>\\d+)\"";
                     string widthPattern = "id=\"\\d+\" width=\"(?<Width>\\d+)";
 
-                    string link = Regex.Match(postString, postPattern).Groups["Link"].Value;
+                    string link = Regex.Match(postString, linkPattern).Groups["Link"].Value;
                     int width = -1;
                     int height = -1;
                     string widthCaptured = Regex.Match(postString, widthPattern).Groups["Width"].Value;
-                    string heightCaptured = Regex.Match(postString, mainPattern).Groups["Height"].Value;
+                    string heightCaptured = Regex.Match(postString, heightPattern).Groups["Height"].Value;
                     if (int.TryParse(widthCaptured, out width) && int.TryParse(heightCaptured, out height))
                     {
                         AddToLinks(link, width, height);

@@ -5,11 +5,11 @@ using MetroFramework.Controls;
 
 namespace ProjectHEDio
 {
-    class WebsiteYandere : Website
+    class WebsiteDanbooru : Website
     {
-        public WebsiteYandere(MetroPanel sourcePanel) : base(sourcePanel)
+        public WebsiteDanbooru(MetroPanel sourcePanel) : base(sourcePanel)
         {
-            
+
         }
 
         public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
@@ -22,17 +22,17 @@ namespace ProjectHEDio
         protected override int GetMaxPages(string[] arguments = null)
         {
             string source = GetSource(FormatURL(arguments));
-
-            if (source.Contains("Nobody here but us chickens!"))
+            if (source.Contains("There is currently no wiki page for the tag") || source.Contains("Nobody here but us chickens!"))
             {
                 return 0;
             }
-            if (!source.Contains("Next Page"))
+            if (!source.Contains("<a rel=\"next\""))
             {
                 return 1;
             }
 
-            string pattern = "page=(?<LastPage>\\d+)[^\"]+\" ?rel=\"last\"";
+            // \.{1,3}<\/li><li><a href="[^>]+>(?<LastPage>\d+)
+            string pattern = "\\.{1,3}<\\/li><li><a href=\"[^>]+>(?<LastPage>\\d+)";
             string match = Regex.Match(source, pattern).Groups["LastPage"].Value;
             int result = -1;
             if (int.TryParse(match, out result))
@@ -44,7 +44,8 @@ namespace ProjectHEDio
 
         protected override string FormatURL(string[] arguments = null, int pageNumber = 1)
         {
-            return string.Format("http://yande.re/post?page={0}&tags={1}", pageNumber, GetTagList(arguments));
+            // No API usage because it requires a key :c
+            return string.Format("http://danbooru.donmai.us/posts?ms=1&page={0}&tags={1}", pageNumber, GetTagList(arguments));
         }
 
         protected override void Scrape(string[] arguments = null, int totalPages = 1)
@@ -62,13 +63,22 @@ namespace ProjectHEDio
             for (int i = 1; i <= pages; i++)
             {
                 string source = GetSource(FormatURL(arguments, i));
-                // Images can be retrieved from the Javascript.
-                // Post\.register\({(?:[^,]+,){13}\"file_url\":\"(?<Link>[^\"]+)
-                string pattern = "Post\\.register\\({(?:[^,]+,){13}\\\"file_url\\\":\\\"(?<Link>[^\\\"]+)";
+                // Images can be retrieved from article elements.
+                // data-file-url="(?<Link>[^"]+)"\s+(?:data-large-file-url="(?<LinkLarge>[^"]+)")?
+                string pattern = "data-file-url=\"(?<Link>[^\"]+)\"\\s+(?:data-large-file-url=\"(?<LinkLarge>[^\"]+)\")?";
                 MatchCollection mc = Regex.Matches(source, pattern);
                 foreach (Match m in mc)
                 {
-                    AddToLinks(m.Groups["Link"].Value);
+                    string link = "";
+                    if (!string.IsNullOrWhiteSpace(m.Groups["LinkLarge"].Value))
+                    {
+                        link = m.Groups["LinkLarge"].Value;
+                    }
+                    else
+                    {
+                        link = m.Groups["Link"].Value;
+                    }
+                    AddToLinks("http://danbooru.donmai.us" + link);
                 }
                 LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
                 totalFound = totalFound + (uint)mc.Count;

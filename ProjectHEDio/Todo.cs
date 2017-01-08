@@ -1,17 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectHEDio
+﻿namespace ProjectHEDio
 {
-    static class Todo
+    internal static class Todo
     {
         //===================================================
         // Functionality
         // - I dunno dude.
-        // - Change commit names to imperative verbs
+        // - Add more logging events.
+        // - [ADD] Scrape limits by pictures.
+        // - [ADD] Size restrictions.
+        // - [ADD] Support to change name if path is too long
+        //
+        // . Change commit names to imperative verbs.
+        //===================================================
+
+        //===================================================
+        // Source
+        // - Add documentation to methods
         //===================================================
 
         //===================================================
@@ -21,6 +25,12 @@ namespace ProjectHEDio
         // - Sankaku Complex
         // - Zerochan
         // - Pixiv
+        //===================================================
+
+        //===================================================
+        // Misc
+        // - https://danbooru.donmai.us/wiki_pages/58938
+        // - http://pixiv.readthedocs.io/en/latest/api.html
         //===================================================
     }
 }
