@@ -29,6 +29,12 @@ namespace ProjectHEDio
         {
             InitializeComponent();
 
+            // Set label positions on About tab
+            this.labelAbout1.Location = new Point(145, 14);
+            this.labelAbout2.Location = new Point(180, 42);
+            this.labelAbout3.Location = new Point(157, 70);
+            this.labelAbout4.Location = new Point(179, 101);
+
             // Do this thing
             comboBoxLanguageSelector.Text = "English";
 
@@ -440,8 +446,13 @@ namespace ProjectHEDio
 
         private string StripFilename(string filename)
         {
-            // TODO: Remove invalid filename characters
             string result = filename;
+
+            // Replace invalid filename characters with _
+            foreach (char c in Path.GetInvalidFileNameChars())
+            {
+                result = result.Replace(c, '_');
+            }
 
             // Remove website prepends
             result = result.Replace("Konachan.com - ", "").Replace("konachan.com - ", "");
@@ -537,6 +548,8 @@ namespace ProjectHEDio
 
                     // Retrieve filename and unescape it
                     string filename = Uri.UnescapeDataString(file.GetLink().Split('/')[file.GetLink().Split('/').Length - 1]);
+
+                    // Strip filename
                     filename = StripFilename(filename);
 
                     try
