@@ -15,6 +15,8 @@ namespace ProjectHEDio
 
         private static int TotalFileCount = 0;
         private static int TotalDownloadedCount = 0;
+        private static int TotalLinkDuplicates = 0;
+        private static int TotalFilenameDuplicates = 0;
 
         public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
 
@@ -91,6 +93,26 @@ namespace ProjectHEDio
         public static int GetDownloadedFiles()
         {
             return TotalDownloadedCount;
+        }
+
+        public static void IncrementLinkDuplicates()
+        {
+            TotalLinkDuplicates++;
+        }
+
+        public static int GetLinkDuplicates()
+        {
+            return TotalLinkDuplicates;
+        }
+
+        public static void IncrementFilenameDuplicates()
+        {
+            TotalFilenameDuplicates++;
+        }
+
+        public static int GetFilenameDuplicates()
+        {
+            return TotalFilenameDuplicates;
         }
 
         public static void Reset()

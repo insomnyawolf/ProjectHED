@@ -275,7 +275,8 @@ namespace ProjectHEDio
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            if (!Website.IsScraping())
+            bool isDownloading = DownloadThread != null && DownloadThread.IsAlive;
+            if (!Website.IsScraping() && !isDownloading)
             {
                 // Currently not downloading
 
@@ -365,7 +366,7 @@ namespace ProjectHEDio
                     if (!DownloadThread.IsAlive)
                     {
                         // End
-                        UpdateStatus("Finished downloading " + Website.GetDownloadedFiles() + " files!", MetroColorStyle.Green);
+                        UpdateStatus("Finished downloading " + Website.GetDownloadedFiles() + " files! Expected: " + Website.GetTotalFiles() + ". dlnk: " + Website.GetLinkDuplicates() + ". dfln: " + Website.GetFilenameDuplicates() + ".", MetroColorStyle.Green);
                         progressBarMain.Value = 100;
                         StatusUpdateTimer.Stop();
                     }
@@ -474,6 +475,8 @@ namespace ProjectHEDio
 
         private void StartDownload()
         {
+            List<string> urlList = new List<string>();
+            List<string> filenameList = new List<string>();
             UpdateStatus("Started download!", MetroColorStyle.Green);
             
             // Clear the WebClientList
@@ -546,11 +549,31 @@ namespace ProjectHEDio
                     // Get link of file
                     Uri uri = new Uri(file.GetLink());
 
+                    if (urlList.Count > 0)
+                    {
+                        if (urlList.Contains(file.GetLink()))
+                        {
+                            Website.IncrementLinkDuplicates();
+                            continue;
+                        }
+                    }
+                    urlList.Add(file.GetLink());
+
                     // Retrieve filename and unescape it
                     string filename = Uri.UnescapeDataString(file.GetLink().Split('/')[file.GetLink().Split('/').Length - 1]);
 
                     // Strip filename
                     filename = StripFilename(filename);
+
+                    if (filenameList.Count > 0)
+                    {
+                        if (filenameList.Contains(filename))
+                        {
+                            Website.IncrementFilenameDuplicates();
+                            continue;
+                        }
+                    }
+                    filenameList.Add(filename);
 
                     try
                     {
