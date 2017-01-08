@@ -14,6 +14,7 @@ namespace ProjectHEDio
         private const int MaxSourceRetrievalRetries = 3;
 
         private static int TotalFileCount = 0;
+        private static int TotalDownloadedCount = 0;
 
         public static Queue<ScrapedFile> WebsiteFileLinks = new Queue<ScrapedFile>();
 
@@ -77,27 +78,74 @@ namespace ProjectHEDio
             return result;
         }
 
+        public static int GetTotalFiles()
+        {
+            return TotalFileCount;
+        }
+
+        public static void IncrementDownloadedFileAmount()
+        {
+            TotalDownloadedCount++;
+        }
+
+        public static int GetDownloadedFiles()
+        {
+            return TotalDownloadedCount;
+        }
+
         public static void Reset()
         {
             TotalFileCount = 0;
+            TotalDownloadedCount = 0;
             WebsiteFileLinks.Clear();
             WebsiteList.Clear();
         }
 
-        protected static void AddToLinks(string link, int retries = 0)
+        public static bool IsScraping()
+        {
+            if (WebsiteList.Count == 0)
+            {
+                return false;
+            }
+            foreach (Website w in WebsiteList)
+            {
+                if (w.ThreadIsAlive())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static void AddToLinks(string link, int retries = 0)
         {
             TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
         }
 
-        protected static void AddToLinks(string link, int width, int height, int retries = 0)
+        public static void AddToLinks(string link, int width, int height, int retries = 0)
         {
             TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, width, height, retries));
         }
 
+        public void KillThread()
+        {
+            if (ScrapeThread != null)
+            {
+                if (ScrapeThread.IsAlive)
+                {
+                    ScrapeThread.Abort();
+                }
+            }
+        }
+
         public bool ThreadIsAlive()
         {
+            if (ScrapeThread == null)
+            {
+                return false;
+            }
             return ScrapeThread.IsAlive;
         }
 

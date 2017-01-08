@@ -67,6 +67,9 @@ namespace ProjectHEDio
                 string source = GetSource(FormatURL(arguments, i));
                 // Images can be retrieved from the XML file.
                 // <post height="(?<Height>\d+)" ?(?:[^\"]+"){2}[^f]?file_url="(?<Link>[^\"]+)"
+
+                // file_url="(?<Link>[^\"]+)"
+                // <post height="(?<Height>\d+)"
                 // id="\d+" width="(?<Width>\d+)
                 // <post[^>]+\/>
                 string postPattern = "<post[^>]+\\/>";
@@ -74,14 +77,16 @@ namespace ProjectHEDio
                 foreach (Match m in mc)
                 {
                     string postString = m.Value;
-                    string mainPattern = "<post height=\"(?<Height>\\d+)\" ?(?:[^\\\"]+\"){2}[^f]?file_url=\"(?<Link>[^\\\"]+)";
+                    // string mainPattern = "<post height=\"(?<Height>\\d+\" ?(?:[^\\\"]+\"){2}[^f]?file_url=\"(?<Link>[^\\\"]+)\"";
+                    string linkPattern = "file_url=\"(?<Link>[^\\\"]+)\"";
+                    string heightPattern = "<post height=\"(?<Height>\\d+)\"";
                     string widthPattern = "id=\"\\d+\" width=\"(?<Width>\\d+)";
 
-                    string link = Regex.Match(postString, postPattern).Groups["Link"].Value;
+                    string link = Regex.Match(postString, linkPattern).Groups["Link"].Value;
                     int width = -1;
                     int height = -1;
                     string widthCaptured = Regex.Match(postString, widthPattern).Groups["Width"].Value;
-                    string heightCaptured = Regex.Match(postString, mainPattern).Groups["Height"].Value;
+                    string heightCaptured = Regex.Match(postString, heightPattern).Groups["Height"].Value;
                     if (int.TryParse(widthCaptured, out width) && int.TryParse(heightCaptured, out height))
                     {
                         AddToLinks(link, width, height);
