@@ -143,12 +143,14 @@ namespace ProjectHEDio
         {
             TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, retries));
+            LogHelper.Log(string.Format("FOUND: Link at \"{0}\" (r:{1})", link, retries));
         }
 
         public static void AddToLinks(string link, int width, int height, int retries = 0)
         {
             TotalFileCount++;
             WebsiteFileLinks.Enqueue(new ScrapedFile(link, width, height, retries));
+            LogHelper.Log(string.Format("FOUND: Link at \"{0}\" (w:{1} h:{2}) (r:{3})", link, width, height, retries));
         }
 
         public void KillThread()
