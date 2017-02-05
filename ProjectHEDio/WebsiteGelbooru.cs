@@ -83,6 +83,10 @@ namespace ProjectHEDio
                     string widthPattern = "id=\"\\d+\" width=\"(?<Width>\\d+)";
 
                     string link = Regex.Match(postString, linkPattern).Groups["Link"].Value;
+                    if (!link.Contains("http:"))
+                    {
+                        link = "http:" + link;
+                    }
                     int width = -1;
                     int height = -1;
                     string widthCaptured = Regex.Match(postString, widthPattern).Groups["Width"].Value;
