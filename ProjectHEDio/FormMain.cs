@@ -500,6 +500,7 @@ namespace ProjectHEDio
             WebsiteGelbooru wgb = new WebsiteGelbooru(panelSourceGelbooruCom);
             WebsiteYandere wyd = new WebsiteYandere(panelSourceYandere);
             WebsiteDanbooru wdb = new WebsiteDanbooru(panelSourceDanbooru);
+            WebsiteSafebooru wsb = new WebsiteSafebooru(panelSourceSafebooru);
 
             foreach (Website w in Website.WebsiteList)
             {

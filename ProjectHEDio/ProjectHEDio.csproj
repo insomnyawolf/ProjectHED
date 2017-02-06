@@ -77,6 +77,7 @@
     <Compile Include="WebsiteGelbooru.cs" />
     <Compile Include="WebsiteKonachanCom.cs" />
     <Compile Include="WebsiteKonachanNet.cs" />
+    <Compile Include="WebsiteSafebooru.cs" />
     <Compile Include="WebsiteYandere.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
