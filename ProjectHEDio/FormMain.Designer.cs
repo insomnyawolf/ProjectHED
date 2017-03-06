@@ -55,6 +55,11 @@
             this.buttonSourcesSelectAll = new MetroFramework.Controls.MetroButton();
             this.labelSourcesColumns = new MetroFramework.Controls.MetroLabel();
             this.panelSources = new MetroFramework.Controls.MetroPanel();
+            this.panelSourceSafebooru = new MetroFramework.Controls.MetroPanel();
+            this.numericUpDownSourceSafebooru = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxSourceSafebooru = new MetroFramework.Controls.MetroComboBox();
+            this.labelSourceSafebooru = new MetroFramework.Controls.MetroLabel();
+            this.checkBoxSourceSafebooru = new MetroFramework.Controls.MetroCheckBox();
             this.panelSourceYandere = new MetroFramework.Controls.MetroPanel();
             this.numericUpDownSourceYandere = new System.Windows.Forms.NumericUpDown();
             this.comboBoxSourceYandere = new MetroFramework.Controls.MetroComboBox();
@@ -101,11 +106,7 @@
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
             this.folderBrowserDialogMain = new System.Windows.Forms.FolderBrowserDialog();
             this.NotifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
-            this.panelSourceSafebooru = new MetroFramework.Controls.MetroPanel();
-            this.numericUpDownSourceSafebooru = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxSourceSafebooru = new MetroFramework.Controls.MetroComboBox();
-            this.labelSourceSafebooru = new MetroFramework.Controls.MetroLabel();
-            this.checkBoxSourceSafebooru = new MetroFramework.Controls.MetroCheckBox();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
             this.panelRestrictImageSizes.SuspendLayout();
@@ -114,6 +115,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).BeginInit();
             this.metroTabPageSourceSelection.SuspendLayout();
             this.panelSources.SuspendLayout();
+            this.panelSourceSafebooru.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceSafebooru)).BeginInit();
             this.panelSourceYandere.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceYandere)).BeginInit();
             this.panelSourceDanbooru.SuspendLayout();
@@ -128,8 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).BeginInit();
             this.metroTabPageAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
-            this.panelSourceSafebooru.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceSafebooru)).BeginInit();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -146,12 +148,10 @@
             // 
             // metroTabPagePictureOptions
             // 
+            this.metroTabPagePictureOptions.Controls.Add(this.metroPanel1);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.labelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizesMethod);
-            this.metroTabPagePictureOptions.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
-            this.metroTabPagePictureOptions.Controls.Add(this.labelResolutionX);
-            this.metroTabPagePictureOptions.Controls.Add(this.numericUpDownRestrictImageSizesWidth);
             this.metroTabPagePictureOptions.Controls.Add(this.checkBoxRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.labelTags3);
             this.metroTabPagePictureOptions.Controls.Add(this.labelTags2);
@@ -278,7 +278,7 @@
             // numericUpDownRestrictImageSizesHeight
             // 
             this.numericUpDownRestrictImageSizesHeight.Enabled = false;
-            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(272, 113);
+            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(85, 3);
             this.numericUpDownRestrictImageSizesHeight.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -303,7 +303,7 @@
             // labelResolutionX
             // 
             this.labelResolutionX.AutoSize = true;
-            this.labelResolutionX.Location = new System.Drawing.Point(251, 113);
+            this.labelResolutionX.Location = new System.Drawing.Point(61, 3);
             this.labelResolutionX.Name = "labelResolutionX";
             this.labelResolutionX.Size = new System.Drawing.Size(15, 19);
             this.labelResolutionX.TabIndex = 9;
@@ -312,7 +312,7 @@
             // numericUpDownRestrictImageSizesWidth
             // 
             this.numericUpDownRestrictImageSizesWidth.Enabled = false;
-            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(190, 113);
+            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(0, 3);
             this.numericUpDownRestrictImageSizesWidth.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -462,6 +462,82 @@
             this.panelSources.VerticalScrollbarBarColor = true;
             this.panelSources.VerticalScrollbarHighlightOnWheel = false;
             this.panelSources.VerticalScrollbarSize = 10;
+            // 
+            // panelSourceSafebooru
+            // 
+            this.panelSourceSafebooru.Controls.Add(this.numericUpDownSourceSafebooru);
+            this.panelSourceSafebooru.Controls.Add(this.comboBoxSourceSafebooru);
+            this.panelSourceSafebooru.Controls.Add(this.labelSourceSafebooru);
+            this.panelSourceSafebooru.Controls.Add(this.checkBoxSourceSafebooru);
+            this.panelSourceSafebooru.HorizontalScrollbarBarColor = true;
+            this.panelSourceSafebooru.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelSourceSafebooru.HorizontalScrollbarSize = 10;
+            this.panelSourceSafebooru.Location = new System.Drawing.Point(4, 174);
+            this.panelSourceSafebooru.Name = "panelSourceSafebooru";
+            this.panelSourceSafebooru.Size = new System.Drawing.Size(490, 31);
+            this.panelSourceSafebooru.TabIndex = 7;
+            this.panelSourceSafebooru.VerticalScrollbarBarColor = true;
+            this.panelSourceSafebooru.VerticalScrollbarHighlightOnWheel = false;
+            this.panelSourceSafebooru.VerticalScrollbarSize = 10;
+            // 
+            // numericUpDownSourceSafebooru
+            // 
+            this.numericUpDownSourceSafebooru.Enabled = false;
+            this.numericUpDownSourceSafebooru.Location = new System.Drawing.Point(393, 5);
+            this.numericUpDownSourceSafebooru.Maximum = new decimal(new int[] {
+            2147483647,
+            0,
+            0,
+            0});
+            this.numericUpDownSourceSafebooru.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownSourceSafebooru.Name = "numericUpDownSourceSafebooru";
+            this.numericUpDownSourceSafebooru.Size = new System.Drawing.Size(89, 20);
+            this.numericUpDownSourceSafebooru.TabIndex = 5;
+            this.numericUpDownSourceSafebooru.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownSourceSafebooru.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBoxSourceSafebooru
+            // 
+            this.comboBoxSourceSafebooru.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.comboBoxSourceSafebooru.FormattingEnabled = true;
+            this.comboBoxSourceSafebooru.ItemHeight = 19;
+            this.comboBoxSourceSafebooru.Items.AddRange(new object[] {
+            "No Limit",
+            "Page Limit",
+            "Image Limit"});
+            this.comboBoxSourceSafebooru.Location = new System.Drawing.Point(284, 3);
+            this.comboBoxSourceSafebooru.Name = "comboBoxSourceSafebooru";
+            this.comboBoxSourceSafebooru.Size = new System.Drawing.Size(98, 25);
+            this.comboBoxSourceSafebooru.TabIndex = 4;
+            // 
+            // labelSourceSafebooru
+            // 
+            this.labelSourceSafebooru.AutoSize = true;
+            this.labelSourceSafebooru.Location = new System.Drawing.Point(227, 6);
+            this.labelSourceSafebooru.Name = "labelSourceSafebooru";
+            this.labelSourceSafebooru.Size = new System.Drawing.Size(36, 19);
+            this.labelSourceSafebooru.Style = MetroFramework.MetroColorStyle.Green;
+            this.labelSourceSafebooru.TabIndex = 3;
+            this.labelSourceSafebooru.Text = "SFW";
+            this.labelSourceSafebooru.UseStyleColors = true;
+            // 
+            // checkBoxSourceSafebooru
+            // 
+            this.checkBoxSourceSafebooru.AutoSize = true;
+            this.checkBoxSourceSafebooru.Location = new System.Drawing.Point(3, 8);
+            this.checkBoxSourceSafebooru.Name = "checkBoxSourceSafebooru";
+            this.checkBoxSourceSafebooru.Size = new System.Drawing.Size(162, 15);
+            this.checkBoxSourceSafebooru.TabIndex = 2;
+            this.checkBoxSourceSafebooru.Text = "Safebooru (safebooru.org)";
+            this.checkBoxSourceSafebooru.UseVisualStyleBackColor = true;
             // 
             // panelSourceYandere
             // 
@@ -993,7 +1069,7 @@
             this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout4.AutoSize = true;
             this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout4.Location = new System.Drawing.Point(14, 101);
+            this.labelAbout4.Location = new System.Drawing.Point(-481, 101);
             this.labelAbout4.Name = "labelAbout4";
             this.labelAbout4.Size = new System.Drawing.Size(164, 19);
             this.labelAbout4.TabIndex = 5;
@@ -1017,7 +1093,7 @@
             this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout2.AutoSize = true;
             this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout2.Location = new System.Drawing.Point(15, 42);
+            this.labelAbout2.Location = new System.Drawing.Point(-480, 42);
             this.labelAbout2.Name = "labelAbout2";
             this.labelAbout2.Size = new System.Drawing.Size(162, 19);
             this.labelAbout2.TabIndex = 3;
@@ -1028,7 +1104,7 @@
             this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelAbout1.AutoSize = true;
             this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout1.Location = new System.Drawing.Point(-20, 14);
+            this.labelAbout1.Location = new System.Drawing.Point(-515, 14);
             this.labelAbout1.Name = "labelAbout1";
             this.labelAbout1.Size = new System.Drawing.Size(232, 19);
             this.labelAbout1.TabIndex = 2;
@@ -1039,12 +1115,14 @@
             this.comboBoxLanguageSelector.FormattingEnabled = true;
             this.comboBoxLanguageSelector.ItemHeight = 23;
             this.comboBoxLanguageSelector.Items.AddRange(new object[] {
-            "English"});
+            "English",
+            "Spanish"});
             this.comboBoxLanguageSelector.Location = new System.Drawing.Point(23, 340);
             this.comboBoxLanguageSelector.MaxDropDownItems = 20;
             this.comboBoxLanguageSelector.Name = "comboBoxLanguageSelector";
             this.comboBoxLanguageSelector.Size = new System.Drawing.Size(121, 29);
             this.comboBoxLanguageSelector.TabIndex = 1;
+            this.comboBoxLanguageSelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguageSelector_SelectedIndexChanged);
             // 
             // buttonStart
             // 
@@ -1084,81 +1162,21 @@
             this.NotifyIconMain.Text = "ProjectHED";
             this.NotifyIconMain.Visible = true;
             // 
-            // panelSourceSafebooru
+            // metroPanel1
             // 
-            this.panelSourceSafebooru.Controls.Add(this.numericUpDownSourceSafebooru);
-            this.panelSourceSafebooru.Controls.Add(this.comboBoxSourceSafebooru);
-            this.panelSourceSafebooru.Controls.Add(this.labelSourceSafebooru);
-            this.panelSourceSafebooru.Controls.Add(this.checkBoxSourceSafebooru);
-            this.panelSourceSafebooru.HorizontalScrollbarBarColor = true;
-            this.panelSourceSafebooru.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelSourceSafebooru.HorizontalScrollbarSize = 10;
-            this.panelSourceSafebooru.Location = new System.Drawing.Point(4, 174);
-            this.panelSourceSafebooru.Name = "panelSourceSafebooru";
-            this.panelSourceSafebooru.Size = new System.Drawing.Size(490, 31);
-            this.panelSourceSafebooru.TabIndex = 7;
-            this.panelSourceSafebooru.VerticalScrollbarBarColor = true;
-            this.panelSourceSafebooru.VerticalScrollbarHighlightOnWheel = false;
-            this.panelSourceSafebooru.VerticalScrollbarSize = 10;
-            // 
-            // numericUpDownSourceSafebooru
-            // 
-            this.numericUpDownSourceSafebooru.Enabled = false;
-            this.numericUpDownSourceSafebooru.Location = new System.Drawing.Point(393, 5);
-            this.numericUpDownSourceSafebooru.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericUpDownSourceSafebooru.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownSourceSafebooru.Name = "numericUpDownSourceSafebooru";
-            this.numericUpDownSourceSafebooru.Size = new System.Drawing.Size(89, 20);
-            this.numericUpDownSourceSafebooru.TabIndex = 5;
-            this.numericUpDownSourceSafebooru.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownSourceSafebooru.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // comboBoxSourceSafebooru
-            // 
-            this.comboBoxSourceSafebooru.FontSize = MetroFramework.MetroLinkSize.Small;
-            this.comboBoxSourceSafebooru.FormattingEnabled = true;
-            this.comboBoxSourceSafebooru.ItemHeight = 19;
-            this.comboBoxSourceSafebooru.Items.AddRange(new object[] {
-            "No Limit",
-            "Page Limit",
-            "Image Limit"});
-            this.comboBoxSourceSafebooru.Location = new System.Drawing.Point(284, 3);
-            this.comboBoxSourceSafebooru.Name = "comboBoxSourceSafebooru";
-            this.comboBoxSourceSafebooru.Size = new System.Drawing.Size(98, 25);
-            this.comboBoxSourceSafebooru.TabIndex = 4;
-            // 
-            // labelSourceSafebooru
-            // 
-            this.labelSourceSafebooru.AutoSize = true;
-            this.labelSourceSafebooru.Location = new System.Drawing.Point(227, 6);
-            this.labelSourceSafebooru.Name = "labelSourceSafebooru";
-            this.labelSourceSafebooru.Size = new System.Drawing.Size(36, 19);
-            this.labelSourceSafebooru.Style = MetroFramework.MetroColorStyle.Green;
-            this.labelSourceSafebooru.TabIndex = 3;
-            this.labelSourceSafebooru.Text = "SFW";
-            this.labelSourceSafebooru.UseStyleColors = true;
-            // 
-            // checkBoxSourceSafebooru
-            // 
-            this.checkBoxSourceSafebooru.AutoSize = true;
-            this.checkBoxSourceSafebooru.Location = new System.Drawing.Point(3, 8);
-            this.checkBoxSourceSafebooru.Name = "checkBoxSourceSafebooru";
-            this.checkBoxSourceSafebooru.Size = new System.Drawing.Size(162, 15);
-            this.checkBoxSourceSafebooru.TabIndex = 2;
-            this.checkBoxSourceSafebooru.Text = "Safebooru (safebooru.org)";
-            this.checkBoxSourceSafebooru.UseVisualStyleBackColor = true;
+            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesWidth);
+            this.metroPanel1.Controls.Add(this.labelResolutionX);
+            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(194, 108);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(140, 25);
+            this.metroPanel1.TabIndex = 14;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // FormMain
             // 
@@ -1187,6 +1205,9 @@
             this.metroTabPageSourceSelection.ResumeLayout(false);
             this.metroTabPageSourceSelection.PerformLayout();
             this.panelSources.ResumeLayout(false);
+            this.panelSourceSafebooru.ResumeLayout(false);
+            this.panelSourceSafebooru.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceSafebooru)).EndInit();
             this.panelSourceYandere.ResumeLayout(false);
             this.panelSourceYandere.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceYandere)).EndInit();
@@ -1208,9 +1229,8 @@
             this.metroTabPageAbout.ResumeLayout(false);
             this.metroTabPageAbout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
-            this.panelSourceSafebooru.ResumeLayout(false);
-            this.panelSourceSafebooru.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceSafebooru)).EndInit();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1294,5 +1314,6 @@
         private MetroFramework.Controls.MetroComboBox comboBoxSourceSafebooru;
         private MetroFramework.Controls.MetroLabel labelSourceSafebooru;
         private MetroFramework.Controls.MetroCheckBox checkBoxSourceSafebooru;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }

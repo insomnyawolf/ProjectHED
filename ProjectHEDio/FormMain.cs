@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+//using System.ComponentModel;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Controls;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
-using System.IO;
 using System.Net;
 using System.Threading;
 
@@ -19,6 +17,12 @@ namespace ProjectHEDio
 {
     public partial class FormMain : MetroFramework.Forms.MetroForm
     {
+        //Workaround for load
+        //EDIT AND FIX THIS
+        public bool onloadskip = true;
+        //EDIT AND FIX THIS
+        //Workaround for load
+
         private Thread DownloadThread = null;
 
         private List<WebClient> WebClientList = new List<WebClient>();
@@ -673,5 +677,61 @@ namespace ProjectHEDio
                 Process.Start("explorer.exe", textBoxDownloadDirectory.Text);
             }
         }
+
+        #region Language;
+
+        private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(onloadskip == false)
+            {
+                
+                //Form load workaround (no english file)
+                var data = File
+                .ReadAllLines(comboBoxLanguageSelector.Text + ".ini")
+                .Select(x => x.Split('='))
+                .Where(x => x.Length > 1)
+                .ToDictionary(x => x[0].Trim(), x => x[1]);
+
+                labelStatus.Text = data["labelStatus"];
+
+                #region tabs;
+
+                metroTabPagePictureOptions.Text = data["metroTabPagePictureOptions"];
+                metroTabPageSourceSelection.Text = data["metroTabPageSourceSelection"];
+                metroTabPageDownloadSettings.Text = data["metroTabPageDownloadSettings"];
+                metroTabPageAbout.Text = data["metroTabPageAbout"];
+
+                #endregion;
+
+                #region image options;
+
+                checkBoxUseTags.Text = data["checkBoxUseTags"];
+                textBoxTags.PromptText = data["textBoxTags"];
+                labelTags1.Text = data["labelTags1"];
+                labelTags2.Text = data["labelTags2"];
+                labelTags3.Text = data["labelTags3"];
+                checkBoxRestrictImageSizes.Text = data["checkBoxRestrictImageSizes"];
+                labelRestrictImageSizes.Text = data["labelRestrictImageSizes"];
+                radioButtonRestrictImageSizesEqual.Text = data["radioButtonRestrictImageSizesEqual"];
+                radioButtonRestrictImageSizesGreater.Text = data["radioButtonRestrictImageSizesGreater"];
+                radioButtonRestrictImageSizesLess.Text = data["radioButtonRestrictImageSizesLess"];
+                radioButtonRestrictImageSizesMethodManual.Text = data["radioButtonRestrictImageSizesMethodManual"];
+                radioButtonRestrictImageSizesMethodTag.Text = data["radioButtonRestrictImageSizesMethodTag"];
+                checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Text = data["checkBoxRestrictImageSizesQueryTagDontDownloadTagless"];
+                buttonStart.Text = data["buttonStart"];
+
+                #endregion;
+
+            }
+            
+            else
+            {
+                onloadskip = false;
+            }
+
+
+        }
+
+        #endregion;
     }
 }
