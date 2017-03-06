@@ -865,6 +865,7 @@
             this.comboBoxLanguageSelector.Items.AddRange(new object[] {
             resources.GetString("comboBoxLanguageSelector.Items")});
             this.comboBoxLanguageSelector.Name = "comboBoxLanguageSelector";
+            this.comboBoxLanguageSelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguageSelector_SelectedIndexChanged);
             // 
             // buttonStart
             // 

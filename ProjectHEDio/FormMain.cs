@@ -671,5 +671,10 @@ namespace ProjectHEDio
                 Process.Start("explorer.exe", textBoxDownloadDirectory.Text);
             }
         }
+
+        private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

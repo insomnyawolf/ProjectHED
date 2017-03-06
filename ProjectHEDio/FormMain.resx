@@ -117,11 +117,308 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Name" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageSourceSelection.Name" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageSourceSelection.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageSourceSelection.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageSourceSelection.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Name" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageAbout.Name" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageAbout.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageAbout.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;metroTabPageAbout.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabControlMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 63</value>
+  </data>
+  <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 271</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.Name" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControlMain.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Name" xml:space="preserve">
+    <value>panelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelRestrictImageSizes.Name" xml:space="preserve">
+    <value>labelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;labelRestrictImageSizes.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelRestrictImageSizes.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;labelRestrictImageSizes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Name" xml:space="preserve">
+    <value>panelRestrictImageSizesMethod</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesHeight.Name" xml:space="preserve">
+    <value>numericUpDownRestrictImageSizesHeight</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesHeight.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesHeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelResolutionX.Name" xml:space="preserve">
+    <value>labelResolutionX</value>
+  </data>
+  <data name="&gt;&gt;labelResolutionX.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelResolutionX.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;labelResolutionX.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesWidth.Name" xml:space="preserve">
+    <value>numericUpDownRestrictImageSizesWidth</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesWidth.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownRestrictImageSizesWidth.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizes.Name" xml:space="preserve">
+    <value>checkBoxRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizes.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizes.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizes.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelTags3.Name" xml:space="preserve">
+    <value>labelTags3</value>
+  </data>
+  <data name="&gt;&gt;labelTags3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelTags3.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;labelTags3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelTags2.Name" xml:space="preserve">
+    <value>labelTags2</value>
+  </data>
+  <data name="&gt;&gt;labelTags2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelTags2.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;labelTags2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;labelTags1.Name" xml:space="preserve">
+    <value>labelTags1</value>
+  </data>
+  <data name="&gt;&gt;labelTags1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelTags1.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;labelTags1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBoxTags.Name" xml:space="preserve">
+    <value>textBoxTags</value>
+  </data>
+  <data name="&gt;&gt;textBoxTags.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;textBoxTags.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;textBoxTags.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseTags.Name" xml:space="preserve">
+    <value>checkBoxUseTags</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseTags.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseTags.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseTags.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="metroTabPagePictureOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 35</value>
+  </data>
+  <data name="metroTabPagePictureOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>522, 232</value>
+  </data>
+  <data name="metroTabPagePictureOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="metroTabPagePictureOptions.Text" xml:space="preserve">
+    <value>Picture Options</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Name" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.Parent" xml:space="preserve">
+    <value>tabControlMain</value>
+  </data>
+  <data name="&gt;&gt;metroTabPagePictureOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesLess.Name" xml:space="preserve">
+    <value>radioButtonRestrictImageSizesLess</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesLess.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroRadioButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesLess.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesLess.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesGreater.Name" xml:space="preserve">
+    <value>radioButtonRestrictImageSizesGreater</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesGreater.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroRadioButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesGreater.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesGreater.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesEqual.Name" xml:space="preserve">
+    <value>radioButtonRestrictImageSizesEqual</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesEqual.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroRadioButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesEqual.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesEqual.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelRestrictImageSizes.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelRestrictImageSizes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 158</value>
+  </data>
+  <data name="panelRestrictImageSizes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 72</value>
+  </data>
+  <data name="panelRestrictImageSizes.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Name" xml:space="preserve">
+    <value>panelRestrictImageSizes</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="radioButtonRestrictImageSizesLess.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="radioButtonRestrictImageSizesLess.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 45</value>
   </data>
@@ -200,30 +497,6 @@
   <data name="&gt;&gt;radioButtonRestrictImageSizesEqual.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="panelRestrictImageSizes.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panelRestrictImageSizes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 158</value>
-  </data>
-  <data name="panelRestrictImageSizes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 72</value>
-  </data>
-  <data name="panelRestrictImageSizes.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizes.Name" xml:space="preserve">
-    <value>panelRestrictImageSizes</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizes.Parent" xml:space="preserve">
-    <value>metroTabPagePictureOptions</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizes.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="labelRestrictImageSizes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -250,6 +523,66 @@
   </data>
   <data name="&gt;&gt;labelRestrictImageSizes.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Name" xml:space="preserve">
+    <value>checkBoxRestrictImageSizesQueryTagDontDownloadTagless</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizesMethod</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRestrictImageSizesQueryTagDontDownloadTagless.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodManual.Name" xml:space="preserve">
+    <value>radioButtonRestrictImageSizesMethodManual</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodManual.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroRadioButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodManual.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizesMethod</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodManual.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodTag.Name" xml:space="preserve">
+    <value>radioButtonRestrictImageSizesMethodTag</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodTag.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroRadioButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodTag.Parent" xml:space="preserve">
+    <value>panelRestrictImageSizesMethod</value>
+  </data>
+  <data name="&gt;&gt;radioButtonRestrictImageSizesMethodTag.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelRestrictImageSizesMethod.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelRestrictImageSizesMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 158</value>
+  </data>
+  <data name="panelRestrictImageSizesMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 72</value>
+  </data>
+  <data name="panelRestrictImageSizesMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Name" xml:space="preserve">
+    <value>panelRestrictImageSizesMethod</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.Parent" xml:space="preserve">
+    <value>metroTabPagePictureOptions</value>
+  </data>
+  <data name="&gt;&gt;panelRestrictImageSizesMethod.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="checkBoxRestrictImageSizesQueryTagDontDownloadTagless.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -330,30 +663,6 @@
     <value>panelRestrictImageSizesMethod</value>
   </data>
   <data name="&gt;&gt;radioButtonRestrictImageSizesMethodTag.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panelRestrictImageSizesMethod.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panelRestrictImageSizesMethod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 158</value>
-  </data>
-  <data name="panelRestrictImageSizesMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 72</value>
-  </data>
-  <data name="panelRestrictImageSizesMethod.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizesMethod.Name" xml:space="preserve">
-    <value>panelRestrictImageSizesMethod</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizesMethod.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizesMethod.Parent" xml:space="preserve">
-    <value>metroTabPagePictureOptions</value>
-  </data>
-  <data name="&gt;&gt;panelRestrictImageSizesMethod.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="numericUpDownRestrictImageSizesHeight.Enabled" type="System.Boolean, mscorlib">
@@ -597,29 +906,77 @@
   <data name="&gt;&gt;checkBoxUseTags.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="metroTabPagePictureOptions.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;buttonSourcesDeselectAll.Name" xml:space="preserve">
+    <value>buttonSourcesDeselectAll</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesDeselectAll.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesDeselectAll.Parent" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesDeselectAll.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesSelectAll.Name" xml:space="preserve">
+    <value>buttonSourcesSelectAll</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesSelectAll.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesSelectAll.Parent" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;buttonSourcesSelectAll.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourcesColumns.Name" xml:space="preserve">
+    <value>labelSourcesColumns</value>
+  </data>
+  <data name="&gt;&gt;labelSourcesColumns.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourcesColumns.Parent" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;labelSourcesColumns.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Name" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Parent" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;panelSources.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="metroTabPageSourceSelection.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 35</value>
   </data>
-  <data name="metroTabPagePictureOptions.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="metroTabPageSourceSelection.Size" type="System.Drawing.Size, System.Drawing">
     <value>522, 232</value>
   </data>
-  <data name="metroTabPagePictureOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="metroTabPageSourceSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="metroTabPagePictureOptions.Text" xml:space="preserve">
-    <value>Picture Options</value>
+  <data name="metroTabPageSourceSelection.Text" xml:space="preserve">
+    <value>Source Selection</value>
   </data>
-  <data name="&gt;&gt;metroTabPagePictureOptions.Name" xml:space="preserve">
-    <value>metroTabPagePictureOptions</value>
+  <data name="&gt;&gt;metroTabPageSourceSelection.Name" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
   </data>
-  <data name="&gt;&gt;metroTabPagePictureOptions.Type" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageSourceSelection.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTabPagePictureOptions.Parent" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageSourceSelection.Parent" xml:space="preserve">
     <value>tabControlMain</value>
   </data>
-  <data name="&gt;&gt;metroTabPagePictureOptions.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;metroTabPageSourceSelection.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="buttonSourcesDeselectAll.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 207</value>
@@ -698,6 +1055,168 @@
   </data>
   <data name="panelSources.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Name" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelSourceYandere.Name" xml:space="preserve">
+    <value>panelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;panelSourceYandere.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceYandere.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceYandere.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelSourceDanbooru.Name" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;panelSourceDanbooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceDanbooru.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.Name" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.Name" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.Name" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panelSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 27</value>
+  </data>
+  <data name="panelSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 174</value>
+  </data>
+  <data name="panelSources.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Name" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSources.Parent" xml:space="preserve">
+    <value>metroTabPageSourceSelection</value>
+  </data>
+  <data name="&gt;&gt;panelSources.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceSafebooru.Name" xml:space="preserve">
+    <value>numericUpDownSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceSafebooru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceSafebooru.Name" xml:space="preserve">
+    <value>comboBoxSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceSafebooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourceSafebooru.Name" xml:space="preserve">
+    <value>labelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;labelSourceSafebooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;labelSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceSafebooru.Name" xml:space="preserve">
+    <value>checkBoxSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceSafebooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelSourceSafebooru.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 174</value>
+  </data>
+  <data name="panelSourceSafebooru.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 31</value>
+  </data>
+  <data name="panelSourceSafebooru.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Name" xml:space="preserve">
+    <value>panelSourceSafebooru</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.Parent" xml:space="preserve">
+    <value>panelSources</value>
+  </data>
+  <data name="&gt;&gt;panelSourceSafebooru.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="numericUpDownSourceSafebooru.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -813,26 +1332,74 @@
   <data name="&gt;&gt;checkBoxSourceSafebooru.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceSafebooru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 174</value>
+  <data name="&gt;&gt;numericUpDownSourceYandere.Name" xml:space="preserve">
+    <value>numericUpDownSourceYandere</value>
   </data>
-  <data name="panelSourceSafebooru.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;numericUpDownSourceYandere.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceYandere.Parent" xml:space="preserve">
+    <value>panelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceYandere.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceYandere.Name" xml:space="preserve">
+    <value>comboBoxSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceYandere.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceYandere.Parent" xml:space="preserve">
+    <value>panelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceYandere.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourceYandere.Name" xml:space="preserve">
+    <value>labelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;labelSourceYandere.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceYandere.Parent" xml:space="preserve">
+    <value>panelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;labelSourceYandere.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceYandere.Name" xml:space="preserve">
+    <value>checkBoxSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceYandere.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceYandere.Parent" xml:space="preserve">
+    <value>panelSourceYandere</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceYandere.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelSourceYandere.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 140</value>
+  </data>
+  <data name="panelSourceYandere.Size" type="System.Drawing.Size, System.Drawing">
     <value>490, 31</value>
   </data>
-  <data name="panelSourceSafebooru.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="panelSourceYandere.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;panelSourceSafebooru.Name" xml:space="preserve">
-    <value>panelSourceSafebooru</value>
+  <data name="&gt;&gt;panelSourceYandere.Name" xml:space="preserve">
+    <value>panelSourceYandere</value>
   </data>
-  <data name="&gt;&gt;panelSourceSafebooru.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceYandere.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceSafebooru.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceYandere.Parent" xml:space="preserve">
     <value>panelSources</value>
   </data>
-  <data name="&gt;&gt;panelSourceSafebooru.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panelSourceYandere.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="numericUpDownSourceYandere.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -948,26 +1515,74 @@
   <data name="&gt;&gt;checkBoxSourceYandere.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceYandere.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 140</value>
+  <data name="&gt;&gt;numericUpDownSourceDanbooru.Name" xml:space="preserve">
+    <value>numericUpDownSourceDanbooru</value>
   </data>
-  <data name="panelSourceYandere.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;numericUpDownSourceDanbooru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceDanbooru.Parent" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceDanbooru.Name" xml:space="preserve">
+    <value>comboBoxSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceDanbooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceDanbooru.Parent" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourceDanbooru.Name" xml:space="preserve">
+    <value>labelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;labelSourceDanbooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceDanbooru.Parent" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;labelSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceDanbooru.Name" xml:space="preserve">
+    <value>checkBoxSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceDanbooru.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceDanbooru.Parent" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelSourceDanbooru.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 106</value>
+  </data>
+  <data name="panelSourceDanbooru.Size" type="System.Drawing.Size, System.Drawing">
     <value>490, 31</value>
   </data>
-  <data name="panelSourceYandere.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="panelSourceDanbooru.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;panelSourceYandere.Name" xml:space="preserve">
-    <value>panelSourceYandere</value>
+  <data name="&gt;&gt;panelSourceDanbooru.Name" xml:space="preserve">
+    <value>panelSourceDanbooru</value>
   </data>
-  <data name="&gt;&gt;panelSourceYandere.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceDanbooru.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceYandere.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceDanbooru.Parent" xml:space="preserve">
     <value>panelSources</value>
   </data>
-  <data name="&gt;&gt;panelSourceYandere.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;panelSourceDanbooru.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="numericUpDownSourceDanbooru.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1083,26 +1698,74 @@
   <data name="&gt;&gt;checkBoxSourceDanbooru.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceDanbooru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 106</value>
+  <data name="&gt;&gt;numericUpDownSourceGelbooruCom.Name" xml:space="preserve">
+    <value>numericUpDownSourceGelbooruCom</value>
   </data>
-  <data name="panelSourceDanbooru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 31</value>
+  <data name="&gt;&gt;numericUpDownSourceGelbooruCom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelSourceDanbooru.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;numericUpDownSourceGelbooruCom.Parent" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceGelbooruCom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceGelbooruCom.Name" xml:space="preserve">
+    <value>comboBoxSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceGelbooruCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceGelbooruCom.Parent" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceGelbooruCom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourceGelbooruCom.Name" xml:space="preserve">
+    <value>labelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;labelSourceGelbooruCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceGelbooruCom.Parent" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;labelSourceGelbooruCom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceGelbooruCom.Name" xml:space="preserve">
+    <value>checkBoxSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceGelbooruCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceGelbooruCom.Parent" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceGelbooruCom.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;panelSourceDanbooru.Name" xml:space="preserve">
-    <value>panelSourceDanbooru</value>
+  <data name="panelSourceGelbooruCom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 72</value>
   </data>
-  <data name="&gt;&gt;panelSourceDanbooru.Type" xml:space="preserve">
+  <data name="panelSourceGelbooruCom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 31</value>
+  </data>
+  <data name="panelSourceGelbooruCom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.Name" xml:space="preserve">
+    <value>panelSourceGelbooruCom</value>
+  </data>
+  <data name="&gt;&gt;panelSourceGelbooruCom.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceDanbooru.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceGelbooruCom.Parent" xml:space="preserve">
     <value>panelSources</value>
   </data>
-  <data name="&gt;&gt;panelSourceDanbooru.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;panelSourceGelbooruCom.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="numericUpDownSourceGelbooruCom.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1218,26 +1881,74 @@
   <data name="&gt;&gt;checkBoxSourceGelbooruCom.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceGelbooruCom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 72</value>
+  <data name="&gt;&gt;numericUpDownSourceKonachanCom.Name" xml:space="preserve">
+    <value>numericUpDownSourceKonachanCom</value>
   </data>
-  <data name="panelSourceGelbooruCom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 31</value>
+  <data name="&gt;&gt;numericUpDownSourceKonachanCom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelSourceGelbooruCom.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;numericUpDownSourceKonachanCom.Parent" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceKonachanCom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanCom.Name" xml:space="preserve">
+    <value>comboBoxSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanCom.Parent" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanCom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanCom.Name" xml:space="preserve">
+    <value>labelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanCom.Parent" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanCom.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;panelSourceGelbooruCom.Name" xml:space="preserve">
-    <value>panelSourceGelbooruCom</value>
+  <data name="&gt;&gt;checkBoxSourceKonachanCom.Name" xml:space="preserve">
+    <value>checkBoxSourceKonachanCom</value>
   </data>
-  <data name="&gt;&gt;panelSourceGelbooruCom.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxSourceKonachanCom.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanCom.Parent" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanCom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelSourceKonachanCom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="panelSourceKonachanCom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 31</value>
+  </data>
+  <data name="panelSourceKonachanCom.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.Name" xml:space="preserve">
+    <value>panelSourceKonachanCom</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanCom.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceGelbooruCom.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceKonachanCom.Parent" xml:space="preserve">
     <value>panelSources</value>
   </data>
-  <data name="&gt;&gt;panelSourceGelbooruCom.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;panelSourceKonachanCom.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="numericUpDownSourceKonachanCom.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1353,26 +2064,74 @@
   <data name="&gt;&gt;checkBoxSourceKonachanCom.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceKonachanCom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 38</value>
+  <data name="&gt;&gt;numericUpDownSourceKonachanNet.Name" xml:space="preserve">
+    <value>numericUpDownSourceKonachanNet</value>
   </data>
-  <data name="panelSourceKonachanCom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 31</value>
+  <data name="&gt;&gt;numericUpDownSourceKonachanNet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelSourceKonachanCom.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;numericUpDownSourceKonachanNet.Parent" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSourceKonachanNet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanNet.Name" xml:space="preserve">
+    <value>comboBoxSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanNet.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanNet.Parent" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSourceKonachanNet.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanCom.Name" xml:space="preserve">
-    <value>panelSourceKonachanCom</value>
+  <data name="&gt;&gt;labelSourceKonachanNet.Name" xml:space="preserve">
+    <value>labelSourceKonachanNet</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanCom.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelSourceKonachanNet.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanNet.Parent" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;labelSourceKonachanNet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanNet.Name" xml:space="preserve">
+    <value>checkBoxSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanNet.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanNet.Parent" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSourceKonachanNet.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelSourceKonachanNet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="panelSourceKonachanNet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 31</value>
+  </data>
+  <data name="panelSourceKonachanNet.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.Name" xml:space="preserve">
+    <value>panelSourceKonachanNet</value>
+  </data>
+  <data name="&gt;&gt;panelSourceKonachanNet.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanCom.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelSourceKonachanNet.Parent" xml:space="preserve">
     <value>panelSources</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanCom.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;panelSourceKonachanNet.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="numericUpDownSourceKonachanNet.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1488,71 +2247,125 @@
   <data name="&gt;&gt;checkBoxSourceKonachanNet.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelSourceKonachanNet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
+  <data name="&gt;&gt;numericUpDownMaxRetryAttempts.Name" xml:space="preserve">
+    <value>numericUpDownMaxRetryAttempts</value>
   </data>
-  <data name="panelSourceKonachanNet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 31</value>
+  <data name="&gt;&gt;numericUpDownMaxRetryAttempts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelSourceKonachanNet.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;numericUpDownMaxRetryAttempts.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxRetryAttempts.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanNet.Name" xml:space="preserve">
-    <value>panelSourceKonachanNet</value>
+  <data name="&gt;&gt;checkBoxOpenDirectoryOnFinish.Name" xml:space="preserve">
+    <value>checkBoxOpenDirectoryOnFinish</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanNet.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;checkBoxOpenDirectoryOnFinish.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanNet.Parent" xml:space="preserve">
-    <value>panelSources</value>
+  <data name="&gt;&gt;checkBoxOpenDirectoryOnFinish.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
   </data>
-  <data name="&gt;&gt;panelSourceKonachanNet.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;checkBoxOpenDirectoryOnFinish.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="panelSources.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 27</value>
+  <data name="&gt;&gt;checkBoxNotify.Name" xml:space="preserve">
+    <value>checkBoxNotify</value>
   </data>
-  <data name="panelSources.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 174</value>
+  <data name="&gt;&gt;checkBoxNotify.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="panelSources.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;checkBoxNotify.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
   </data>
-  <data name="&gt;&gt;panelSources.Name" xml:space="preserve">
-    <value>panelSources</value>
+  <data name="&gt;&gt;checkBoxNotify.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;panelSources.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;checkBoxRetryDownloads.Name" xml:space="preserve">
+    <value>checkBoxRetryDownloads</value>
   </data>
-  <data name="&gt;&gt;panelSources.Parent" xml:space="preserve">
-    <value>metroTabPageSourceSelection</value>
+  <data name="&gt;&gt;checkBoxRetryDownloads.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;panelSources.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxRetryDownloads.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;checkBoxRetryDownloads.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="metroTabPageSourceSelection.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;checkBoxOverwrite.Name" xml:space="preserve">
+    <value>checkBoxOverwrite</value>
+  </data>
+  <data name="&gt;&gt;checkBoxOverwrite.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroCheckBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;checkBoxOverwrite.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;checkBoxOverwrite.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadDirectoryBrowse.Name" xml:space="preserve">
+    <value>buttonDownloadDirectoryBrowse</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadDirectoryBrowse.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadDirectoryBrowse.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadDirectoryBrowse.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBoxDownloadDirectory.Name" xml:space="preserve">
+    <value>textBoxDownloadDirectory</value>
+  </data>
+  <data name="&gt;&gt;textBoxDownloadDirectory.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;textBoxDownloadDirectory.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;textBoxDownloadDirectory.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadDirectory.Name" xml:space="preserve">
+    <value>labelDownloadDirectory</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadDirectory.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadDirectory.Parent" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadDirectory.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="metroTabPageDownloadSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 35</value>
   </data>
-  <data name="metroTabPageSourceSelection.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="metroTabPageDownloadSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>522, 232</value>
   </data>
-  <data name="metroTabPageSourceSelection.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="metroTabPageDownloadSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="metroTabPageSourceSelection.Text" xml:space="preserve">
-    <value>Source Selection</value>
+  <data name="metroTabPageDownloadSettings.Text" xml:space="preserve">
+    <value>Download Settings</value>
   </data>
-  <data name="&gt;&gt;metroTabPageSourceSelection.Name" xml:space="preserve">
-    <value>metroTabPageSourceSelection</value>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Name" xml:space="preserve">
+    <value>metroTabPageDownloadSettings</value>
   </data>
-  <data name="&gt;&gt;metroTabPageSourceSelection.Type" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTabPageSourceSelection.Parent" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageDownloadSettings.Parent" xml:space="preserve">
     <value>tabControlMain</value>
   </data>
-  <data name="&gt;&gt;metroTabPageSourceSelection.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;metroTabPageDownloadSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="numericUpDownMaxRetryAttempts.Location" type="System.Drawing.Point, System.Drawing">
     <value>346, 95</value>
@@ -1758,29 +2571,89 @@
   <data name="&gt;&gt;labelDownloadDirectory.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="metroTabPageDownloadSettings.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;pictureBoxDonate.Name" xml:space="preserve">
+    <value>pictureBoxDonate</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDonate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDonate.Parent" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDonate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelAbout4.Name" xml:space="preserve">
+    <value>labelAbout4</value>
+  </data>
+  <data name="&gt;&gt;labelAbout4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelAbout4.Parent" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;labelAbout4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelAbout3.Name" xml:space="preserve">
+    <value>labelAbout3</value>
+  </data>
+  <data name="&gt;&gt;labelAbout3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAbout3.Parent" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;labelAbout3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelAbout2.Name" xml:space="preserve">
+    <value>labelAbout2</value>
+  </data>
+  <data name="&gt;&gt;labelAbout2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelAbout2.Parent" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;labelAbout2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelAbout1.Name" xml:space="preserve">
+    <value>labelAbout1</value>
+  </data>
+  <data name="&gt;&gt;labelAbout1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;labelAbout1.Parent" xml:space="preserve">
+    <value>metroTabPageAbout</value>
+  </data>
+  <data name="&gt;&gt;labelAbout1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="metroTabPageAbout.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 35</value>
   </data>
-  <data name="metroTabPageDownloadSettings.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="metroTabPageAbout.Size" type="System.Drawing.Size, System.Drawing">
     <value>522, 232</value>
   </data>
-  <data name="metroTabPageDownloadSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="metroTabPageAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="metroTabPageDownloadSettings.Text" xml:space="preserve">
-    <value>Download Settings</value>
+  <data name="metroTabPageAbout.Text" xml:space="preserve">
+    <value>About</value>
   </data>
-  <data name="&gt;&gt;metroTabPageDownloadSettings.Name" xml:space="preserve">
-    <value>metroTabPageDownloadSettings</value>
+  <data name="&gt;&gt;metroTabPageAbout.Name" xml:space="preserve">
+    <value>metroTabPageAbout</value>
   </data>
-  <data name="&gt;&gt;metroTabPageDownloadSettings.Type" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageAbout.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTabPageDownloadSettings.Parent" xml:space="preserve">
+  <data name="&gt;&gt;metroTabPageAbout.Parent" xml:space="preserve">
     <value>tabControlMain</value>
   </data>
-  <data name="&gt;&gt;metroTabPageDownloadSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;metroTabPageAbout.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="pictureBoxDonate.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 204</value>
@@ -1922,51 +2795,6 @@
   </data>
   <data name="&gt;&gt;labelAbout1.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="metroTabPageAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 35</value>
-  </data>
-  <data name="metroTabPageAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>522, 232</value>
-  </data>
-  <data name="metroTabPageAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metroTabPageAbout.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="&gt;&gt;metroTabPageAbout.Name" xml:space="preserve">
-    <value>metroTabPageAbout</value>
-  </data>
-  <data name="&gt;&gt;metroTabPageAbout.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroTabPageAbout.Parent" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;metroTabPageAbout.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControlMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 63</value>
-  </data>
-  <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>530, 271</value>
-  </data>
-  <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Name" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControlMain.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="comboBoxLanguageSelector.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
