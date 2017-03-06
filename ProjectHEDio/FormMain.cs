@@ -326,8 +326,6 @@ namespace ProjectHEDio
                     return;
                 }
 
-                // TODO: Check if any invalid tags are present
-
                 // Disable controls
                 ToggleControls(false);
 
