@@ -126,7 +126,8 @@ namespace ProjectHEDio
                                 }
                             }
                         }
-                        labelStatus.Text = "Status: " + sources + " source" + (sources == 1 ? " is" : "s are") + " selected.";
+                        // labelStatus.Text = "Status: " + sources + " source" + (sources == 1 ? " is" : "s are") + " selected.";
+                        UpdateStatus(sources + " source" + (sources == 1 ? " is" : "s are") + " selected.");
                     };
                 }
             }
