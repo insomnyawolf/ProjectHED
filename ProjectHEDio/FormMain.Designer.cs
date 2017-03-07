@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControlMain = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPagePictureOptions = new MetroFramework.Controls.MetroTabPage();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.numericUpDownRestrictImageSizesWidth = new System.Windows.Forms.NumericUpDown();
+            this.labelResolutionX = new MetroFramework.Controls.MetroLabel();
+            this.numericUpDownRestrictImageSizesHeight = new System.Windows.Forms.NumericUpDown();
             this.panelRestrictImageSizes = new MetroFramework.Controls.MetroPanel();
             this.radioButtonRestrictImageSizesLess = new MetroFramework.Controls.MetroRadioButton();
             this.radioButtonRestrictImageSizesGreater = new MetroFramework.Controls.MetroRadioButton();
@@ -41,15 +45,18 @@
             this.checkBoxRestrictImageSizesQueryTagDontDownloadTagless = new MetroFramework.Controls.MetroCheckBox();
             this.radioButtonRestrictImageSizesMethodManual = new MetroFramework.Controls.MetroRadioButton();
             this.radioButtonRestrictImageSizesMethodTag = new MetroFramework.Controls.MetroRadioButton();
-            this.numericUpDownRestrictImageSizesHeight = new System.Windows.Forms.NumericUpDown();
-            this.labelResolutionX = new MetroFramework.Controls.MetroLabel();
-            this.numericUpDownRestrictImageSizesWidth = new System.Windows.Forms.NumericUpDown();
             this.checkBoxRestrictImageSizes = new MetroFramework.Controls.MetroCheckBox();
             this.labelTags3 = new MetroFramework.Controls.MetroLabel();
             this.labelTags2 = new MetroFramework.Controls.MetroLabel();
             this.labelTags1 = new MetroFramework.Controls.MetroLabel();
             this.textBoxTags = new MetroFramework.Controls.MetroTextBox();
             this.checkBoxUseTags = new MetroFramework.Controls.MetroCheckBox();
+            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBoxDonate = new System.Windows.Forms.PictureBox();
+            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
+            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
+            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPageSourceSelection = new MetroFramework.Controls.MetroTabPage();
             this.buttonSourcesDeselectAll = new MetroFramework.Controls.MetroButton();
             this.buttonSourcesSelectAll = new MetroFramework.Controls.MetroButton();
@@ -94,25 +101,21 @@
             this.buttonDownloadDirectoryBrowse = new MetroFramework.Controls.MetroButton();
             this.textBoxDownloadDirectory = new MetroFramework.Controls.MetroTextBox();
             this.labelDownloadDirectory = new MetroFramework.Controls.MetroLabel();
-            this.metroTabPageAbout = new MetroFramework.Controls.MetroTabPage();
-            this.pictureBoxDonate = new System.Windows.Forms.PictureBox();
-            this.labelAbout4 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout3 = new System.Windows.Forms.LinkLabel();
-            this.labelAbout2 = new MetroFramework.Controls.MetroLabel();
-            this.labelAbout1 = new MetroFramework.Controls.MetroLabel();
             this.comboBoxLanguageSelector = new MetroFramework.Controls.MetroComboBox();
             this.buttonStart = new MetroFramework.Controls.MetroButton();
             this.labelStatus = new MetroFramework.Controls.MetroLabel();
             this.progressBarMain = new System.Windows.Forms.ProgressBar();
             this.folderBrowserDialogMain = new System.Windows.Forms.FolderBrowserDialog();
             this.NotifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tabControlMain.SuspendLayout();
             this.metroTabPagePictureOptions.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).BeginInit();
             this.panelRestrictImageSizes.SuspendLayout();
             this.panelRestrictImageSizesMethod.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).BeginInit();
+            this.metroTabPageAbout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
             this.metroTabPageSourceSelection.SuspendLayout();
             this.panelSources.SuspendLayout();
             this.panelSourceSafebooru.SuspendLayout();
@@ -129,9 +132,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSourceKonachanNet)).BeginInit();
             this.metroTabPageDownloadSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).BeginInit();
-            this.metroTabPageAbout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).BeginInit();
-            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -142,7 +142,7 @@
             this.tabControlMain.Controls.Add(this.metroTabPageAbout);
             this.tabControlMain.Location = new System.Drawing.Point(23, 63);
             this.tabControlMain.Name = "tabControlMain";
-            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.SelectedIndex = 3;
             this.tabControlMain.Size = new System.Drawing.Size(530, 271);
             this.tabControlMain.TabIndex = 0;
             // 
@@ -165,6 +165,81 @@
             this.metroTabPagePictureOptions.TabIndex = 0;
             this.metroTabPagePictureOptions.Text = "Picture Options";
             this.metroTabPagePictureOptions.VerticalScrollbarBarColor = true;
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesWidth);
+            this.metroPanel1.Controls.Add(this.labelResolutionX);
+            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(194, 108);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(140, 25);
+            this.metroPanel1.TabIndex = 14;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // numericUpDownRestrictImageSizesWidth
+            // 
+            this.numericUpDownRestrictImageSizesWidth.Enabled = false;
+            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(0, 3);
+            this.numericUpDownRestrictImageSizesWidth.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesWidth.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesWidth.Name = "numericUpDownRestrictImageSizesWidth";
+            this.numericUpDownRestrictImageSizesWidth.Size = new System.Drawing.Size(55, 20);
+            this.numericUpDownRestrictImageSizesWidth.TabIndex = 8;
+            this.numericUpDownRestrictImageSizesWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownRestrictImageSizesWidth.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesWidth.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
+            // 
+            // labelResolutionX
+            // 
+            this.labelResolutionX.AutoSize = true;
+            this.labelResolutionX.Location = new System.Drawing.Point(61, 3);
+            this.labelResolutionX.Name = "labelResolutionX";
+            this.labelResolutionX.Size = new System.Drawing.Size(15, 19);
+            this.labelResolutionX.TabIndex = 9;
+            this.labelResolutionX.Text = "x";
+            // 
+            // numericUpDownRestrictImageSizesHeight
+            // 
+            this.numericUpDownRestrictImageSizesHeight.Enabled = false;
+            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(85, 3);
+            this.numericUpDownRestrictImageSizesHeight.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesHeight.Name = "numericUpDownRestrictImageSizesHeight";
+            this.numericUpDownRestrictImageSizesHeight.Size = new System.Drawing.Size(55, 20);
+            this.numericUpDownRestrictImageSizesHeight.TabIndex = 10;
+            this.numericUpDownRestrictImageSizesHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownRestrictImageSizesHeight.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownRestrictImageSizesHeight.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
             // 
             // panelRestrictImageSizes
             // 
@@ -275,65 +350,6 @@
             this.radioButtonRestrictImageSizesMethodTag.Text = "Implement size restrictions in tag queries.";
             this.radioButtonRestrictImageSizesMethodTag.UseVisualStyleBackColor = true;
             // 
-            // numericUpDownRestrictImageSizesHeight
-            // 
-            this.numericUpDownRestrictImageSizesHeight.Enabled = false;
-            this.numericUpDownRestrictImageSizesHeight.Location = new System.Drawing.Point(85, 3);
-            this.numericUpDownRestrictImageSizesHeight.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesHeight.Name = "numericUpDownRestrictImageSizesHeight";
-            this.numericUpDownRestrictImageSizesHeight.Size = new System.Drawing.Size(55, 20);
-            this.numericUpDownRestrictImageSizesHeight.TabIndex = 10;
-            this.numericUpDownRestrictImageSizesHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownRestrictImageSizesHeight.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesHeight.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
-            // 
-            // labelResolutionX
-            // 
-            this.labelResolutionX.AutoSize = true;
-            this.labelResolutionX.Location = new System.Drawing.Point(61, 3);
-            this.labelResolutionX.Name = "labelResolutionX";
-            this.labelResolutionX.Size = new System.Drawing.Size(15, 19);
-            this.labelResolutionX.TabIndex = 9;
-            this.labelResolutionX.Text = "x";
-            // 
-            // numericUpDownRestrictImageSizesWidth
-            // 
-            this.numericUpDownRestrictImageSizesWidth.Enabled = false;
-            this.numericUpDownRestrictImageSizesWidth.Location = new System.Drawing.Point(0, 3);
-            this.numericUpDownRestrictImageSizesWidth.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesWidth.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesWidth.Name = "numericUpDownRestrictImageSizesWidth";
-            this.numericUpDownRestrictImageSizesWidth.Size = new System.Drawing.Size(55, 20);
-            this.numericUpDownRestrictImageSizesWidth.TabIndex = 8;
-            this.numericUpDownRestrictImageSizesWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownRestrictImageSizesWidth.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownRestrictImageSizesWidth.ValueChanged += new System.EventHandler(this.numericUpDownRestrictImageSizesEitherControl_ValueChanged);
-            // 
             // checkBoxRestrictImageSizes
             // 
             this.checkBoxRestrictImageSizes.AutoSize = true;
@@ -397,6 +413,79 @@
             this.checkBoxUseTags.Text = "Use Tags:";
             this.checkBoxUseTags.UseVisualStyleBackColor = true;
             this.checkBoxUseTags.CheckedChanged += new System.EventHandler(this.checkBoxUseTags_CheckedChanged);
+            // 
+            // metroTabPageAbout
+            // 
+            this.metroTabPageAbout.Controls.Add(this.pictureBoxDonate);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout4);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout3);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout2);
+            this.metroTabPageAbout.Controls.Add(this.labelAbout1);
+            this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
+            this.metroTabPageAbout.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPageAbout.Name = "metroTabPageAbout";
+            this.metroTabPageAbout.Size = new System.Drawing.Size(522, 232);
+            this.metroTabPageAbout.TabIndex = 4;
+            this.metroTabPageAbout.Text = "About";
+            this.metroTabPageAbout.VerticalScrollbarBarColor = true;
+            // 
+            // pictureBoxDonate
+            // 
+            this.pictureBoxDonate.Image = global::ProjectHEDio.Properties.Resources.DonateButton;
+            this.pictureBoxDonate.Location = new System.Drawing.Point(215, 204);
+            this.pictureBoxDonate.Name = "pictureBoxDonate";
+            this.pictureBoxDonate.Size = new System.Drawing.Size(92, 26);
+            this.pictureBoxDonate.TabIndex = 6;
+            this.pictureBoxDonate.TabStop = false;
+            this.pictureBoxDonate.Click += new System.EventHandler(this.pictureBoxDonate_Click);
+            this.pictureBoxDonate.MouseEnter += new System.EventHandler(this.pictureBoxDonate_MouseEnter);
+            this.pictureBoxDonate.MouseLeave += new System.EventHandler(this.pictureBoxDonate_MouseLeave);
+            // 
+            // labelAbout4
+            // 
+            this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout4.AutoSize = true;
+            this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout4.Location = new System.Drawing.Point(-811, 101);
+            this.labelAbout4.Name = "labelAbout4";
+            this.labelAbout4.Size = new System.Drawing.Size(164, 19);
+            this.labelAbout4.TabIndex = 5;
+            this.labelAbout4.Text = "Thank you for the love. ♡";
+            // 
+            // labelAbout3
+            // 
+            this.labelAbout3.AutoSize = true;
+            this.labelAbout3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAbout3.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbout3.Location = new System.Drawing.Point(157, 70);
+            this.labelAbout3.Name = "labelAbout3";
+            this.labelAbout3.Size = new System.Drawing.Size(207, 19);
+            this.labelAbout3.TabIndex = 4;
+            this.labelAbout3.TabStop = true;
+            this.labelAbout3.Text = "To visit the repository, click here.";
+            this.labelAbout3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.labelAbout3_LinkClicked);
+            // 
+            // labelAbout2
+            // 
+            this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout2.AutoSize = true;
+            this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout2.Location = new System.Drawing.Point(-810, 42);
+            this.labelAbout2.Name = "labelAbout2";
+            this.labelAbout2.Size = new System.Drawing.Size(162, 19);
+            this.labelAbout2.TabIndex = 3;
+            this.labelAbout2.Text = "ProjectHED is on GitHub.";
+            // 
+            // labelAbout1
+            // 
+            this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelAbout1.AutoSize = true;
+            this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.labelAbout1.Location = new System.Drawing.Point(-845, 14);
+            this.labelAbout1.Name = "labelAbout1";
+            this.labelAbout1.Size = new System.Drawing.Size(232, 19);
+            this.labelAbout1.TabIndex = 2;
+            this.labelAbout1.Text = "ProjectHED is maintained by Chezzy.";
             // 
             // metroTabPageSourceSelection
             // 
@@ -1037,86 +1126,13 @@
             this.labelDownloadDirectory.TabIndex = 2;
             this.labelDownloadDirectory.Text = "Download Directory:";
             // 
-            // metroTabPageAbout
-            // 
-            this.metroTabPageAbout.Controls.Add(this.pictureBoxDonate);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout4);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout3);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout2);
-            this.metroTabPageAbout.Controls.Add(this.labelAbout1);
-            this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
-            this.metroTabPageAbout.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageAbout.Name = "metroTabPageAbout";
-            this.metroTabPageAbout.Size = new System.Drawing.Size(522, 232);
-            this.metroTabPageAbout.TabIndex = 4;
-            this.metroTabPageAbout.Text = "About";
-            this.metroTabPageAbout.VerticalScrollbarBarColor = true;
-            // 
-            // pictureBoxDonate
-            // 
-            this.pictureBoxDonate.Image = global::ProjectHEDio.Properties.Resources.DonateButton;
-            this.pictureBoxDonate.Location = new System.Drawing.Point(215, 204);
-            this.pictureBoxDonate.Name = "pictureBoxDonate";
-            this.pictureBoxDonate.Size = new System.Drawing.Size(92, 26);
-            this.pictureBoxDonate.TabIndex = 6;
-            this.pictureBoxDonate.TabStop = false;
-            this.pictureBoxDonate.Click += new System.EventHandler(this.pictureBoxDonate_Click);
-            this.pictureBoxDonate.MouseEnter += new System.EventHandler(this.pictureBoxDonate_MouseEnter);
-            this.pictureBoxDonate.MouseLeave += new System.EventHandler(this.pictureBoxDonate_MouseLeave);
-            // 
-            // labelAbout4
-            // 
-            this.labelAbout4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout4.AutoSize = true;
-            this.labelAbout4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout4.Location = new System.Drawing.Point(-481, 101);
-            this.labelAbout4.Name = "labelAbout4";
-            this.labelAbout4.Size = new System.Drawing.Size(164, 19);
-            this.labelAbout4.TabIndex = 5;
-            this.labelAbout4.Text = "Thank you for the love. ♡";
-            // 
-            // labelAbout3
-            // 
-            this.labelAbout3.AutoSize = true;
-            this.labelAbout3.BackColor = System.Drawing.Color.Transparent;
-            this.labelAbout3.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAbout3.Location = new System.Drawing.Point(157, 70);
-            this.labelAbout3.Name = "labelAbout3";
-            this.labelAbout3.Size = new System.Drawing.Size(207, 19);
-            this.labelAbout3.TabIndex = 4;
-            this.labelAbout3.TabStop = true;
-            this.labelAbout3.Text = "To visit the repository, click here.";
-            this.labelAbout3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.labelAbout3_LinkClicked);
-            // 
-            // labelAbout2
-            // 
-            this.labelAbout2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout2.AutoSize = true;
-            this.labelAbout2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout2.Location = new System.Drawing.Point(-480, 42);
-            this.labelAbout2.Name = "labelAbout2";
-            this.labelAbout2.Size = new System.Drawing.Size(162, 19);
-            this.labelAbout2.TabIndex = 3;
-            this.labelAbout2.Text = "ProjectHED is on GitHub.";
-            // 
-            // labelAbout1
-            // 
-            this.labelAbout1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.labelAbout1.AutoSize = true;
-            this.labelAbout1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.labelAbout1.Location = new System.Drawing.Point(-515, 14);
-            this.labelAbout1.Name = "labelAbout1";
-            this.labelAbout1.Size = new System.Drawing.Size(232, 19);
-            this.labelAbout1.TabIndex = 2;
-            this.labelAbout1.Text = "ProjectHED is maintained by Chezzy.";
-            // 
             // comboBoxLanguageSelector
             // 
             this.comboBoxLanguageSelector.FormattingEnabled = true;
             this.comboBoxLanguageSelector.ItemHeight = 23;
             this.comboBoxLanguageSelector.Items.AddRange(new object[] {
-            "English",
-            "Spanish"});
+            "english",
+            "spanish"});
             this.comboBoxLanguageSelector.Location = new System.Drawing.Point(23, 340);
             this.comboBoxLanguageSelector.MaxDropDownItems = 20;
             this.comboBoxLanguageSelector.Name = "comboBoxLanguageSelector";
@@ -1162,22 +1178,6 @@
             this.NotifyIconMain.Text = "ProjectHED";
             this.NotifyIconMain.Visible = true;
             // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesWidth);
-            this.metroPanel1.Controls.Add(this.labelResolutionX);
-            this.metroPanel1.Controls.Add(this.numericUpDownRestrictImageSizesHeight);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(194, 108);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(140, 25);
-            this.metroPanel1.TabIndex = 14;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1196,12 +1196,17 @@
             this.tabControlMain.ResumeLayout(false);
             this.metroTabPagePictureOptions.ResumeLayout(false);
             this.metroTabPagePictureOptions.PerformLayout();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).EndInit();
             this.panelRestrictImageSizes.ResumeLayout(false);
             this.panelRestrictImageSizes.PerformLayout();
             this.panelRestrictImageSizesMethod.ResumeLayout(false);
             this.panelRestrictImageSizesMethod.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRestrictImageSizesWidth)).EndInit();
+            this.metroTabPageAbout.ResumeLayout(false);
+            this.metroTabPageAbout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
             this.metroTabPageSourceSelection.ResumeLayout(false);
             this.metroTabPageSourceSelection.PerformLayout();
             this.panelSources.ResumeLayout(false);
@@ -1226,11 +1231,6 @@
             this.metroTabPageDownloadSettings.ResumeLayout(false);
             this.metroTabPageDownloadSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxRetryAttempts)).EndInit();
-            this.metroTabPageAbout.ResumeLayout(false);
-            this.metroTabPageAbout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDonate)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

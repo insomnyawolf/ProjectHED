@@ -12,16 +12,14 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.Net;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace ProjectHEDio
 {
     public partial class FormMain : MetroFramework.Forms.MetroForm
     {
-        //Workaround for load
-        //EDIT AND FIX THIS
-        public bool onloadskip = true;
-        //EDIT AND FIX THIS
-        //Workaround for load
+
+        bool onloadWorkaround = true;
 
         private Thread DownloadThread = null;
 
@@ -32,6 +30,8 @@ namespace ProjectHEDio
         public FormMain()
         {
             InitializeComponent();
+
+            lang.download();
 
             // Set label positions on About tab
             this.labelAbout1.Location = new Point(145, 14);
@@ -133,7 +133,8 @@ namespace ProjectHEDio
                         labelStatus.Text = "Status: " + sources + " source" + (sources == 1 ? " is" : "s are") + " selected.";
                     };
                 }
-            }
+            }   
+
         }
 
         private void checkBoxUseTags_CheckedChanged(object sender, EventArgs e)
@@ -678,60 +679,88 @@ namespace ProjectHEDio
             }
         }
 
-        #region Language;
+        
 
         private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(onloadskip == false)
+            #region Language;
+
+            if (onloadWorkaround == false)
             {
-                
-                //Form load workaround (no english file)
-                var data = File
-                .ReadAllLines(comboBoxLanguageSelector.Text + ".ini")
-                .Select(x => x.Split('='))
-                .Where(x => x.Length > 1)
-                .ToDictionary(x => x[0].Trim(), x => x[1]);
+                string local = Directory.GetCurrentDirectory() + "\\lang\\" + comboBoxLanguageSelector.Text + ".ini";
+                if (File.Exists(local))
+                {
+                    var data = File
+                    .ReadAllLines(local)
+                    .Select(x => x.Split('='))
+                    .Where(x => x.Length > 1)
+                    .ToDictionary(x => x[0].Trim(), x => x[1]);
 
-                labelStatus.Text = data["labelStatus"];
+                    labelStatus.Text = data["labelStatus"];
 
-                #region tabs;
+                    #region tabs;
 
-                metroTabPagePictureOptions.Text = data["metroTabPagePictureOptions"];
-                metroTabPageSourceSelection.Text = data["metroTabPageSourceSelection"];
-                metroTabPageDownloadSettings.Text = data["metroTabPageDownloadSettings"];
-                metroTabPageAbout.Text = data["metroTabPageAbout"];
+                    metroTabPagePictureOptions.Text = data["metroTabPagePictureOptions"];
+                    metroTabPageSourceSelection.Text = data["metroTabPageSourceSelection"];
+                    metroTabPageDownloadSettings.Text = data["metroTabPageDownloadSettings"];
+                    metroTabPageAbout.Text = data["metroTabPageAbout"];
 
-                #endregion;
+                    #endregion;
 
-                #region image options;
+                    #region image options;
 
-                checkBoxUseTags.Text = data["checkBoxUseTags"];
-                textBoxTags.PromptText = data["textBoxTags"];
-                labelTags1.Text = data["labelTags1"];
-                labelTags2.Text = data["labelTags2"];
-                labelTags3.Text = data["labelTags3"];
-                checkBoxRestrictImageSizes.Text = data["checkBoxRestrictImageSizes"];
-                labelRestrictImageSizes.Text = data["labelRestrictImageSizes"];
-                radioButtonRestrictImageSizesEqual.Text = data["radioButtonRestrictImageSizesEqual"];
-                radioButtonRestrictImageSizesGreater.Text = data["radioButtonRestrictImageSizesGreater"];
-                radioButtonRestrictImageSizesLess.Text = data["radioButtonRestrictImageSizesLess"];
-                radioButtonRestrictImageSizesMethodManual.Text = data["radioButtonRestrictImageSizesMethodManual"];
-                radioButtonRestrictImageSizesMethodTag.Text = data["radioButtonRestrictImageSizesMethodTag"];
-                checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Text = data["checkBoxRestrictImageSizesQueryTagDontDownloadTagless"];
-                buttonStart.Text = data["buttonStart"];
+                    checkBoxUseTags.Text = data["checkBoxUseTags"];
+                    textBoxTags.PromptText = data["textBoxTags"];
+                    labelTags1.Text = data["labelTags1"];
+                    labelTags2.Text = data["labelTags2"];
+                    labelTags3.Text = data["labelTags3"];
+                    checkBoxRestrictImageSizes.Text = data["checkBoxRestrictImageSizes"];
+                    labelRestrictImageSizes.Text = data["labelRestrictImageSizes"];
+                    radioButtonRestrictImageSizesEqual.Text = data["radioButtonRestrictImageSizesEqual"];
+                    radioButtonRestrictImageSizesGreater.Text = data["radioButtonRestrictImageSizesGreater"];
+                    radioButtonRestrictImageSizesLess.Text = data["radioButtonRestrictImageSizesLess"];
+                    radioButtonRestrictImageSizesMethodManual.Text = data["radioButtonRestrictImageSizesMethodManual"];
+                    radioButtonRestrictImageSizesMethodTag.Text = data["radioButtonRestrictImageSizesMethodTag"];
+                    checkBoxRestrictImageSizesQueryTagDontDownloadTagless.Text = data["checkBoxRestrictImageSizesQueryTagDontDownloadTagless"];
+                    buttonStart.Text = data["buttonStart"];
 
-                #endregion;
+                    #endregion;
 
+                    #region SourceSelection;
+
+                    labelSourcesColumns.Text = data["labelSourcesColumns"];
+                    buttonSourcesSelectAll.Text = data["buttonSourcesSelectAll"];
+                    buttonSourcesDeselectAll.Text = data["buttonSourcesDeselectAll"];
+
+                    #endregion;
+
+                    #region Download Settings;
+
+                    labelDownloadDirectory.Text = data["labelDownloadDirectory"];
+                    checkBoxOverwrite.Text = data["checkBoxOverwrite"];
+                    checkBoxRetryDownloads.Text = data["checkBoxRetryDownloads"];
+                    checkBoxNotify.Text = data["checkBoxNotify"];
+                    checkBoxOpenDirectoryOnFinish.Text = data["checkBoxOpenDirectoryOnFinish"];
+
+                    #endregion;
+
+                    #region about;
+
+                    labelAbout1.Text = data["labelAbout1"];
+                    labelAbout2.Text = data["labelAbout2"];
+                    labelAbout3.Text = data["labelAbout3"];
+                    labelAbout4.Text = data["labelAbout4"];
+
+                    #endregion;
+                }
             }
-            
+
             else
             {
-                onloadskip = false;
+                onloadWorkaround = false;
             }
 
-
+            #endregion;
         }
-
-        #endregion;
     }
 }
