@@ -443,6 +443,16 @@ namespace ProjectHEDio
             return comboBox.Text;
         }
 
+        private int GetComboBoxSelectedIndex(MetroComboBox comboBox)
+        {
+            if (this.InvokeRequired)
+            {
+                // this.Invoke((MethodInvoker)(() => GetComboBoxText(comboBox)));
+                return (int)this.Invoke(new Func<int>(() => GetComboBoxSelectedIndex(comboBox)));
+            }
+            return comboBox.SelectedIndex;
+        }
+
         private string StripFilename(string filename)
         {
             string result = filename;
@@ -527,12 +537,14 @@ namespace ProjectHEDio
                     // Don't initialize the scrape for this source
                     continue;
                 }
-                string limitType = GetComboBoxText(comboBox);
-                if (limitType == "No Limit")
+                // string limitType = GetComboBoxText(comboBox);
+                int limitType = GetComboBoxSelectedIndex(comboBox);
+                // No Limit
+                if (limitType == 0)
                 {
                     limit = Int32.MaxValue;
                 }
-                else if (limitType == "Page Limit")
+                else if (limitType == 1)
                 {
                     limit = (int)limitControl.Value;
                 }
