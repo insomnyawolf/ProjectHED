@@ -331,8 +331,6 @@ namespace ProjectHEDio
                     return;
                 }
 
-                // TODO: Check if any invalid tags are present
-
                 // Disable controls
                 ToggleControls(false);
 
@@ -679,6 +677,7 @@ namespace ProjectHEDio
             }
         }
 
+<<<<<<< HEAD
         
 
         private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
@@ -761,6 +760,11 @@ namespace ProjectHEDio
             }
 
             #endregion;
+=======
+        private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+>>>>>>> refs/remotes/MoeChezzy/develop
         }
     }
 }
