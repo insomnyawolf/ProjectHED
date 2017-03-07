@@ -285,7 +285,7 @@
             // checkBoxRestrictImageSizes
             // 
             resources.ApplyResources(this.checkBoxRestrictImageSizes, "checkBoxRestrictImageSizes");
-            this.checkBoxRestrictImageSizes.FontSize = MetroFramework.MetroLinkSize.Tall;
+            this.checkBoxRestrictImageSizes.FontSize = MetroFramework.MetroLinkSize.Medium;
             this.checkBoxRestrictImageSizes.Name = "checkBoxRestrictImageSizes";
             this.checkBoxRestrictImageSizes.UseVisualStyleBackColor = true;
             this.checkBoxRestrictImageSizes.CheckedChanged += new System.EventHandler(this.checkBoxRestrictImageSizes_CheckedChanged);
@@ -293,16 +293,19 @@
             // labelTags3
             // 
             resources.ApplyResources(this.labelTags3, "labelTags3");
+            this.labelTags3.FontSize = MetroFramework.MetroLabelSize.Small;
             this.labelTags3.Name = "labelTags3";
             // 
             // labelTags2
             // 
             resources.ApplyResources(this.labelTags2, "labelTags2");
+            this.labelTags2.FontSize = MetroFramework.MetroLabelSize.Small;
             this.labelTags2.Name = "labelTags2";
             // 
             // labelTags1
             // 
             resources.ApplyResources(this.labelTags1, "labelTags1");
+            this.labelTags1.FontSize = MetroFramework.MetroLabelSize.Small;
             this.labelTags1.Name = "labelTags1";
             // 
             // textBoxTags
