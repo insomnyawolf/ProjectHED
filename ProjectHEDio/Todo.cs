@@ -10,7 +10,6 @@
         // - [ADD] Size restrictions.
         // - [ADD] Support to change name if path is too long
         // - Add Environment.Exit(0) call on exit form
-        // - Add check for invalid tags in buttonStart_Click
         //
         // . Change commit names to imperative verbs.
         //===================================================
