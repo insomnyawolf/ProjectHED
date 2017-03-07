@@ -290,7 +290,7 @@ namespace ProjectHEDio
                 // Check to see if tag usage is checked but no tags were inserted
                 if (checkBoxUseTags.Checked && string.IsNullOrWhiteSpace(textBoxTags.Text))
                 {
-                    UpdateStatus("Couldn't start download - no tags were specified when \"Use Tags\" is checked.", MetroColorStyle.Red);
+                    UpdateStatus("Couldn't start download - no tags were specified while \"Use Tags\" is checked.", MetroColorStyle.Red);
                     return;
                 }
 
