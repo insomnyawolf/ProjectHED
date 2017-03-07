@@ -364,7 +364,7 @@ namespace ProjectHEDio
                     if (!DownloadThread.IsAlive)
                     {
                         // End
-                        UpdateStatus("Finished downloading " + Website.GetDownloadedFiles() + " files! Expected: " + Website.GetTotalFiles() + ". dlnk: " + Website.GetLinkDuplicates() + ". dfln: " + Website.GetFilenameDuplicates() + ".", MetroColorStyle.Green);
+                        UpdateStatus(string.Format("Finished downloading {0} files! (ttl: {1}. dlnk: {2}. dfln: {3}.)", Website.GetDownloadedFiles(), Website.GetTotalFiles(), Website.GetLinkDuplicates(), Website.GetFilenameDuplicates()), MetroColorStyle.Green);
                         progressBarMain.Value = 100;
                         StatusUpdateTimer.Stop();
                     }
