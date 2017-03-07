@@ -29,6 +29,9 @@ namespace ProjectHEDio
         {
             InitializeComponent();
 
+            // Set event for closing the form
+            this.FormClosing += FormMain_FormClosing;
+
             // Set label positions on About tab
             this.labelAbout1.Location = new Point(145, 14);
             this.labelAbout2.Location = new Point(180, 42);
@@ -131,6 +134,11 @@ namespace ProjectHEDio
                     };
                 }
             }
+        }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
 
         private void checkBoxUseTags_CheckedChanged(object sender, EventArgs e)
