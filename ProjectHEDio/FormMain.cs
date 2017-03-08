@@ -29,7 +29,8 @@ namespace ProjectHEDio
         {
             InitializeComponent();
 
-            // TODO: Load config
+            // Load config
+            ConfigHelper.LoadConfig(ref comboBoxLanguageSelector, ref checkBoxOverwrite, ref checkBoxRetryDownloads, ref numericUpDownMaxRetryAttempts, ref checkBoxNotify, ref checkBoxOpenDirectoryOnFinish);
 
             // Set event for closing the form
             this.FormClosing += FormMain_FormClosing;
@@ -145,7 +146,9 @@ namespace ProjectHEDio
             if (!Website.IsScraping() && !isDownloading)
             {
                 // Nothing is going on. We can close!
-                // TODO: Save config
+
+                // Write settings config
+                SaveSettings();
             }
             else
             {
@@ -160,7 +163,8 @@ namespace ProjectHEDio
                 {
                     // Close ProjectHED, aborting all operations.
                     // TODO: Make sure all operations are stopped here
-                    // TODO: Save config
+
+                    SaveSettings();
                 }
             }
         }
@@ -715,6 +719,11 @@ namespace ProjectHEDio
             {
                 Process.Start("explorer.exe", textBoxDownloadDirectory.Text);
             }
+        }
+
+        private void SaveSettings()
+        {
+            ConfigHelper.WriteConfig(comboBoxLanguageSelector.Text, checkBoxOverwrite.Checked, checkBoxRetryDownloads.Checked, (int)numericUpDownMaxRetryAttempts.Value, checkBoxNotify.Checked, checkBoxOpenDirectoryOnFinish.Checked);
         }
 
         private void comboBoxLanguageSelector_SelectedIndexChanged(object sender, EventArgs e)
