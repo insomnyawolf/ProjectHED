@@ -138,29 +138,7 @@ namespace ProjectHEDio
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Check if a downloading operation is still going on
-            bool isDownloading = DownloadThread != null && DownloadThread.IsAlive;
-            if (!Website.IsScraping() && !isDownloading)
-            {
-                // Nothing is going on. We can close!
-                // TODO: Save config
-            }
-            else
-            {
-                DialogResult confirmClosing = MessageBox.Show("ProjectHED is still performing an operation! Are you sure you want to close ProjectHED now?", "Download In Progress", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (confirmClosing == DialogResult.No)
-                {
-                    // Cancel closing.
-                    e.Cancel = true;
-                    return;
-                }
-                else
-                {
-                    // Close ProjectHED, aborting all operations.
-                    // TODO: Make sure all operations are stopped here
-                    // TODO: Save config
-                }
-            }
+            
         }
 
         private void checkBoxUseTags_CheckedChanged(object sender, EventArgs e)
