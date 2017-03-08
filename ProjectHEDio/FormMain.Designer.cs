@@ -866,8 +866,7 @@
             this.comboBoxLanguageSelector.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxLanguageSelector, "comboBoxLanguageSelector");
             this.comboBoxLanguageSelector.Items.AddRange(new object[] {
-            resources.GetString("comboBoxLanguageSelector.Items"),
-            resources.GetString("comboBoxLanguageSelector.Items1")});
+            resources.GetString("comboBoxLanguageSelector.Items")});
             this.comboBoxLanguageSelector.Name = "comboBoxLanguageSelector";
             this.comboBoxLanguageSelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguageSelector_SelectedIndexChanged);
             // 
