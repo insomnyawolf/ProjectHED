@@ -526,7 +526,7 @@
     <value>4, 38</value>
   </data>
   <data name="labelTags1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 15</value>
+    <value>517, 19</value>
   </data>
   <data name="labelTags1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1810,7 +1810,7 @@
     <value>True</value>
   </data>
   <data name="labelAbout4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-481, 101</value>
+    <value>-316, 101</value>
   </data>
   <data name="labelAbout4.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 19</value>
@@ -1870,7 +1870,7 @@
     <value>True</value>
   </data>
   <data name="labelAbout2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-480, 42</value>
+    <value>-315, 42</value>
   </data>
   <data name="labelAbout2.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 19</value>
@@ -1900,7 +1900,7 @@
     <value>True</value>
   </data>
   <data name="labelAbout1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-515, 14</value>
+    <value>-350, 14</value>
   </data>
   <data name="labelAbout1.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 19</value>
