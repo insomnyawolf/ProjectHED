@@ -472,7 +472,7 @@
     <value>4, 76</value>
   </data>
   <data name="labelTags3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 19</value>
+    <value>360, 15</value>
   </data>
   <data name="labelTags3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -499,7 +499,7 @@
     <value>4, 57</value>
   </data>
   <data name="labelTags2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>495, 19</value>
+    <value>421, 15</value>
   </data>
   <data name="labelTags2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1973,6 +1973,9 @@
   </data>
   <data name="comboBoxLanguageSelector.Items" xml:space="preserve">
     <value>English</value>
+  </data>
+  <data name="comboBoxLanguageSelector.Items1" xml:space="preserve">
+    <value>Español</value>
   </data>
   <data name="comboBoxLanguageSelector.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 340</value>
