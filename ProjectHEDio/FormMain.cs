@@ -29,6 +29,8 @@ namespace ProjectHEDio
         {
             InitializeComponent();
 
+            // TODO: Load config
+
             // Set event for closing the form
             this.FormClosing += FormMain_FormClosing;
 
