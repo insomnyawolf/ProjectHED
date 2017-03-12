@@ -640,7 +640,6 @@ namespace ProjectHEDio
 
                     // Strip filename
                     filename = StripFilename(filename);
-
                     if (filenameList.Count > 0)
                     {
                         if (filenameList.Contains(filename))
