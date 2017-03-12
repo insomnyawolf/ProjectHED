@@ -134,16 +134,17 @@
             // 
             // tabControlMain
             // 
+            resources.ApplyResources(this.tabControlMain, "tabControlMain");
             this.tabControlMain.Controls.Add(this.metroTabPagePictureOptions);
             this.tabControlMain.Controls.Add(this.metroTabPageSourceSelection);
             this.tabControlMain.Controls.Add(this.metroTabPageDownloadSettings);
             this.tabControlMain.Controls.Add(this.metroTabPageAbout);
-            resources.ApplyResources(this.tabControlMain, "tabControlMain");
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
             // 
             // metroTabPagePictureOptions
             // 
+            resources.ApplyResources(this.metroTabPagePictureOptions, "metroTabPagePictureOptions");
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.labelRestrictImageSizes);
             this.metroTabPagePictureOptions.Controls.Add(this.panelRestrictImageSizesMethod);
@@ -157,16 +158,15 @@
             this.metroTabPagePictureOptions.Controls.Add(this.textBoxTags);
             this.metroTabPagePictureOptions.Controls.Add(this.checkBoxUseTags);
             this.metroTabPagePictureOptions.HorizontalScrollbarBarColor = true;
-            resources.ApplyResources(this.metroTabPagePictureOptions, "metroTabPagePictureOptions");
             this.metroTabPagePictureOptions.Name = "metroTabPagePictureOptions";
             this.metroTabPagePictureOptions.VerticalScrollbarBarColor = true;
             // 
             // panelRestrictImageSizes
             // 
+            resources.ApplyResources(this.panelRestrictImageSizes, "panelRestrictImageSizes");
             this.panelRestrictImageSizes.Controls.Add(this.radioButtonRestrictImageSizesLess);
             this.panelRestrictImageSizes.Controls.Add(this.radioButtonRestrictImageSizesGreater);
             this.panelRestrictImageSizes.Controls.Add(this.radioButtonRestrictImageSizesEqual);
-            resources.ApplyResources(this.panelRestrictImageSizes, "panelRestrictImageSizes");
             this.panelRestrictImageSizes.HorizontalScrollbarBarColor = true;
             this.panelRestrictImageSizes.HorizontalScrollbarHighlightOnWheel = false;
             this.panelRestrictImageSizes.HorizontalScrollbarSize = 10;
@@ -199,14 +199,15 @@
             // labelRestrictImageSizes
             // 
             resources.ApplyResources(this.labelRestrictImageSizes, "labelRestrictImageSizes");
+            this.labelRestrictImageSizes.FontSize = MetroFramework.MetroLabelSize.Small;
             this.labelRestrictImageSizes.Name = "labelRestrictImageSizes";
             // 
             // panelRestrictImageSizesMethod
             // 
+            resources.ApplyResources(this.panelRestrictImageSizesMethod, "panelRestrictImageSizesMethod");
             this.panelRestrictImageSizesMethod.Controls.Add(this.checkBoxRestrictImageSizesQueryTagDontDownloadTagless);
             this.panelRestrictImageSizesMethod.Controls.Add(this.radioButtonRestrictImageSizesMethodManual);
             this.panelRestrictImageSizesMethod.Controls.Add(this.radioButtonRestrictImageSizesMethodTag);
-            resources.ApplyResources(this.panelRestrictImageSizesMethod, "panelRestrictImageSizesMethod");
             this.panelRestrictImageSizesMethod.HorizontalScrollbarBarColor = true;
             this.panelRestrictImageSizesMethod.HorizontalScrollbarHighlightOnWheel = false;
             this.panelRestrictImageSizesMethod.HorizontalScrollbarSize = 10;
@@ -326,12 +327,12 @@
             // 
             // metroTabPageSourceSelection
             // 
+            resources.ApplyResources(this.metroTabPageSourceSelection, "metroTabPageSourceSelection");
             this.metroTabPageSourceSelection.Controls.Add(this.buttonSourcesDeselectAll);
             this.metroTabPageSourceSelection.Controls.Add(this.buttonSourcesSelectAll);
             this.metroTabPageSourceSelection.Controls.Add(this.labelSourcesColumns);
             this.metroTabPageSourceSelection.Controls.Add(this.panelSources);
             this.metroTabPageSourceSelection.HorizontalScrollbarBarColor = true;
-            resources.ApplyResources(this.metroTabPageSourceSelection, "metroTabPageSourceSelection");
             this.metroTabPageSourceSelection.Name = "metroTabPageSourceSelection";
             this.metroTabPageSourceSelection.VerticalScrollbarBarColor = true;
             // 
@@ -374,6 +375,7 @@
             // 
             // panelSourceSafebooru
             // 
+            resources.ApplyResources(this.panelSourceSafebooru, "panelSourceSafebooru");
             this.panelSourceSafebooru.Controls.Add(this.numericUpDownSourceSafebooru);
             this.panelSourceSafebooru.Controls.Add(this.comboBoxSourceSafebooru);
             this.panelSourceSafebooru.Controls.Add(this.labelSourceSafebooru);
@@ -381,7 +383,6 @@
             this.panelSourceSafebooru.HorizontalScrollbarBarColor = true;
             this.panelSourceSafebooru.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceSafebooru.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceSafebooru, "panelSourceSafebooru");
             this.panelSourceSafebooru.Name = "panelSourceSafebooru";
             this.panelSourceSafebooru.VerticalScrollbarBarColor = true;
             this.panelSourceSafebooru.VerticalScrollbarHighlightOnWheel = false;
@@ -409,9 +410,9 @@
             // 
             // comboBoxSourceSafebooru
             // 
+            resources.ApplyResources(this.comboBoxSourceSafebooru, "comboBoxSourceSafebooru");
             this.comboBoxSourceSafebooru.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceSafebooru.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceSafebooru, "comboBoxSourceSafebooru");
             this.comboBoxSourceSafebooru.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceSafebooru.Items"),
             resources.GetString("comboBoxSourceSafebooru.Items1"),
@@ -433,6 +434,7 @@
             // 
             // panelSourceYandere
             // 
+            resources.ApplyResources(this.panelSourceYandere, "panelSourceYandere");
             this.panelSourceYandere.Controls.Add(this.numericUpDownSourceYandere);
             this.panelSourceYandere.Controls.Add(this.comboBoxSourceYandere);
             this.panelSourceYandere.Controls.Add(this.labelSourceYandere);
@@ -440,7 +442,6 @@
             this.panelSourceYandere.HorizontalScrollbarBarColor = true;
             this.panelSourceYandere.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceYandere.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceYandere, "panelSourceYandere");
             this.panelSourceYandere.Name = "panelSourceYandere";
             this.panelSourceYandere.VerticalScrollbarBarColor = true;
             this.panelSourceYandere.VerticalScrollbarHighlightOnWheel = false;
@@ -468,9 +469,9 @@
             // 
             // comboBoxSourceYandere
             // 
+            resources.ApplyResources(this.comboBoxSourceYandere, "comboBoxSourceYandere");
             this.comboBoxSourceYandere.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceYandere.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceYandere, "comboBoxSourceYandere");
             this.comboBoxSourceYandere.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceYandere.Items"),
             resources.GetString("comboBoxSourceYandere.Items1"),
@@ -492,6 +493,7 @@
             // 
             // panelSourceDanbooru
             // 
+            resources.ApplyResources(this.panelSourceDanbooru, "panelSourceDanbooru");
             this.panelSourceDanbooru.Controls.Add(this.numericUpDownSourceDanbooru);
             this.panelSourceDanbooru.Controls.Add(this.comboBoxSourceDanbooru);
             this.panelSourceDanbooru.Controls.Add(this.labelSourceDanbooru);
@@ -499,7 +501,6 @@
             this.panelSourceDanbooru.HorizontalScrollbarBarColor = true;
             this.panelSourceDanbooru.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceDanbooru.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceDanbooru, "panelSourceDanbooru");
             this.panelSourceDanbooru.Name = "panelSourceDanbooru";
             this.panelSourceDanbooru.VerticalScrollbarBarColor = true;
             this.panelSourceDanbooru.VerticalScrollbarHighlightOnWheel = false;
@@ -527,9 +528,9 @@
             // 
             // comboBoxSourceDanbooru
             // 
+            resources.ApplyResources(this.comboBoxSourceDanbooru, "comboBoxSourceDanbooru");
             this.comboBoxSourceDanbooru.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceDanbooru.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceDanbooru, "comboBoxSourceDanbooru");
             this.comboBoxSourceDanbooru.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceDanbooru.Items"),
             resources.GetString("comboBoxSourceDanbooru.Items1"),
@@ -551,6 +552,7 @@
             // 
             // panelSourceGelbooruCom
             // 
+            resources.ApplyResources(this.panelSourceGelbooruCom, "panelSourceGelbooruCom");
             this.panelSourceGelbooruCom.Controls.Add(this.numericUpDownSourceGelbooruCom);
             this.panelSourceGelbooruCom.Controls.Add(this.comboBoxSourceGelbooruCom);
             this.panelSourceGelbooruCom.Controls.Add(this.labelSourceGelbooruCom);
@@ -558,7 +560,6 @@
             this.panelSourceGelbooruCom.HorizontalScrollbarBarColor = true;
             this.panelSourceGelbooruCom.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceGelbooruCom.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceGelbooruCom, "panelSourceGelbooruCom");
             this.panelSourceGelbooruCom.Name = "panelSourceGelbooruCom";
             this.panelSourceGelbooruCom.VerticalScrollbarBarColor = true;
             this.panelSourceGelbooruCom.VerticalScrollbarHighlightOnWheel = false;
@@ -586,9 +587,9 @@
             // 
             // comboBoxSourceGelbooruCom
             // 
+            resources.ApplyResources(this.comboBoxSourceGelbooruCom, "comboBoxSourceGelbooruCom");
             this.comboBoxSourceGelbooruCom.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceGelbooruCom.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceGelbooruCom, "comboBoxSourceGelbooruCom");
             this.comboBoxSourceGelbooruCom.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceGelbooruCom.Items"),
             resources.GetString("comboBoxSourceGelbooruCom.Items1"),
@@ -610,6 +611,7 @@
             // 
             // panelSourceKonachanCom
             // 
+            resources.ApplyResources(this.panelSourceKonachanCom, "panelSourceKonachanCom");
             this.panelSourceKonachanCom.Controls.Add(this.numericUpDownSourceKonachanCom);
             this.panelSourceKonachanCom.Controls.Add(this.comboBoxSourceKonachanCom);
             this.panelSourceKonachanCom.Controls.Add(this.labelSourceKonachanCom);
@@ -617,7 +619,6 @@
             this.panelSourceKonachanCom.HorizontalScrollbarBarColor = true;
             this.panelSourceKonachanCom.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceKonachanCom.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceKonachanCom, "panelSourceKonachanCom");
             this.panelSourceKonachanCom.Name = "panelSourceKonachanCom";
             this.panelSourceKonachanCom.VerticalScrollbarBarColor = true;
             this.panelSourceKonachanCom.VerticalScrollbarHighlightOnWheel = false;
@@ -645,9 +646,9 @@
             // 
             // comboBoxSourceKonachanCom
             // 
+            resources.ApplyResources(this.comboBoxSourceKonachanCom, "comboBoxSourceKonachanCom");
             this.comboBoxSourceKonachanCom.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceKonachanCom.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceKonachanCom, "comboBoxSourceKonachanCom");
             this.comboBoxSourceKonachanCom.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceKonachanCom.Items"),
             resources.GetString("comboBoxSourceKonachanCom.Items1"),
@@ -669,6 +670,7 @@
             // 
             // panelSourceKonachanNet
             // 
+            resources.ApplyResources(this.panelSourceKonachanNet, "panelSourceKonachanNet");
             this.panelSourceKonachanNet.Controls.Add(this.numericUpDownSourceKonachanNet);
             this.panelSourceKonachanNet.Controls.Add(this.comboBoxSourceKonachanNet);
             this.panelSourceKonachanNet.Controls.Add(this.labelSourceKonachanNet);
@@ -676,7 +678,6 @@
             this.panelSourceKonachanNet.HorizontalScrollbarBarColor = true;
             this.panelSourceKonachanNet.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSourceKonachanNet.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panelSourceKonachanNet, "panelSourceKonachanNet");
             this.panelSourceKonachanNet.Name = "panelSourceKonachanNet";
             this.panelSourceKonachanNet.VerticalScrollbarBarColor = true;
             this.panelSourceKonachanNet.VerticalScrollbarHighlightOnWheel = false;
@@ -704,9 +705,9 @@
             // 
             // comboBoxSourceKonachanNet
             // 
+            resources.ApplyResources(this.comboBoxSourceKonachanNet, "comboBoxSourceKonachanNet");
             this.comboBoxSourceKonachanNet.FontSize = MetroFramework.MetroLinkSize.Small;
             this.comboBoxSourceKonachanNet.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxSourceKonachanNet, "comboBoxSourceKonachanNet");
             this.comboBoxSourceKonachanNet.Items.AddRange(new object[] {
             resources.GetString("comboBoxSourceKonachanNet.Items"),
             resources.GetString("comboBoxSourceKonachanNet.Items1"),
@@ -728,6 +729,7 @@
             // 
             // metroTabPageDownloadSettings
             // 
+            resources.ApplyResources(this.metroTabPageDownloadSettings, "metroTabPageDownloadSettings");
             this.metroTabPageDownloadSettings.Controls.Add(this.numericUpDownMaxRetryAttempts);
             this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxOpenDirectoryOnFinish);
             this.metroTabPageDownloadSettings.Controls.Add(this.checkBoxNotify);
@@ -737,7 +739,6 @@
             this.metroTabPageDownloadSettings.Controls.Add(this.textBoxDownloadDirectory);
             this.metroTabPageDownloadSettings.Controls.Add(this.labelDownloadDirectory);
             this.metroTabPageDownloadSettings.HorizontalScrollbarBarColor = true;
-            resources.ApplyResources(this.metroTabPageDownloadSettings, "metroTabPageDownloadSettings");
             this.metroTabPageDownloadSettings.Name = "metroTabPageDownloadSettings";
             this.metroTabPageDownloadSettings.VerticalScrollbarBarColor = true;
             // 
@@ -815,20 +816,20 @@
             // 
             // metroTabPageAbout
             // 
+            resources.ApplyResources(this.metroTabPageAbout, "metroTabPageAbout");
             this.metroTabPageAbout.Controls.Add(this.pictureBoxDonate);
             this.metroTabPageAbout.Controls.Add(this.labelAbout4);
             this.metroTabPageAbout.Controls.Add(this.labelAbout3);
             this.metroTabPageAbout.Controls.Add(this.labelAbout2);
             this.metroTabPageAbout.Controls.Add(this.labelAbout1);
             this.metroTabPageAbout.HorizontalScrollbarBarColor = true;
-            resources.ApplyResources(this.metroTabPageAbout, "metroTabPageAbout");
             this.metroTabPageAbout.Name = "metroTabPageAbout";
             this.metroTabPageAbout.VerticalScrollbarBarColor = true;
             // 
             // pictureBoxDonate
             // 
-            this.pictureBoxDonate.Image = global::ProjectHEDio.Properties.Resources.DonateButton;
             resources.ApplyResources(this.pictureBoxDonate, "pictureBoxDonate");
+            this.pictureBoxDonate.Image = global::ProjectHEDio.Properties.Resources.DonateButton;
             this.pictureBoxDonate.Name = "pictureBoxDonate";
             this.pictureBoxDonate.TabStop = false;
             this.pictureBoxDonate.Click += new System.EventHandler(this.pictureBoxDonate_Click);
@@ -863,8 +864,8 @@
             // 
             // comboBoxLanguageSelector
             // 
-            this.comboBoxLanguageSelector.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxLanguageSelector, "comboBoxLanguageSelector");
+            this.comboBoxLanguageSelector.FormattingEnabled = true;
             this.comboBoxLanguageSelector.Items.AddRange(new object[] {
             resources.GetString("comboBoxLanguageSelector.Items")});
             this.comboBoxLanguageSelector.Name = "comboBoxLanguageSelector";
