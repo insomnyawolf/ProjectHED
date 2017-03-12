@@ -645,8 +645,33 @@ namespace ProjectHEDio
                     {
                         if (filenameList.Contains(filename))
                         {
-                            Website.IncrementFilenameDuplicates();
-                            continue;
+                            // Website.IncrementFilenameDuplicates();
+                            // continue;
+
+                            // Generate a new filename for the file
+
+                            string[] filenameArray = filename.Split('.');
+
+                            // Retrieve file extension
+                            string filenameExtension = filenameArray[filenameArray.Length - 1];
+
+                            // Retrieve base filename
+                            string filenameBase = "";
+                            if (filenameArray.Length > 2)
+                            {
+                                for (int i = 0; i < filenameArray.Length - 1; i++)
+                                {
+                                    filenameBase += filenameArray[i] + ".";
+                                }
+
+                                // Strip last character (trailing period)
+                                filenameBase = filenameBase.Remove(filenameBase.Length - 1);
+                            }
+                            else
+                            {
+                                filenameBase = filenameArray[0];
+                            }
+                            filename = filenameBase + " (copy)" + "." + filenameExtension;
                         }
                     }
                     filenameList.Add(filename);
