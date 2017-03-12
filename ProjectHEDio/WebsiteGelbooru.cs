@@ -12,9 +12,9 @@ namespace ProjectHEDio
 
         }
 
-        public override void InitializeScrape(string[] arguments = null, int totalPages = 1)
+        public override void InitializeScrape(string[] arguments = null, int limit = 1, bool limitByImages = false)
         {
-            ScrapeThread = new Thread(() => Scrape(arguments, totalPages));
+            ScrapeThread = new Thread(() => Scrape(arguments, limit, limitByImages));
             ScrapeThread.IsBackground = true;
             ScrapeThread.Start();
         }
@@ -50,17 +50,18 @@ namespace ProjectHEDio
             return string.Format("http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=42&pid={0}&tags={1}", (pageNumber - 1), GetTagList(arguments));
         }
 
-        protected override void Scrape(string[] arguments = null, int totalPages = 1)
+        protected override void Scrape(string[] arguments = null, int limit = 1, bool limitByImages = false)
         {
             int pages = GetMaxPages(arguments);
             if (pages < 1)
             {
                 return;
             }
-            if (totalPages < pages)
+            if (!limitByImages && limit < pages)
             {
-                pages = totalPages;
+                pages = limit;
             }
+
             ulong totalFound = 0;
             for (int i = 1; i <= pages; i++)
             {
@@ -93,15 +94,51 @@ namespace ProjectHEDio
                     string heightCaptured = Regex.Match(postString, heightPattern).Groups["Height"].Value;
                     if (int.TryParse(widthCaptured, out width) && int.TryParse(heightCaptured, out height))
                     {
-                        AddToLinks(link, width, height);
+                        if (limitByImages)
+                        {
+                            if ((int)totalFound < limit)
+                            {
+                                AddToLinks(link, width, height);
+                                totalFound++;
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            AddToLinks(link, width, height);
+                            totalFound++;
+                        }
                     }
                     else
                     {
-                        AddToLinks(link);
+                        if (limitByImages)
+                        {
+                            if ((int)totalFound < limit)
+                            {
+                                AddToLinks(link);
+                                totalFound++;
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            AddToLinks(link);
+                            totalFound++;
+                        }
                     }
                 }
                 LogHelper.Log(string.Format("PAGE: Found {0} matches from page {1} of this {2} object.", mc.Count, i, this.ToString()));
-                totalFound = totalFound + (uint)mc.Count;
+                if (limitByImages && (int)totalFound >= limit)
+                {
+                    break;
+                }
+                // totalFound = totalFound + (uint)mc.Count;
             }
             LogHelper.Log(string.Format("SCRAPE: Found {0} total matches from this {1} object.", totalFound, this.ToString()));
         }

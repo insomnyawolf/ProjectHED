@@ -180,12 +180,12 @@ namespace ProjectHEDio
             this.SourcePanel = sourcePanel;
         }
 
-        public abstract void InitializeScrape(string[] arguments = null, int totalPages = 1);
+        public abstract void InitializeScrape(string[] arguments = null, int limit = 1, bool limitByImages = false);
 
         protected abstract int GetMaxPages(string[] arguments = null);
 
         protected abstract string FormatURL(string[] arguments = null, int pageNumber = 1);
 
-        protected abstract void Scrape(string[] arguments = null, int totalPages = 1);
+        protected abstract void Scrape(string[] arguments = null, int limit = 1, bool limitByImages = false);
     }
 }

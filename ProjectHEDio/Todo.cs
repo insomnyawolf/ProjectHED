@@ -6,12 +6,12 @@
         // Functionality
         // - I dunno dude.
         // - Add more logging events.
-        // - [ADD] Scrape limits by pictures.
         // - [ADD] Size restrictions.
         // - [ADD] Support to change name if path is too long
         // - Add check for invalid tags in buttonStart_Click
         // - Check if load config would cause change language
         //
+        // . [ADD] Scrape limits by pictures.
         // . Change commit names to imperative verbs.
         //===================================================
 
