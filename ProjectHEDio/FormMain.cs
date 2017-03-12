@@ -185,6 +185,8 @@ namespace ProjectHEDio
                     WebClientList.Clear();
 
                     SaveSettings();
+
+                    // Might have to add a call to Environment.Exit(0); or Application.Exit(); here
                 }
             }
         }
