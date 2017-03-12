@@ -162,7 +162,27 @@ namespace ProjectHEDio
                 else
                 {
                     // Close ProjectHED, aborting all operations.
-                    // TODO: Make sure all operations are stopped here
+
+                    DownloadThread.Abort();
+                    StatusUpdateTimer.Stop();
+
+                    foreach (Website w in Website.WebsiteList)
+                    {
+                        w.KillThread();
+                    }
+
+                    foreach (WebClient wc in WebClientList)
+                    {
+                        if (wc.IsBusy)
+                        {
+                            wc.CancelAsync();
+                        }
+                    }
+                    foreach (WebClient wc in WebClientList)
+                    {
+                        wc.Dispose();
+                    }
+                    WebClientList.Clear();
 
                     SaveSettings();
                 }
