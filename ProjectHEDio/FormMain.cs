@@ -575,6 +575,7 @@ namespace ProjectHEDio
                 MetroComboBox comboBox = null;
                 NumericUpDown limitControl = null;
                 int limit = 1;
+                bool limitByImages = false;
                 // Check if the source has been checked on their panel by looping through controls
                 foreach (Control c in w.SourcePanel.Controls)
                 {
@@ -607,7 +608,12 @@ namespace ProjectHEDio
                 {
                     limit = (int)limitControl.Value;
                 }
-                w.InitializeScrape(tagList, limit);
+                else if (limitType == 2)
+                {
+                    limit = (int)limitControl.Value;
+                    limitByImages = true;
+                }
+                w.InitializeScrape(tagList, limit, limitByImages);
             }
             while (Website.IsScraping())
             {
