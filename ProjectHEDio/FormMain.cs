@@ -694,7 +694,6 @@ namespace ProjectHEDio
                     }
                     catch (WebException e)
                     {
-                        MessageBox.Show(e + "");
                         // An exception happened oh no whatever shall we do
                         // Retry the download if conditions are met
                         if (checkBoxRetryDownloads.Checked)
