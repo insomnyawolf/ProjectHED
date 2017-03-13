@@ -692,7 +692,7 @@ namespace ProjectHEDio
                         // Start the download on the added WebClient
                         WebClientList.Last().DownloadFileAsync(uri, textBoxDownloadDirectory.Text + "\\" + filename);
                     }
-                    catch (WebException e)
+                    catch (WebException)
                     {
                         // An exception happened oh no whatever shall we do
                         // Retry the download if conditions are met
