@@ -407,7 +407,7 @@ namespace ProjectHEDio
                         */
                         decimal percent = Website.GetDownloadedFiles() * 100.0m / (Website.GetTotalFiles() == 0 ? int.MaxValue : Website.GetTotalFiles());
                         progressBarMain.Value = (int)percent;
-                        UpdateStatus(string.Format("Currently scraping all files (scraped: {0} / downloaded: {1})!", Website.GetTotalFiles(), Website.GetDownloadedFiles()));
+                        UpdateStatus(string.Format("Scraping all files (scraped: {0} / downloaded: {1})!", Website.GetTotalFiles(), Website.GetDownloadedFiles()));
                     }
                     else
                     {
