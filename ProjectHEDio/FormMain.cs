@@ -81,10 +81,10 @@ namespace ProjectHEDio
                         }
                     }
                     comboBoxLimitType.Enabled = false;
-                    comboBoxLimitType.Text = "No Limit";
+                    comboBoxLimitType.Text = comboBoxLimitType.Items[0].ToString();
                     comboBoxLimitType.SelectedIndexChanged += (sender, args) =>
                     {
-                        if (comboBoxLimitType.Text != "No Limit")
+                        if (comboBoxLimitType.SelectedIndex != 0)
                         {
                             numericUpDownLimitAmount.Enabled = true;
                         }
@@ -98,7 +98,7 @@ namespace ProjectHEDio
                         if (checkBoxSelected.Checked)
                         {
                             comboBoxLimitType.Enabled = true;
-                            if (comboBoxLimitType.Text != "No Limit")
+                            if (comboBoxLimitType.SelectedIndex != 0)
                             {
                                 numericUpDownLimitAmount.Enabled = true;
                             }
