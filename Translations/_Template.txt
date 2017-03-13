@@ -1,0 +1,287 @@
+Hi! This is a "translation form" for ProjectHED.
+If you would like to contribute a translation for ProjectHED, please read ALL of the following:
+
+1. Fork this repository.
+
+2. On your fork, make a duplicate of this file (_Template.txt) in the same directory.
+
+3. Name the file you just made as "<Language>.txt". Please use the English term for the filename.
+   For example, a 日本語 translation would require the file to be named "Japanese.txt".
+   Likewise, an Español translation should have the file named as "Spanish.txt".
+
+4. Fill in all the empty quotations with the string that translates the text.
+   The strings will be listed in this format:
+   [Type]
+   (Variables)
+   "Original Text"
+   "Translated Text"
+   
+   The "Type" specifies what the text will be used for (headings, messages, alerts, choices, buttons, prompts, labels).
+   Some words can be translated differently depending on their usage, so the usage of the text will be defined here.
+   
+   Some strings will require a variable in the text, such as a number for a counter.
+   Variables in a string (enclosed within quotation marks) will be surrounded like <this>.
+   In a translation, please keep the variable as it appeared in the original text.
+   Any variables will be explained in the (Variables) section which is after the "Translated Text" string.
+   For example, a counter displaying the amount of errors will appear untranslated as "Errors: <x>".
+   This string will be translated in Japanese to "エラー： <x>".
+   
+   Strings that contain quotation marks (") will be "escaped" (\").
+   If your language uses quotation marks, please retain the escaped usage of these quotation marks (\").
+   For example, "\Hello, world!\"" will will be translated in Español to "\"¡Hola, mundo!\"".
+   If your language uses other characters to represent text in quotations, you can replace the escaped quotation with the character.
+   For example, "\Hello, world!\"" will will be translated in Japanese to "「こんにちは、世界！」".
+   
+   Some strings may contain parts that should not be translated.
+   Parts of a string that should not be translated will be surrounded in {braces}.
+   If we wanted to translate the phrase "Hello, world!" but keep "world" in English, the untranslated string would be written as:
+   "\"Hello, {world}!\""
+   Translating this string to Japanese would result in "「こんにちは、world！」".
+   The text "ProjectHED" should not be translated; it is a proper noun.
+   
+   Comments about the string will start with two forward slashes (//).
+   This will provide extra (potentially helpful) information.
+   For example:
+   "Hello, world!" // This is a standard greeting.
+   
+5. Commit the changes.
+
+6. Push the changes to the remote.
+
+7. Create a pull request to the main repository after all translations have been completed.
+
+[Header]
+"Picture Options"
+""
+
+[Header]
+"Source Selection"
+""
+
+[Header]
+"Download Options"
+""
+
+[Header]
+"About"
+""
+
+[Button / Action]
+"Start"
+""
+
+[Button / Action]
+"Stop"
+""
+
+[Option]
+"Use Tags:"
+""
+
+[Prompt]
+"tags here, separated by spaces" // This shows in the text box when nothing has been typed.
+""
+
+[Label]
+"If this is checked, ProjectHED will only download images containing the tags you specify."
+""
+
+[Label]
+"To use multiple tags in the same query, please separate individual tags with a space."
+""
+
+[Label]
+"Name tags are usually denoted as \"lastname_firstname\" as a single tag."
+""
+
+[Check Box / Option]
+"Restrict Image Sizes:"
+""
+
+[Label]
+"If this is checked, ProjectHED will restrict image downloads to the options below."
+""
+
+[Choice / Choose One: Choice A]
+("w" represents the width of an image, measured in the number of pixels.
+ "h" represents the height of an image, measured in the number of pixels.)
+"Images must be <w>x<h> pixels."
+""
+
+[Choice / Choose One: Choice B]
+(The variables used are the same as the above string.)
+"Images must exceed <w>x<h> pixels."
+""
+
+[Choice / Choose One: Choice C]
+(The variables used are the same as the above string.)
+"Images must be less than <w>x<h> pixels."
+""
+
+[Optional Setting]
+"Check dimensions before downloading." // If this is checked, each image will have its dimensions checked before being saved.
+""
+
+[Optional Setting]
+"Implement size restrictions in tag queries." // If this is checked, tags will be added to the search; this will restrict image sizes.
+""
+
+[Optional Setting]
+"Only download images with size tags." // If this is checked, only images that have their dimensions as tags will be downloaded.
+""
+
+[Column Header]
+"Source Name" // Sources are the different websites that images are downloaded from. If needed, "Source" can just be translated.
+""
+
+[Column Header]
+"Content" // Whether the content of the source is SFW or NSFW. Alternative translations could be "Age-restricted" or "Explicit".
+""
+
+[Column Header]
+"Limit" // The user can define if they want to limit how many files are downloaded from a certain source.
+""
+
+[Column Header]
+"Limit Amount" // Alternative translations could be "Amount".
+""
+
+[Choice / Choose One: Choice A]
+"No Limit" // This means all images from the source will be downloaded. Alternative translations could be "None".
+""
+
+[Choice / Choose One: Choice B]
+"Page Limit" // This means that there is limit on the pages of downloaded images. Alternative translations could be "Page" or "Pages".
+""
+
+[Choice / Choose One: Choice C]
+"Image Limit" // This means that the amount of images downloaded will be limited. Alternative translations could be "Image" or "Images".
+""
+
+[Button / Action]
+"Select All" // When this button is pressed, all the sources will be selected for download.
+""
+
+[Button / Action]
+"Deselect All" // When this button is pressed, all the sources will be unchecked.
+""
+
+[Label]
+"Download Directory:"
+""
+
+[Option]
+"Overwrite files that have the same filename"
+""
+
+[Option]
+("x" represents a number that determines how many times the program will attempt to redownload an image.)
+"Automatically retry failed downloads (max attempts: <x> tries)"
+""
+
+[Option]
+"After the download completes, show a notification in the system tray"
+""
+
+[Option]
+"After the download completes, open the download directory in Windows Explorer"
+""
+
+[Label]
+"ProjectHED is maintained by {Chezzy}."
+""
+
+[Label]
+"ProjectHED is on {GitHub}."
+""
+
+[Clickable Label]
+"To visit the repository, click here."
+""
+
+[Label]
+"Thank you for the love. {♡}"
+""
+
+[Label]
+"Status:" // This is a label that will display the current status of the program.
+""
+
+[Status Label]
+"Waiting." // The program isn't doing anything, so its status is "Waiting." Alternative translations could be "Idle".
+""
+
+[Status Label]
+("x" represents the amount of sources that are selected.)
+"<x> sources are selected."
+""
+
+[Status Label]
+"Couldn't start download - no valid download directory was set."
+""
+
+[Status Label]
+"Couldn't start download - no tags were specified while \"Use Tags\" is checked."
+""
+
+[Status Label]
+"Couldn't start download - no sources were checked."
+""
+
+[Status Label]
+"Couldn't start download - thread is still alive." // Alternative translations: "Couldn't start download - download is in progress."
+""
+
+[Status Label]
+("x" is a number representing the current amount of scraped files.
+ "y" is a number representing the current amount of downloaded files.)
+"Scraping all files (scraped: <x> / downloaded: <y>)!"
+""
+
+[Status Label]
+("x" is a number representing the current amount of downloaded files.
+ "y" is a number representing the total amount of files to download.)
+"Downloading all files (<x>/<y>)!"
+""
+
+[Status Label]
+("x" represents how many files were downloaded.
+ "a" represents how many total files were found.
+ "b" represents how many duplicate links there were.
+ "c" represents how many duplicate filenames there were.)
+"Finished downloading <x> files! {(ttl: <a>. dlnk: <b>. dfln: <c>.)}" // Only translate the "Finished downloading <x> files!" part.
+""
+
+[Status Label]
+("x" represents how many files were finished downloading before aborting the operation.)
+"Aborted download! Finished downloads: <x>."
+""
+
+[Status Label]
+"Started download!"
+""
+
+[Alert / Popup]
+("x" represents how many files were downloaded.)
+"ProjectHED has finished downloading <x> files!"
+""
+
+[Message Box Title]
+"Download In Progress"
+""
+
+[Message Box Text]
+"ProjectHED is still performing an operation! Are you sure you want to close ProjectHED now?"
+""
+
+[Message Box Title]
+"Warning"
+""
+
+[Message Box Text]
+"ProjectHED is still downloading images!"
+""
+
+[Message Box Text]
+"Are you sure you want to stop the operation?"
+""
