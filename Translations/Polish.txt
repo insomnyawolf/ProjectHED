@@ -1,0 +1,287 @@
+Hi! This is a "translation form" for ProjectHED.
+If you would like to contribute a translation for ProjectHED, please read ALL of the following:
+
+1. Fork this repository.
+
+2. On your fork, make a duplicate of this file (_Template.txt) in the same directory.
+
+3. Name the file you just made as "<Language>.txt". Please use the English term for the filename.
+   For example, a 日本語 translation would require the file to be named "Japanese.txt".
+   Likewise, an Español translation should have the file named as "Spanish.txt".
+
+4. Fill in all the empty quotations with the string that translates the text.
+   The strings will be listed in this format:
+   [Type]
+   (Variables)
+   "Original Text"
+   "Translated Text"
+   
+   The "Type" specifies what the text will be used for (headings, messages, alerts, choices, buttons, prompts, labels).
+   Some words can be translated differently depending on their usage, so the usage of the text will be defined here.
+   
+   Some strings will require a variable in the text, such as a number for a counter.
+   Variables in a string (enclosed within quotation marks) will be surrounded like <this>.
+   In a translation, please keep the variable as it appeared in the original text.
+   Any variables will be explained in the (Variables) section which is after the "Translated Text" string.
+   For example, a counter displaying the amount of errors will appear untranslated as "Errors: <x>".
+   This string will be translated in Japanese to "エラー： <x>".
+   
+   Strings that contain quotation marks (") will be "escaped" (\").
+   If your language uses quotation marks, please retain the escaped usage of these quotation marks (\").
+   For example, "\Hello, world!\"" will will be translated in Español to "\"¡Hola, mundo!\"".
+   If your language uses other characters to represent text in quotations, you can replace the escaped quotation with the character.
+   For example, "\Hello, world!\"" will will be translated in Japanese to "「こんにちは、世界！」".
+   
+   Some strings may contain parts that should not be translated.
+   Parts of a string that should not be translated will be surrounded in {braces}.
+   If we wanted to translate the phrase "Hello, world!" but keep "world" in English, the untranslated string would be written as:
+   "\"Hello, {world}!\""
+   Translating this string to Japanese would result in "「こんにちは、world！」".
+   The text "ProjectHED" should not be translated; it is a proper noun.
+   
+   Comments about the string will start with two forward slashes (//).
+   This will provide extra (potentially helpful) information.
+   For example:
+   "Hello, world!" // This is a standard greeting.
+   
+5. Commit the changes.
+
+6. Push the changes to the remote.
+
+7. Create a pull request to the main repository after all translations have been completed.
+
+[Header]
+"Opcje obrazka"
+""
+
+[Header]
+"Opcje źródła"
+""
+
+[Header]
+"Opcje pobierania"
+""
+
+[Header]
+"O programie"
+""
+
+[Button / Action]
+"Start"
+""
+
+[Button / Action]
+"Stop"
+""
+
+[Option]
+"Użyj tagów:"
+""
+
+[Prompt]
+"tagi mają być tutaj, odzielaj je spacją" // This shows in the text box when nothing has been typed.
+""
+
+[Label]
+"Kiedy ta opcja zostanie zaznaczona, ProjectHED zacznie pobierać tylko zdjęca które ty wybrałeś wpisując tagi."
+""
+
+[Label]
+"Żeby użyć kilka razy tagów w tym samy miejscu, proszę odziel je spacją."
+""
+
+[Label]
+"Nazwy tagów są zwykle oznaczone jako \"lastname_firstname\"."
+""
+
+[Check Box / Option]
+"Rozmiar obrazka:"
+""
+
+[Label]
+"Kiedy to zostanie zaznaczone, ProjectHED ograniczy pobieranie do powyższych opcji."
+""
+
+[Choice / Choose One: Choice A]
+("w" reprezentuje szerokość obrazu, mierzoną liczbą pikseli.
+ "h" reprezentuje szerokość obrazu, mierzoną liczbą pikseli.)
+"Images must be <w>x<h> pixels."
+""
+
+[Choice / Choose One: Choice B]
+(Stosowane zmienne są takie same, jak powyższy ciąg znaków.)
+"Obrazki muszą przekraczać <w>x<h> pixeli."
+""
+
+[Choice / Choose One: Choice C]
+(Zmienne są takie same, jak powyższy ciąg znaków.)
+"Obrazki muszą przekraczać <w>x<h> pixeli."
+""
+
+[Optional Setting]
+"Zaznacz folder przed pobraniem." // If this is checked, each image will have its dimensions checked before being saved.
+""
+
+[Optional Setting]
+"Wdrażanie ograniczeń rozmiaru w zapytaniach dotyczących tagów." // If this is checked, tags will be added to the search; this will restrict image sizes.
+""
+
+[Optional Setting]
+"Pobieraj tylko zdjęcia ze tagami rozmiaru." // If this is checked, only images that have their dimensions as tags will be downloaded.
+""
+
+[Column Header]
+"Nazwa źródła" // Sources are the different websites that images are downloaded from. If needed, "Source" can just be translated.
+""
+
+[Column Header]
+"Kontent" // Whether the content of the source is SFW or NSFW. Alternative translations could be "Age-restricted" or "Explicit".
+""
+
+[Column Header]
+"Limit" // The user can define if they want to limit how many files are downloaded from a certain source.
+""
+
+[Column Header]
+"Kwota limitu" // Alternative translations could be "Amount".
+""
+
+[Choice / Choose One: Choice A]
+"Bez limitu" // This means all images from the source will be downloaded. Alternative translations could be "None".
+""
+
+[Choice / Choose One: Choice B]
+"Limit strony" // This means that there is limit on the pages of downloaded images. Alternative translations could be "Page" or "Pages".
+""
+
+[Choice / Choose One: Choice C]
+"Limit obrazku" // This means that the amount of images downloaded will be limited. Alternative translations could be "Image" or "Images".
+""
+
+[Button / Action]
+"Zaznacz wszystko" // When this button is pressed, all the sources will be selected for download.
+""
+
+[Button / Action]
+"Odznacz wszystko" // When this button is pressed, all the sources will be unchecked.
+""
+
+[Label]
+"Folder, w którym mam pobrać obrazki:"
+""
+
+[Option]
+"Nadpisz pliki o tej samej nazwie"
+""
+
+[Option]
+("X" oznacza liczbę określającą, ile razy program próbuje ponownie pobrać zdjęcie.)
+"Automatyczne ponawianie nieudanych pobrań (maksimum prób: <x>)"
+""
+
+[Option]
+"Kiedy wszystko się zakończy, poinformuj mnie."
+""
+
+[Option]
+"Kiedy wszystko się zakończy, otwórz folder."
+""
+
+[Label]
+"ProjectHED jest tworzony przez {Chezzy}."
+""
+
+[Label]
+"ProjectHED jest na {GitHub}."
+""
+
+[Clickable Label]
+"Jeżeli chcesz zobaczyć reprezytorium, kliknij tutaj."
+""
+
+[Label]
+"Dziękujemy za miłość. {♡}"
+""
+
+[Label]
+"Status:" // This is a label that will display the current status of the program.
+""
+
+[Status Label]
+"Oczekuje." // The program isn't doing anything, so its status is "Waiting." Alternative translations could be "Idle".
+""
+
+[Status Label]
+("x" oznacza ilość wybranych źródeł.)
+"<x> źródeł zostało zaznaczonych."
+""
+
+[Status Label]
+"Nie można rozpocząć pobierania - nie ustawiono prawidłowego katalogu pobierania."
+""
+
+[Status Label]
+"Nie można rozpocząć pobierania - nie określono tagów, podczas gdy \"Use Tags\" jest zaznaczone."
+""
+
+[Status Label]
+"Nie można rozpocząć pobierania - nie znaleziono źródła."
+""
+
+[Status Label]
+"Nie można rozpocząć pobierania - wątek jest nadal aktualny." // Alternative translations: "Couldn't start download - download is in progress."
+""
+
+[Status Label]
+("x" to liczba reprezentująca bieżącą ilość skrobanych plików.
+ "y" to liczba reprezentująca bieżącą ilość pobranych plików.)
+"Skrobanie wszystkich plików (skrobane: <x> / pobrane: <y>)!"
+""
+
+[Status Label]
+("x" to liczba reprezentująca bieżącą ilość pobranych plików.
+ "y" to liczba reprezentująca łączną ilość plików do pobrania.)
+"Pobieranie wszystkich plików (<x>/<y>)!"
+""
+
+[Status Label]
+("x" oznacza liczbę pobranych plików.
+ "a" oznacza liczbę znalezionych plików.
+ "b" reprezentuje liczbę powtórzeń linków.
+ "c" reprezentuje liczbę powtórzonych nazw plików.)
+"Zakończono pobieranie <x> plików! {(ttl: <a>. dlnk: <b>. dfln: <c>.)}" // Only translate the "Finished downloading <x> files!" part.
+""
+
+[Status Label]
+("x" oznacza liczbę ukończonych plików przed przerwaniem operacji.)
+"Przerwano pobieranie! Liczba pobranych zdjęć: <x>."
+""
+
+[Status Label]
+"Rozpoczęto pobieranie."
+""
+
+[Alert / Popup]
+("x" oznacza liczbę pobranych plików, im więcej wskazuje, tym więcej zostało pobranych plików.)
+"ProjectHED skończył pobierać <x> plików!"
+""
+
+[Message Box Title]
+"Pobieranie trwa"
+""
+
+[Message Box Text]
+"ProjectHED ciągle pobiera pliki! Czy napewno chcesz wyjść?"
+""
+
+[Message Box Title]
+"Uwaga!"
+""
+
+[Message Box Text]
+"ProjectHED ciągle pobiera obrazki!"
+""
+
+[Message Box Text]
+"Czy napewno chcesz zakończyć operację?"
+""
