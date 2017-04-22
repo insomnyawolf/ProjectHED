@@ -1,3 +1,4 @@
+
 Hi! This is a "translation form" for ProjectHED.
 If you would like to contribute a translation for ProjectHED, please read ALL of the following:
 
@@ -51,237 +52,237 @@ If you would like to contribute a translation for ProjectHED, please read ALL of
 7. Create a pull request to the main repository after all translations have been completed.
 
 [Header]
+"Picture Options"
 "Opcje obrazka"
-""
 
 [Header]
+"Source Selection"
 "Opcje źródła"
-""
 
 [Header]
+"Download Options"
 "Opcje pobierania"
-""
 
 [Header]
+"About"
 "O programie"
-""
 
 [Button / Action]
 "Start"
-""
+"Start"
 
 [Button / Action]
 "Stop"
-""
+"Stop"
 
 [Option]
+"Use Tags:"
 "Użyj tagów:"
-""
 
 [Prompt]
-"tagi mają być tutaj, odzielaj je spacją" // This shows in the text box when nothing has been typed.
-""
+"tags here, separated by spaces" // This shows in the text box when nothing has been typed.
+"tagi mają być tutaj, odzielaj je spacją"
 
 [Label]
+"If this is checked, ProjectHED will only download images containing the tags you specify."
 "Kiedy ta opcja zostanie zaznaczona, ProjectHED zacznie pobierać tylko zdjęca które ty wybrałeś wpisując tagi."
-""
 
 [Label]
+"To use multiple tags in the same query, please separate individual tags with a space."
 "Żeby użyć kilka razy tagów w tym samy miejscu, proszę odziel je spacją."
-""
 
 [Label]
+"Name tags are usually denoted as \"lastname_firstname\" as a single tag."
 "Nazwy tagów są zwykle oznaczone jako \"lastname_firstname\"."
-""
 
 [Check Box / Option]
+"Restrict Image Sizes:"
 "Rozmiar obrazka:"
-""
 
 [Label]
+"If this is checked, ProjectHED will restrict image downloads to the options below."
 "Kiedy to zostanie zaznaczone, ProjectHED ograniczy pobieranie do powyższych opcji."
-""
 
 [Choice / Choose One: Choice A]
-("w" reprezentuje szerokość obrazu, mierzoną liczbą pikseli.
- "h" reprezentuje szerokość obrazu, mierzoną liczbą pikseli.)
+("w" represents the width of an image, measured in the number of pixels.
+ "h" represents the height of an image, measured in the number of pixels.)
 "Images must be <w>x<h> pixels."
-""
+"Obrazki muszą być w <w>x<h> pixelach."
 
 [Choice / Choose One: Choice B]
-(Stosowane zmienne są takie same, jak powyższy ciąg znaków.)
+(The variables used are the same as the above string.)
+"Images must exceed <w>x<h> pixels."
 "Obrazki muszą przekraczać <w>x<h> pixeli."
-""
 
 [Choice / Choose One: Choice C]
-(Zmienne są takie same, jak powyższy ciąg znaków.)
+(The variables used are the same as the above string.)
+"Images must be less than <w>x<h> pixels."
 "Obrazki muszą przekraczać <w>x<h> pixeli."
-""
 
 [Optional Setting]
-"Zaznacz folder przed pobraniem." // If this is checked, each image will have its dimensions checked before being saved.
-""
+"Check dimensions before downloading." // If this is checked, each image will have its dimensions checked before being saved.
+"Zaznacz folder przed pobraniem."
 
 [Optional Setting]
-"Wdrażanie ograniczeń rozmiaru w zapytaniach dotyczących tagów." // If this is checked, tags will be added to the search; this will restrict image sizes.
-""
+"Implement size restrictions in tag queries." // If this is checked, tags will be added to the search; this will restrict image sizes.
+"Wdrażanie ograniczeń rozmiaru w zapytaniach dotyczących tagów."
 
 [Optional Setting]
-"Pobieraj tylko zdjęcia ze tagami rozmiaru." // If this is checked, only images that have their dimensions as tags will be downloaded.
-""
+"Only download images with size tags." // If this is checked, only images that have their dimensions as tags will be downloaded.
+"Pobieraj tylko zdjęcia ze tagami rozmiaru."
 
 [Column Header]
-"Nazwa źródła" // Sources are the different websites that images are downloaded from. If needed, "Source" can just be translated.
-""
+"Source Name" // Sources are the different websites that images are downloaded from. If needed, "Source" can just be translated.
+"Nazwa źródła"
 
 [Column Header]
-"Kontent" // Whether the content of the source is SFW or NSFW. Alternative translations could be "Age-restricted" or "Explicit".
-""
+"Content" // Whether the content of the source is SFW or NSFW. Alternative translations could be "Age-restricted" or "Explicit".
+"Kontent"
 
 [Column Header]
 "Limit" // The user can define if they want to limit how many files are downloaded from a certain source.
-""
+"Limit"
 
 [Column Header]
-"Kwota limitu" // Alternative translations could be "Amount".
-""
+"Limit Amount" // Alternative translations could be "Amount".
+"Kwota limitu"
 
 [Choice / Choose One: Choice A]
-"Bez limitu" // This means all images from the source will be downloaded. Alternative translations could be "None".
-""
+"No Limit" // This means all images from the source will be downloaded. Alternative translations could be "None".
+"Bez limitu"
 
 [Choice / Choose One: Choice B]
-"Limit strony" // This means that there is limit on the pages of downloaded images. Alternative translations could be "Page" or "Pages".
-""
+"Page Limit" // This means that there is limit on the pages of downloaded images. Alternative translations could be "Page" or "Pages".
+"Limit strony"
 
 [Choice / Choose One: Choice C]
-"Limit obrazku" // This means that the amount of images downloaded will be limited. Alternative translations could be "Image" or "Images".
-""
+"Image Limit" // This means that the amount of images downloaded will be limited. Alternative translations could be "Image" or "Images".
+"Limit obrazku"
 
 [Button / Action]
-"Zaznacz wszystko" // When this button is pressed, all the sources will be selected for download.
-""
+"Select All" // When this button is pressed, all the sources will be selected for download.
+"Zaznacz wszystko"
 
 [Button / Action]
-"Odznacz wszystko" // When this button is pressed, all the sources will be unchecked.
-""
+"Deselect All" // When this button is pressed, all the sources will be unchecked.
+"Odznacz wszystko"
 
 [Label]
+"Download Directory:"
 "Folder, w którym mam pobrać obrazki:"
-""
 
 [Option]
+"Overwrite files that have the same filename"
 "Nadpisz pliki o tej samej nazwie"
-""
 
 [Option]
-("X" oznacza liczbę określającą, ile razy program próbuje ponownie pobrać zdjęcie.)
+("x" represents a number that determines how many times the program will attempt to redownload an image.)
+"Automatically retry failed downloads (max attempts: <x> tries)"
 "Automatyczne ponawianie nieudanych pobrań (maksimum prób: <x>)"
-""
 
 [Option]
+"After the download completes, show a notification in the system tray"
 "Kiedy wszystko się zakończy, poinformuj mnie."
-""
 
 [Option]
+"After the download completes, open the download directory in Windows Explorer"
 "Kiedy wszystko się zakończy, otwórz folder."
-""
 
 [Label]
+"ProjectHED is maintained by {Chezzy}."
 "ProjectHED jest tworzony przez {Chezzy}."
-""
 
 [Label]
+"ProjectHED is on {GitHub}."
 "ProjectHED jest na {GitHub}."
-""
 
 [Clickable Label]
+"To visit the repository, click here."
 "Jeżeli chcesz zobaczyć reprezytorium, kliknij tutaj."
-""
 
 [Label]
-"Dziękujemy za miłość. {♡}"
-""
+"Thank you for the love. {♡}"
+"Dziękuje za miłość. {♡}"
 
 [Label]
 "Status:" // This is a label that will display the current status of the program.
 ""
 
 [Status Label]
-"Oczekuje." // The program isn't doing anything, so its status is "Waiting." Alternative translations could be "Idle".
-""
+"Waiting." // The program isn't doing anything, so its status is "Waiting." Alternative translations could be "Idle".
+"Oczekuje."
 
 [Status Label]
-("x" oznacza ilość wybranych źródeł.)
+("x" represents the amount of sources that are selected.)
+"<x> sources are selected."
 "<x> źródeł zostało zaznaczonych."
-""
 
 [Status Label]
+"Couldn't start download - no valid download directory was set."
 "Nie można rozpocząć pobierania - nie ustawiono prawidłowego katalogu pobierania."
-""
 
 [Status Label]
+"Couldn't start download - no tags were specified while \"Use Tags\" is checked."
 "Nie można rozpocząć pobierania - nie określono tagów, podczas gdy \"Use Tags\" jest zaznaczone."
-""
 
 [Status Label]
+"Couldn't start download - no sources were checked."
 "Nie można rozpocząć pobierania - nie znaleziono źródła."
-""
 
 [Status Label]
-"Nie można rozpocząć pobierania - wątek jest nadal aktualny." // Alternative translations: "Couldn't start download - download is in progress."
-""
+"Couldn't start download - thread is still alive." // Alternative translations: "Couldn't start download - download is in progress."
+"Nie można rozpocząć pobierania - wątek jest nadal aktualny."
 
 [Status Label]
-("x" to liczba reprezentująca bieżącą ilość skrobanych plików.
- "y" to liczba reprezentująca bieżącą ilość pobranych plików.)
+("x" is a number representing the current amount of scraped files.
+ "y" is a number representing the current amount of downloaded files.)
+"Scraping all files (scraped: <x> / downloaded: <y>)!"
 "Skrobanie wszystkich plików (skrobane: <x> / pobrane: <y>)!"
-""
 
 [Status Label]
-("x" to liczba reprezentująca bieżącą ilość pobranych plików.
- "y" to liczba reprezentująca łączną ilość plików do pobrania.)
+("x" is a number representing the current amount of downloaded files.
+ "y" is a number representing the total amount of files to download.)
+"Downloading all files (<x>/<y>)!"
 "Pobieranie wszystkich plików (<x>/<y>)!"
-""
 
 [Status Label]
-("x" oznacza liczbę pobranych plików.
- "a" oznacza liczbę znalezionych plików.
- "b" reprezentuje liczbę powtórzeń linków.
- "c" reprezentuje liczbę powtórzonych nazw plików.)
-"Zakończono pobieranie <x> plików! {(ttl: <a>. dlnk: <b>. dfln: <c>.)}" // Only translate the "Finished downloading <x> files!" part.
-""
+("x" represents how many files were downloaded.
+ "a" represents how many total files were found.
+ "b" represents how many duplicate links there were.
+ "c" represents how many duplicate filenames there were.)
+"Finished downloading <x> files! {(ttl: <a>. dlnk: <b>. dfln: <c>.)}" // Only translate the "Finished downloading <x> files!" part.
+"Zakończono pobieranie <x> plików!"
 
 [Status Label]
-("x" oznacza liczbę ukończonych plików przed przerwaniem operacji.)
+("x" represents how many files were finished downloading before aborting the operation.)
+"Aborted download! Finished downloads: <x>."
 "Przerwano pobieranie! Liczba pobranych zdjęć: <x>."
-""
 
 [Status Label]
+"Started download!"
 "Rozpoczęto pobieranie."
-""
 
 [Alert / Popup]
-("x" oznacza liczbę pobranych plików, im więcej wskazuje, tym więcej zostało pobranych plików.)
+("x" represents how many files were downloaded.)
+"ProjectHED has finished downloading <x> files!"
 "ProjectHED skończył pobierać <x> plików!"
-""
 
 [Message Box Title]
+"Download In Progress"
 "Pobieranie trwa"
-""
 
 [Message Box Text]
+"ProjectHED is still performing an operation! Are you sure you want to close ProjectHED now?"
 "ProjectHED ciągle pobiera pliki! Czy napewno chcesz wyjść?"
-""
 
 [Message Box Title]
-"Uwaga!"
-""
+"Warning"
+"Uwaga"
 
 [Message Box Text]
+"ProjectHED is still downloading images!"
 "ProjectHED ciągle pobiera obrazki!"
-""
 
 [Message Box Text]
+"Are you sure you want to stop the operation?"
 "Czy napewno chcesz zakończyć operację?"
-""
